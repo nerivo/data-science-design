@@ -1,0 +1,13 @@
+# Finding help
+A number of kind and generous data professionals make themselves available to help others. Three of our favourite collections are:
+
+Data Helpers by Angela Bassa (a list of people who are happy to help and mentor data scientists)
+https://www.datahelpers.org/ 
+Stephanie Hurlburt’s lists of engineers willing to offer mentorship
+http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you
+https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/)
+The R for Data Science Online Learning Community, where R users and learners can find one another and share ideas (https://www.rfordatasci.com/). 
+
+The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise...don’t be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another. 
+
+

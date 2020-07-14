@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 The phases of a project | Designing and Building Data Science Solutions: A Practical Guide</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 The phases of a project | Designing and Building Data Science Solutions: A Practical Guide" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 The phases of a project | Designing and Building Data Science Solutions: A Practical Guide" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Jonathan Leslie and Neri Van Otten" />
+
+
+<meta name="date" content="2020-07-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="what-success-looks-like-the-four-levels-of-project-evaluation.html"/>
+<link rel="next" href="deep-dive-into-phase-4-project-definition.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Designing and Building Data Science Solutions</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Preface</a></li>
+<li class="chapter" data-level="3" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>3</b> Introduction</a><ul>
+<li class="chapter" data-level="3.1" data-path="introduction.html"><a href="introduction.html#the-challenges-when-embarking-on-a-data-science-project"><i class="fa fa-check"></i><b>3.1</b> The challenges when embarking on a data science project?</a></li>
+<li class="chapter" data-level="3.2" data-path="introduction.html"><a href="introduction.html#our-framework"><i class="fa fa-check"></i><b>3.2</b> Our framework</a></li>
+<li class="chapter" data-level="3.3" data-path="introduction.html"><a href="introduction.html#organisation-of-this-book"><i class="fa fa-check"></i><b>3.3</b> Organisation of this book</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html"><i class="fa fa-check"></i><b>4</b> What success looks like: the four levels of project evaluation</a><ul>
+<li class="chapter" data-level="4.1" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#contextual-level"><i class="fa fa-check"></i><b>4.1</b> Contextual level</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#swot-analysis"><i class="fa fa-check"></i><b>4.1.1</b> SWOT analysis</a></li>
+<li class="chapter" data-level="4.1.2" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#porters-five-forces"><i class="fa fa-check"></i><b>4.1.2</b> Porter’s Five Forces</a></li>
+<li class="chapter" data-level="4.1.3" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#pestel-analysis"><i class="fa fa-check"></i><b>4.1.3</b> PESTEL Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#business-level"><i class="fa fa-check"></i><b>4.2</b> Business level</a></li>
+<li class="chapter" data-level="4.3" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#product-level"><i class="fa fa-check"></i><b>4.3</b> Product level</a></li>
+<li class="chapter" data-level="4.4" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#project-process-level"><i class="fa fa-check"></i><b>4.4</b> Project process level</a></li>
+<li class="chapter" data-level="4.5" data-path="what-success-looks-like-the-four-levels-of-project-evaluation.html"><a href="what-success-looks-like-the-four-levels-of-project-evaluation.html#final-thoughts"><i class="fa fa-check"></i><b>4.5</b> Final thoughts</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html"><i class="fa fa-check"></i><b>5</b> The phases of a project</a><ul>
+<li class="chapter" data-level="5.1" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-1-define-the-business-casequestion"><i class="fa fa-check"></i><b>5.1</b> Phase 1: Define the business case/question</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#find-the-business-case"><i class="fa fa-check"></i><b>5.1.1</b> Find the business case</a></li>
+<li class="chapter" data-level="5.1.2" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#define-the-business-case"><i class="fa fa-check"></i><b>5.1.2</b> Define the business case</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-2-define-success."><i class="fa fa-check"></i><b>5.2</b> Phase 2: Define success.</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#key-performance-indicator-kpi"><i class="fa fa-check"></i><b>5.2.1</b> Key Performance Indicator (KPI)</a></li>
+<li class="chapter" data-level="5.2.2" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#feasibility-study"><i class="fa fa-check"></i><b>5.2.2</b> Feasibility Study</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-3-scoping."><i class="fa fa-check"></i><b>5.3</b> Phase 3: Scoping.</a></li>
+<li class="chapter" data-level="5.4" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-4-project-definition"><i class="fa fa-check"></i><b>5.4</b> Phase 4: Project definition</a></li>
+<li class="chapter" data-level="5.5" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-5-exploration-execution-and-pivots"><i class="fa fa-check"></i><b>5.5</b> Phase 5: Exploration, execution and pivots</a></li>
+<li class="chapter" data-level="5.6" data-path="the-phases-of-a-project.html"><a href="the-phases-of-a-project.html#phase-6-handover-and-knowledge-transfer-aka-finding-a-new-owner"><i class="fa fa-check"></i><b>5.6</b> Phase 6: Handover and knowledge transfer (aka finding a new owner)</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html"><i class="fa fa-check"></i><b>6</b> Deep dive into Phase 4 – project definition</a><ul>
+<li class="chapter" data-level="6.1" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html#developing-a-project-plan"><i class="fa fa-check"></i><b>6.1</b> Developing a project plan</a></li>
+<li class="chapter" data-level="6.2" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html#what-skillsexpertise-is-required"><i class="fa fa-check"></i><b>6.2</b> What skills/expertise is required?</a></li>
+<li class="chapter" data-level="6.3" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html#how-much-will-it-cost"><i class="fa fa-check"></i><b>6.3</b> How much will it cost?</a></li>
+<li class="chapter" data-level="6.4" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html#how-will-you-manage-the-project"><i class="fa fa-check"></i><b>6.4</b> How will you manage the project?</a></li>
+<li class="chapter" data-level="6.5" data-path="deep-dive-into-phase-4-project-definition.html"><a href="deep-dive-into-phase-4-project-definition.html#check-back-on-the-four-levels-and-evaluate-the-plan-in-the-context-of-each."><i class="fa fa-check"></i><b>6.5</b> Check back on the four levels and evaluate the plan in the context of each.</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><i class="fa fa-check"></i><b>7</b> Deep dive into Phase 5 – exploration, execution and pivots</a><ul>
+<li class="chapter" data-level="7.1" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#research---is-the-goal-possible"><i class="fa fa-check"></i><b>7.1</b> Research - Is the goal possible?</a></li>
+<li class="chapter" data-level="7.2" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#prototyping---how-should-i-attain-the-goal"><i class="fa fa-check"></i><b>7.2</b> Prototyping - How should I attain the goal?</a></li>
+<li class="chapter" data-level="7.3" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#build-assess-rinse-and-repeat"><i class="fa fa-check"></i><b>7.3</b> Build, assess, rinse and repeat</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#testing"><i class="fa fa-check"></i><b>7.3.1</b> Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#evaluate"><i class="fa fa-check"></i><b>7.4</b> Evaluate</a></li>
+<li class="chapter" data-level="7.5" data-path="deep-dive-into-phase-5-exploration-execution-and-pivots.html"><a href="deep-dive-into-phase-5-exploration-execution-and-pivots.html#go-to-clientmanager"><i class="fa fa-check"></i><b>7.5</b> Go to client/manager</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="example-project-plan.html"><a href="example-project-plan.html"><i class="fa fa-check"></i><b>8</b> Example project plan</a></li>
+<li class="chapter" data-level="9" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html"><i class="fa fa-check"></i><b>9</b> Going independent: building a client base and developing your business</a><ul>
+<li class="chapter" data-level="9.1" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#finding-clients-and-helping-clients-find-you"><i class="fa fa-check"></i><b>9.1</b> Finding clients and helping clients find you</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#build-a-network"><i class="fa fa-check"></i><b>9.1.1</b> Build a network</a></li>
+<li class="chapter" data-level="9.1.2" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#listen-to-people"><i class="fa fa-check"></i><b>9.1.2</b> Listen to people</a></li>
+<li class="chapter" data-level="9.1.3" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#promote-yourself"><i class="fa fa-check"></i><b>9.1.3</b> Promote yourself</a></li>
+<li class="chapter" data-level="9.1.4" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#have-a-strong-profile"><i class="fa fa-check"></i><b>9.1.4</b> Have a strong profile</a></li>
+<li class="chapter" data-level="9.1.5" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#get-involved-with-your-community-both-locally-and-internationally"><i class="fa fa-check"></i><b>9.1.5</b> Get involved with your community, both locally and internationally</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#the-realities-of-consulting"><i class="fa fa-check"></i><b>9.2</b> The realities of consulting</a></li>
+<li class="chapter" data-level="9.3" data-path="going-independent-building-a-client-base-and-developing-your-business.html"><a href="going-independent-building-a-client-base-and-developing-your-business.html#freelancing-versus-permanent-roles"><i class="fa fa-check"></i><b>9.3</b> Freelancing versus permanent roles</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="finding-help.html"><a href="finding-help.html"><i class="fa fa-check"></i><b>10</b> Finding help</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Designing and Building Data Science Solutions: A Practical Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-phases-of-a-project" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> The phases of a project</h1>
+<p>Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="the-phases-of-a-project.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&#39;figures/phases-flow.png&#39;</span>, <span class="dv">1</span>))</span></code></pre></div>
+<p><img src="figures/phases-flow.png" width="100%" /></p>
+<div id="phase-1-define-the-business-casequestion" class="section level2">
+<h2><span class="header-section-number">5.1</span> Phase 1: Define the business case/question</h2>
+<div id="find-the-business-case" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Find the business case</h3>
+<p>You may find that your client already has a clear idea of possible projects. If that’s the case, then we encourage you to go through each and view them through the lens of the contextual understandings identified above. If your client does not have preconceived ideas about possible projects, then you might want to view this conversation as a brainstorming session.</p>
+<p>Questions that can help to drive the conversation can include:
+Do you have any ideas already that you would like to consider?
+If you could improve three aspects of your business, what would they be?
+Do you have a concrete objective or are you trying to implement a more general innovation in your business?</p>
+<p>As you drill down into specific project ideas, you should consider the practical aspects to delivering the project. For example, we often ask our clients to describe to us what a successful outcome would be, what would be acceptable and what would be outstanding. These questions can be in terms of concrete modelling metrics (such as accuracy, precision, recall, etc) or in terms of business value (for instance, to save at least £10,000 in lost annual revenue from customer churn). Asking for concrete examples of outcomes can help you to get a sense of your client’s expectations and will allow you to manage these in advance.</p>
+<p>You will also want to understand what your client will need in terms of deliverable</p>
+<p>Similarly, it can be useful to assess your client’s appetite for risk by asking questions such as, “If our best model is only correct half the time, would that be acceptable?”</p>
+</div>
+<div id="define-the-business-case" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Define the business case</h3>
+<p>As with any scientific experiment, a critical first step in designing a data science project is to define the question and to phrase a hypothesis. In other words, it is vital that all parties, including the data scientists and the stakeholders, agree on the project’s goal. While a project brief can help identify important aspects of the work, in our experience the best results come from face-to-face conversations. Do not restrict this to a single person, but rather make every effort to talk to every stakeholder who may be involved in the project.</p>
+<p>With a client I once worked with, the main stakeholder turned out to be the CFO (Chief Financial Officer). Although he was in no way involved in the project he was the one who created the budget required for the innovation. When asking the other stakeholders about the budget and requirements his name came up and we decided to include him in the next meeting. At the next meeting, we discussed the scope and even expanded the scope and budget as we were finally talking to the main stakeholder. When talking to the stakeholders, ask yourself whether a clear vision forms from these conversations and, more importantly, whether the different visions from the different stakeholders are aligned. When they aren’t aligned, it is your responsibility to align them. Find the middle ground and make compromises between the different parties. There is never going to be an infinite budget so you will always need to compromise somewhere.</p>
+<p>In a related way, it is important to recognise that different stakeholders will almost always come from different backgrounds and have different preconceptions that can influence the way they perceive business problems and potential solutions. As a consultant, you want to take these different points of view into account, and you may even find that you have to defend your point of view as well.</p>
+<p>A common pre-conception is that artificial intelligence is complicated and cannot be understood. It is often treated as a black box with a magical outcome. Developers who use machine learning libraries without fully understanding these often create or support this preconception. This viewpoint, however, originates from a lack of knowledge. Most machine learning libraries are open source and a skilled data scientist will be able to dig into their models and alter or understand the results it produces.</p>
+<p>Machine learning models at the core are mathematical models, data is manipulated through a series of mathematical operations. These operations aren’t random but should be well chosen to produce favourable results. Understanding this process lets you understand the limitations and the overall behaviour of the model. Once this is properly understood, one can make deliberate changes that improve the model overall, remove bias or simply deal better with outliers that had been neglected previously.</p>
+<p>“””””
+What is open source
+Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.
+“””</p>
+<p>As a side note be aware when choosing your machine learning toolkit. When using closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that data scientists will lose visibility and the ability to understand the system fully.</p>
+<p>When talking to your stakeholders, do not be shy: understanding what the different stakeholders know and value is essential to forming a plan and ensuring that everyone is “on the same page.”</p>
+<p>In this phase, you should be focusing on the contextual and business levels. As a data scientist, it is your responsibility to make sure you and your teammates have thought carefully about what will bring value to the business and whether or not the candidate project aligns with the business strategy long-term. Fully consider how the business will change over time and what will be needed to keep this new part of the system up to date so that it can remain relevant.</p>
+<p>Systems are in development constantly, the more you learn about the overall product and future of the product through the roadmap, the more you can use this knowledge to make your own part of the system more robust. Is one of the data sources being replaced by a richer data source in future? If so how can you build your system so that this can be easily incorporated in your model when this data arrives and how will your models deal with the inconsistency in your old and new data? Writing a recommendation engine for an e-commerce site can be straightforward but how can your model use the clickstream data that will be collected in the future if you do not have this data now? These scenarios, as well as many others, can lead to technical debt in a data science pipeline. While a comprehensive review of how to minimise technical debt is beyond the scope of this article, we recommend Managing Technical Debt.</p>
+</div>
+</div>
+<div id="phase-2-define-success." class="section level2">
+<h2><span class="header-section-number">5.2</span> Phase 2: Define success.</h2>
+<p>After going through Phase 1, you and your client/manager should have a clear picture of what the main objectives of the project are. Now it’s time to narrow in on some details. In this phase, you will address specific requirements to make sure that you and your client/manager agree on what a successful outcome will look like in concrete terms.</p>
+<p>As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is all about negotiation, negotiate with the different parties until you get everybody to align to the same vision. Note that without alignment you can’t proceed, if you do proceed by choosing to align to the main stakeholder, the other stakeholders will be hostile towards you and the project. If there really is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.</p>
+<p>When fleshing out your feature list, It can be useful to make two different lists, one with the must-have requirements and one with the nice to have. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements.</p>
+<p>At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?</p>
+<p>In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter 3 and define success on the four different levels; the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent.</p>
+<p>Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.</p>
+<div id="key-performance-indicator-kpi" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Key Performance Indicator (KPI)</h3>
+<p>Definition
+A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.</p>
+<p>KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:</p>
+<p>What is your desired outcome?
+Why does this outcome matter?
+How are you going to measure progress?
+How can you influence the outcome?
+Who is responsible for the business outcome?
+How will you know you’ve achieved your outcome?
+How often will you review progress towards the outcome?
+One way to evaluate the relevance of a performance indicator is to use the SMART criteria. The letters are typically taken to stand for Specific, Measurable, Attainable, Relevant, Time-bound. In other words:
+Is your objective Specific?
+Can you Measure progress towards that goal?
+Is the goal realistically Attainable?
+How Relevant is the goal to your organization?
+What is the Time-frame for achieving this goal?</p>
+</div>
+<div id="feasibility-study" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Feasibility Study</h3>
+<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of an existing business to uncover the opportunities and threats present that will ultimately lead to project success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibility.</p>
+<div id="technical-feasibility" class="section level4">
+<h4><span class="header-section-number">5.2.2.1</span> Technical Feasibility</h4>
+<p>The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.</p>
+<p>This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken to consideration:
+A brief description of the business to assess more possible factors which could affect the study
+The part of the business being examined
+The human and economic factor
+The possible solutions to the problem
+Methods of producing the solution
+Detailed project requirements</p>
+<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it’s technically possible to do so.</p>
+</div>
+<div id="economic-feasibility" class="section level4">
+<h4><span class="header-section-number">5.2.2.2</span> Economic Feasibility</h4>
+<p>An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
+serves as an independent project assessment and enhances project
+credibility—helping decision makers determine the positive economic benefits to the organization that the proposed project will provide.</p>
+</div>
+<div id="legal-feasibility" class="section level4">
+<h4><span class="header-section-number">5.2.2.3</span> Legal Feasibility</h4>
+<p>The legal feasibility assessment investigates whether any aspect of the proposed project conflicts with legal requirements like zoning laws, data protection acts, or social media laws. Let’s say an organization wants to store customer information for the use in a recommendation engine on their e-commerce site. A feasibility study might reveal that the laws governing this data differ depending on where the customer is located. Therefore, simply storing this data isn’t possible and a more in depth analysis of the law needs to be made and different data stored for different customers. This might mean that the recommendation engine isn’t feasible for the organisation right now as this would add extra costs and technical difficulty.</p>
+</div>
+<div id="operational-feasibility" class="section level4">
+<h4><span class="header-section-number">5.2.2.4</span> Operational Feasibility</h4>
+<p>The operational feasibility study involves undertaking a study to analyze and determine whether—and how well—the organization’s needs can be met by completing the project. Operational feasibility studies also analyze how a project plan satisfies the requirements identified in the requirements analysis phase of system development.</p>
+<p>To ensure success, desired operational outcomes must be imparted during design and development. These include such design-dependent parameters as reliability, maintainability, supportability, usability, producibility, disposability, sustainability, affordability and others. These parameters are required to be considered at the early stages of design if desired operational behaviours are to be realised. A system design and development requires appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters. A system may serve its intended purpose most effectively when its technical and operating characteristics are engineered into the design. Therefore, operational feasibility is a critical aspect of systems engineering that needs to be an integral part of the early design phases</p>
+</div>
+<div id="scheduling-feasibility" class="section level4">
+<h4><span class="header-section-number">5.2.2.5</span> Scheduling Feasibility</h4>
+<p>The scheduling feasibility assessment is the most important study for the project’s success; after all a project that is delivered too late to be useful is an automatic failure. In this study we estimate how long the system will take to develop, and if it can be completed in a given time period. Time feasibility is a measure of how reasonable the project timetable is. Given our technical expertise, are the project deadlines reasonable? Some projects are initiated with specific deadlines. It is necessary to determine whether the deadlines are mandatory or desirable.</p>
+</div>
+</div>
+</div>
+<div id="phase-3-scoping." class="section level2">
+<h2><span class="header-section-number">5.3</span> Phase 3: Scoping.</h2>
+<p>This is the phase where we start to look at and clean some data and test some of our hypotheses and assumptions. Note that this is not a proof of concept and should not be treated as such. This phase has no concrete deliverables and is more open-ended. We get access to some data and start manipulating it. The main goal of this exercise is to get a clearer understanding of the problem and get an initial understanding of what a solution would look like. Start with the data, is it in a clean usable format? If not what manual/automated effort would be required in order to get the data in a usable format? How complex are the transformations required? And if you do have usable data, what abnormalities does the data set have? What do the distributions look like? Is the dataset uniformly distributed or is it sparse and does it have a lot of outliers?</p>
+<p>‘’’’
+Getting access to data can often be a challenge due to security policies governing the data. There are many ways of making data access secure so work with the data administrators to work out a safe and secure plan that works for them. I have personally had to sit in data rooms with no internet access, have had encrypted laptops sent to me and have worked with countless VPN and cloud-based servers that restricted access based on multi-factor authentication. For some industries, I have even had to go through extensive background checks. There are often quite a few hurdles to jump through.
+‘’’</p>
+<p>What defines clean data can vary greatly across professions and industries. For some people, hundreds of differently structured excel files that are human-readable would be considered clean data while for data scientists this would require a substantial investment to merge all of the files in order for them to be a coherent whole. The same applies to databases or data warehouses. Even though data can be easily accessed via a database querying language, that doesn’t necessarily mean that the data is clean. There could be loads of duplicates or missing data that needs manual sorting through.</p>
+<p>The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. We are dealing with a scientific question that relies on several assumptions, so the more we can validate these assumptions the better we will be able to predict the eventual outcome of the overall project. One common assumption is that having sufficient data will automatically lead to predictive power. The size of your dataset sadly doesn’t indicate how good the individual features are at predicting a specific behaviour. It is also good to remember that data alone isn’t ground truth.</p>
+<p>It is essential that this phase is time-boxed, for example, a 2-week POC (Proof of Concept) for research projects or just a couple of hours to look through data. This allows the team to focus their efforts on the most pressing concerns without starting to implement the entire project. The goal is not to get started but rather to reduce risk and explore possible solutions. In software engineering, this is often done in the form of a design sprint. In data science, we can also work in sprints but the process is slightly different as we need to validate a hypothesis, and so the process is far more scientific. Doing this work beforehand helps us drastically reduce uncertainties and even guarantees that projects that are doomed to fail don’t even get started. If at this stage we discover there is insufficient or insignificant data to reach the goal then we can go back and collect more data and delay the project until its goals are achievable.</p>
+<p>The reader might think that doing this phase is hindering the project – delaying it from really getting started and providing little in the way of tangible outcomes. In our experience, this is absolutely untrue: when we scope out a project we can more accurately predict what the ultimate outcome will be and what resources are needed to achieve the end goal. This translates into less risk for clients and data scientists alike. Being able to quickly demonstrate progress or build a basic proof-of-concept reassures all stakeholders that the project will be successful. This also stops us from adding large margins to project proposals to combat the uncertainty and ultimately delivers project proposals that better reflect reality, which is better for all stakeholders involved. We have personally had a 100% success rate of winning project proposals as an independent consultant once we embarked on this stage. The reason is clear, having had time to scope out the project our proposal was more competitive as we didn’t have the need to add large margins for project uncertainty.</p>
+<p>It is essential to note that general engineering projects differ from data science projects. Data science projects need to be scientifically correct and for this, you need to follow a scientific process. It is not enough to make a library call to train a model and assume it will perform a certain way just because you tested a few cases. Models you create need to be robust or you will get large varying results that cannot be explained. Making models robust to outliers is an important step in modelling. So be warned, it is not enough for somebody to have used a machine learning library in the past, they should be capable of following a scientific process required to build what is necessary for a data science project to succeed.</p>
+<p>In this phase, it is also essential to start thinking about testing. How will you test your final solution? Can you use TDD (test-driven development)? This strategy requires you to set up extensive test cases now that you will use to validate your final solution later. Doing this will let you think through the problem more clearly and actually write down what criteria the end result will adhere to.</p>
+<p>The last thing to consider in this phase is that you might not get the desired outcome. It is essential that you allow the scoping project to fail if need be. At the very least you saved yourself from failing at a larger scale. Most probably you will discover shortcomings that will not allow the project to be successful. How can these issues be addressed? Can more data be collected, can the data be enriched with another source or can data be cleaned even further to get a better sample? A valid outcome is to make a good recommendation as to how the project can still be successful by doing other work. For example, can clickstream data be collected from the website if there are insufficient orders to make decent recommendations for customers who have never bought an item?</p>
+</div>
+<div id="phase-4-project-definition" class="section level2">
+<h2><span class="header-section-number">5.4</span> Phase 4: Project definition</h2>
+<p>In the previous scoping section we got to do some hands-on work. At this point, you have understood the business case for your project and had a look at the data that will support the work. You will also have defined what a successful outcome is, established metrics for measuring success and developed a clear understanding of the complexity of the task in front of you. The next steps are to concretely define the project, describe it in the form of a written proposal and put a price tag on it. Welcome to Phase 4: Project definition.</p>
+<p>This is a difficult task and it comes with a large number of considerations that you need to take into account. We have, therefore, put a detailed description of how we approach this in a subsequent chapter. Here we highlight a few of those factors.</p>
+<p>When defining your project, it’s good to start with a project plan that can be broken down into milestones. Think about what the objective of each milestone is, and what deliverable will mark its completion. What skills will be needed for the work? If you are building a team, you’ll want to make sure they have what’s required; if you’re working on your own, will you have to do any homework to ensure that you have the experience that is needed. You will have to put a price on the work and think about how the project will be managed. These items are discussed in detail in Chapter 5.</p>
+</div>
+<div id="phase-5-exploration-execution-and-pivots" class="section level2">
+<h2><span class="header-section-number">5.5</span> Phase 5: Exploration, execution and pivots</h2>
+<p>This is probably the most exciting phase as we have come to the actual execution of the project. Firstly we will start off by doing research, the research sets the groundwork for the entire project. It is here that we discover what works and what doesn’t. We try different approaches, weighing the pros and cons of each before selecting a final solution.</p>
+<p>This phase is different from the scoping done previously as now the goal is to develop and deliver on the full scope. The scoping exercise only delivered a good idea on what the solution might look like, not necessarily an optimum one. In this phase, we are really looking for a solution that meets all of the requirements. To elaborate, the scoping exercise might have produced a model capable of predicting good results but not necessarily at a speed or larger scale required for production.</p>
+<p>Once we have made these decisions and agreed on them with the client/manager we are ready to start building. If however, you do not get agreement at this point, have a longer session in order to flesh out any other requirements.</p>
+<p>In this step, we go deeper into the chosen approach. Deeper may mean using all of the data instead of just a sample, improve feature engineering, improve model accuracy, do a deeper analysis or even build a viable usable product.</p>
+<p>Throughout this process, we will evaluate our results and possibly move back to the building stage or even the research stage if we do not have adequate results. Client engagement is critical and we will include them regularly. For further details on these stages see Chapter 6.</p>
+</div>
+<div id="phase-6-handover-and-knowledge-transfer-aka-finding-a-new-owner" class="section level2">
+<h2><span class="header-section-number">5.6</span> Phase 6: Handover and knowledge transfer (aka finding a new owner)</h2>
+<p>Sometimes this phase is really simple. If the deliverable was a report then nothing further needs to be done. For more complex projects this, however, can be the most difficult phase.</p>
+<p>If you are creating a system, remember to deploy the solution according to the plan. It is often not enough to hand over source code as crucial details are often in the deployment. Does your solution scale? Make sure to stress test your application so that it doesn’t crash unexpectedly.</p>
+<p>For the long term success of any project, it is essential that there is also a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. Model How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?</p>
+<p>“””
+The concept ‘drift’ explained
+In most challenging data analysis applications, data evolve over time and must be analyzed in near real-time. Patterns and relations in such data often evolve over time, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.
+“””</p>
+<p>Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location then a developer making changes would need to remember to also update the documentation.</p>
+<p>There are many great tools that can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend Sphynx as it is widely used and gives you loads of great styles to choose from.
+Regarding proper coding style, we recommend you follow PEP8 for python and for R, the R style guide. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use Black. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is however important to note that once you use a formatter, you can’t really override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your own preferred format.</p>
+<p>When you reach the end of your project, find the person responsible for maintaining the system and run through how it works. Do a complete handover running through both the code and the documentation, adding comments and notes to clarify points that aren’t clear to the person you are handing over to.</p>
+<p>If handover to an actual person is not possible for whatever reason, eg. if a permanent data scientist is not yet hired, then make sure you make your documentation as clear as possible. Do not leave it to chance and write it as if you are writing for a very junior person. More documentation is definitely recommended in these cases.</p>
+<p>Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="the-phases-of-a-project.html#cb6-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&#39;figures/Framework phases.png&#39;</span>, <span class="dv">1</span>))</span></code></pre></div>
+<p><img src="figures/Framework%20phases.png" width="100%" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="what-success-looks-like-the-four-levels-of-project-evaluation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deep-dive-into-phase-4-project-definition.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["designing_and_building_data_science_solutions.pdf", "designing_and_building_data_science_solutions.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
