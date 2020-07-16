@@ -51,7 +51,14 @@ It is also useful to consider the business when budgeting for a project. Have yo
 On the other hand, if the project is exploratory, if your client/manager is just looking to see the “art of the possible” or if your project is restricted to creating insights, you may feel a bit braver and choose a slightly lower budget: the costs of underestimating the time required are lower. Or, to think of it in another way, even if you only accomplish 95% of what you would have liked, that is still very valuable for the business. 
 
 
-
+knitr::kable(
+trial <- matrix(c(34,11,9,32), ncol=2)
+colnames(trial) <- c('sick', 'healthy')
+rownames(trial) <- c('risk', 'no_risk')
+trial.table <- as.table(trial)
+  head(mtcars[, 1:8], 10), booktabs = TRUE,
+  caption = 'A table of the first 10 rows of the mtcars data.'
+)
 
 Potential benefits
 Risks
