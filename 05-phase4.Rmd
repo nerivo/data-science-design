@@ -7,10 +7,11 @@ It isn’t always possible to have a robust plan but having a flawed plan is alw
 
 This phase uses a different type of thinking than is normally found in scientific research. While research generally uses deductive (the reasoning of logic) and inductive (the reasoning of forming general rules from observations) reasoning, the synthesis required for design thinking uses intuition, or more accurately, abductive reasoning – the reasoning of developing one of several possible solutions for a problem. More specifically it is seeking the simplest solution to a problem without any formal validation. For a more detailed explanation of how designers think, we recommend the book Design Thinking by Nigel Cross. For the purposes of this writing, what is important is to understand that this relates to the process of identifying a set of required functionalities or purposes and crafting a solution that satisfies those purposes.
 
-“”””
-What is abductive reasoning?
+::: {.infobox}
+**What is abductive reasoning?**
+
 Abductive reasoning starts with an observation or set of observations and then seeks to find the simplest and most likely conclusion from the observations. This process, unlike deductive reasoning, yields a plausible conclusion but does not positively verify it. Abductive conclusions are thus qualified as having a remnant of uncertainty or doubt, which is expressed in terms such as "best available" or "most likely".
-“””
+:::
 
 For many, project design is difficult, ambiguous, stressful and downright unpleasant. Indeed, this phase requires you to commit to delivering a given bit of work in exchange for a certain budget, and you want to get it right – who wouldn’t find that responsibility stressful? You inherently can’t know exactly what it will take to deliver a successful outcome because that insight only really comes from the work itself. But if you have done a good job of scoping the project in Phases 2 and 3, then you should have a fairly good idea of the complexity of the task in front of you. 
 
@@ -32,8 +33,9 @@ As you plan your project, the required technical and non-technical skills should
 
 Your approach to meeting the skills required for a project is, of course, dependent upon the composition of your team. If you are designing a project that you will work on individually, then it is up to you to make sure you have the skills required in your repertoire. If you don’t, you may need to consider bringing in outside help or budgeting for the time it will take to level-up your shortfall. Often projects are designed for teams of data scientists, in which case you will want to make sure that the skills required are matched collectively by the team. Data Science as software development is a team sport.
 
+::: {.infobox}
 “If you want to go fast, go alone. If you want to go far, go together.” -- African Proverb
-
+:::
 
 ## How much will it cost?
 You will almost certainly have to put a price tag on your project. For us, this is essentially a calculation based on how long we think the project will take and the billing rate for the staff. Junior/mid-level/senior data scientists all have different rates to consider in this calculation. The staff billing rate is normally constant, so we tend to focus primarily on the duration of the project. 
@@ -89,7 +91,7 @@ For some teams, a scrum approach can be useful, although you should bear in mind
 
 In addition to planning out how you will work and communicate with your team, you should also make a plan for how you will interact with your client/manager. You should consider how you will communicate with your client/manager on a day-to-day basis (we have found Slack to be very useful) as well as how and when you will give progress reports and project updates. 
 
-We also encourage you to think about how you intend to structure your codebase. We generally use Git and GitHub for version control and code sharing, and we would encourage you to build your repository’s directory structure before any code is added. We highly recommend the “cookiecutter” family of project templates (https://github.com/cookiecutter/cookiecutter) and have found the Python-based data science template (http://drivendata.github.io/cookiecutter-data-science/) to be a good fit for most of our Python-based projects. It includes a guide to best practices for directory structure and naming conventions and contains a built-in make functionality that can be useful for managing the steps required to build the requisite datasets and functions for your project. For R-based projects, one option is the ProjectTemplate (http://projecttemplate.net/), although others also exist. At the minimum, we encourage you to work within the framework of an R Project (https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects). 
+We also encourage you to think about how you intend to structure your codebase. We generally use Git and GitHub for version control and code sharing, and we would encourage you to build your repository’s directory structure before any code is added. We highly recommend the [“cookiecutter” family of project templates](https://github.com/cookiecutter/cookiecutter){target="_blank"} and have found the [Python-based data science template](http://drivendata.github.io/cookiecutter-data-science/){target="_blank"} to be a good fit for most of our Python-based projects. It includes a guide to best practices for directory structure and naming conventions and contains a built-in make functionality that can be useful for managing the steps required to build the requisite datasets and functions for your project. For R-based projects, one option is the [ProjectTemplate](http://projecttemplate.net/){target="_blank"}, although others also exist. At the minimum, we encourage you to work within the [framework of an R Project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects){target="_blank"}. 
 
 ## Check back on the four levels and evaluate the plan in the context of each.
 If you have followed the steps above, you will now have defined your project. You will have a project plan that includes milestones, a timeline, potential pivot points and clearly-defined deliverables. You will have determined the composition of the team needed to execute the project and have thought about how the team will work together and liaise with the client/manager. You will have also created a budget for the project based on the time required, cost of staff and any other costs required. You probably can’t wait to send your proposed plan off to the client/manager and get to work! 

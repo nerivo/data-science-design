@@ -56,8 +56,8 @@ Another common use case for unit testing in software is to ensure things work pr
 For machine learning models in a production environment  you can run code that retrains your model on new data and automatically redeploys your updated model to production. In this situation, you may want the deployment to fail if your updated model fails to meet certain conditions. To handle that, abort the deployment if your retraining script throws an error. This allows you to build any gatekeeping checks you while ensuring consistent quality.
 
 
----------
-A note on notes
+::: {.infobox}
+***A note on notes***
 
 Any experience researcher will know that a critical part of the work is in keeping detailed records. This is no different for the data scientist – keeping track of results, as well as detailed records of assumptions and choices that you make, is essential. Aside from the fact that this is scientific best-practice, it also makes practical sense: it is not uncommon to examine your final results and realise that something doesn’t make intuitive sense. In this case, you will have to do some detective work to figure out why. Good notes that include information about the assumptions and potential errors you made along the way will make that task a lot easier. 
 
@@ -65,15 +65,15 @@ In a recent episode of one of our favourite podcasts, Not So Standard Deviations
 https://www.projecttier.org/.
 
 While saying that you should take good notes may seem obvious in principle, it is very easy to fall short in practice. Data science projects can move fast, and we all get caught up in the excitement of discovery or writing code that works well. It’s good to be excited – the work is exciting – but don’t let yourself forget to be a good scientist in the process. 
----------
+:::
 
 ## Evaluate
 As you are building, it’s a good idea to keep in mind the four levels of project evaluation we outlined in Chapter 4. Recall that we described them as such:
 
-The process level is focused on the actions taken towards producing deliverables. 
-The product level is concerned with the deliverables themselves and whether they meet the technical requirements of the project.
-The business level describes how well the project brings value to your client/manager.
-The contextual level is the most abstract and relates to the circumstances surrounding a project and the externalities that affect it.
+- The **process level** is focused on the actions taken towards producing deliverables. 
+- The **product** level is concerned with the deliverables themselves and whether they meet the technical requirements of the project.
+- The **business level** describes how well the project brings value to your client/manager.
+= The **contextual level** is the most abstract and relates to the circumstances surrounding a project and the externalities that affect it.
 
 We encourage you to revisit these levels often throughout your project. During the Build stage, you will mostly focus on the process and product levels. But it is also important to not lose sight of the higher business and contextual levels. When you have finished building and are ready to hand over your work to your client/manager, consider how well your project, as a whole, has satisfied these higher, more abstract levels of evaluation. If you feel that you have done a good job on all four levels, then you can be reasonably confident that you have designed, executed and delivered something of value. 
 
