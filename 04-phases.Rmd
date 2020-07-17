@@ -1,7 +1,7 @@
 # The phases of a project
 Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project. 
 
-```{r bottom-fig, out.width='100%', fig.show='hold'}
+```{r bottom-fig, out.width='100%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/phases-flow.png', 1))
 ```
 
@@ -183,6 +183,6 @@ If handover to an actual person is not possible for whatever reason, eg. if a pe
 
 Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.
 
-```{r full-figure, fig.show='hold', message=FALSE, out.width='100%'}
+```{r full-figure, fig.show='hold', message=FALSE, out.width='100%', echo=FALSE}
 knitr::include_graphics(rep('figures/Framework phases.png', 1))
 ```

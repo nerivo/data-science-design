@@ -5,7 +5,7 @@ In early conversations with a stakeholder, you may have agreed upon a certain se
 
 Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend reading the paper.)
 
-```{r eval-levels, out.width='70%', fig.show='hold'}
+```{r eval-levels, out.width='70%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/Figure_1-eval_levels.png', 1))
 ```
 
