@@ -3,15 +3,17 @@ Between the two of us, we have designed, managed or delivered hundreds of projec
 
 We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.
 
+-----------
+<center>
+**Proposal for Client X**
+</center>
 
+*Introduction:*
 
-
-
-Proposal for Client X
-Introduction:
 Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers. 
 
-Project description:
+*Project description:*
+
 In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience. 
 
 In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset. 
@@ -20,64 +22,42 @@ When performing cluster analysis, an important consideration is in determining t
 
 In Objective 2, “Product recommendations”, we will focus on building a recommender system that can be used to suggest products to Client X customers. Our plan is to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches with a view to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.
 
-We outline the plan for this project in the table below.
+We outline the plan for this project in below.
 
-Project plan:
-Project Proposal: Customer insights and recommendations
+-----------
 
+<center>
+**Project Proposal: Customer Insights and Recommendations**
 
-Objective:
-This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.
+*Objective:This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.*
 
+</center>
 
-Objective 1: Customer insights
+**Objective 1: Customer insights**
 
+```{r echo=FALSE}
+mytable = data.frame(
+    milestone     = c("", "Milestone 1", "Milestone 2"),
+    
+    work =c("Work carried out", "- **Exploratory data analysis** \n - We will explore the data available to support the project.\n - We will ensure that data are accessible and will perform a preliminary analysis with a view to identifying a subset of features that best-suited for cluster analysis in Milestone 2.", "- **Cluster analysis** \n - Using the learnings from Milestone 1, we will experiment with various clustering algorithms. \n - The best candidate will be selected for further improvements."),
+    outcome = c("Outcome/Deliverable", "- A presentation showing the initial findings of relationships between features.\n - A list of features to use for clustering.", "- A GitHub repository containing Python code driving a segmentation model.\n - A report and presentation highlighting findings."),
+    completion = c("Completion date", "End of Week 2", "End of Week 4")
+)
 
-Work carried out
-Outcome/Deliverable
-Completion date
-Milestone 1
-Exploratory data analysis
+pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left')
+```
 
-We will explore the data available to support the project.
-We will ensure that data are accessible and will perform a preliminary analysis with a view to identifying a subset of features that best-suited for cluster analysis in Milestone 2.
+**Objective 2: Product recommendations**
 
+```{r echo=FALSE}
+mytable = data.frame(
+    milestone     = c("", "Milestone 3", "Milestone 4"),
+    
+    work =c("Work carried out", "- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
+    outcome = c("Outcome/Deliverable", "- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
+."),
+    completion = c("Completion date", "End of Week 6", "End of Week 9")
+)
 
-
-A presentation showing the initial findings of relationships between features.
-A list of features to use for clustering. 
-End of Week 2
-Milestone 2
-Cluster analysis
-
-Using the learnings from Milestone 1, we will experiment with various clustering algorithms.
-The best candidate will be selected for further improvements. 
-
-
-A GitHub repository containing Python code driving a segmentation model.
-A report and presentation highlighting findings.
-End of Week 4
-Objective 2: Product recommendations
-
-
-Work carried out
-Outcome/Deliverable
-Completion date
-Milestone 3
-Research
-
-We will examine the data available to identify a feature space to use for collaborative filtering.
-
-
-A presentation showing initial findings of possible approaches to the recommendation engine.
-End of Week 6
-Milestone 4
-Build 
-
-We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure
-
-
-A deployed recommender system that runs on the Client X GCP instance.
-A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. 
-A GitHub repo containing all code used.
-End of Week 9
+pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left')
+```
