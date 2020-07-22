@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.22)  22 JUL 2020 18:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.22)  22 JUL 2020 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,28 +762,52 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [3] [4
 
 ]
-Chapter 1.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 128.
+(Font)              scaled to size 7.0pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 128.
+(Font)              scaled to size 5.0pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 128.
+(Font)              scaled to size 10.00092pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 128.
+(Font)              scaled to size 7.00064pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 128.
+(Font)              scaled to size 5.00046pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 128.
+(Font)              scaled to size 9.99893pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 128.
+(Font)              scaled to size 6.99925pt on input line 129.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 128.
+(Font)              scaled to size 4.99947pt on input line 129.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 134.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 135.
 [5] [6
 
 ]
+Chapter 1.
+[7] [8] [9] [10
+
+] [11] [12]
+Chapter 2.
+File: figures/Figure_1-eval_levels.png Graphic file (type bmp)
+<figures/Figure_1-eval_levels.png>
+[13
+
+]
+Overfull \hbox (110.36125pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 14 \TU/lmr/m/sl/10 CHAPTER 2.  WHAT SUCCESS LOOKS LIKE: THE FOUR
+ LEVELS OF PROJECT EVALUATION
+ []
+
+[14] [15]
+Underfull \vbox (badness 3907) has occurred while \output is active []
+
+
+Overfull \hbox (110.36125pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 16 \TU/lmr/m/sl/10 CHAPTER 2.  WHAT SUCCESS LOOKS LIKE: THE FOUR
+ LEVELS OF PROJECT EVALUATION
+ []
+
+[16]
 
 ! LaTeX Error: Environment infobox undefined.
 
@@ -791,15 +815,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \begin{infobox}
+l.257 \begin{infobox}
                       
 Here is how much of TeX's memory you used:
- 17359 strings out of 481704
- 305545 string characters out of 5929986
- 721341 words of memory out of 5000000
- 34225 multiletter control sequences out of 15000+600000
- 541539 words of font info for 82 fonts, out of 8000000 for 9000
+ 17383 strings out of 481704
+ 306081 string characters out of 5929986
+ 728341 words of memory out of 5000000
+ 34239 multiletter control sequences out of 15000+600000
+ 541563 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,6n,118p,939b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,6n,118p,1358b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on designing_and_building_data_science_solutions.pdf (6 pages).
+Output written on designing_and_building_data_science_solutions.pdf (16 pages).
+

@@ -122,8 +122,9 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{prerequisites}{%
-\chapter{Prerequisites}\label{prerequisites}}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
@@ -140,87 +141,6 @@ The \textbf{bookdown} package can be installed from CRAN or Github:
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preface-intro}{%
-\chapter*{Preface \{\#intro\}}\label{preface-intro}}
-\addcontentsline{toc}{chapter}{Preface \{\#intro\}}
-
-\begin{infobox}
-
-\textbf{NOTICE!}
-
-Thank you for noticing this \textbf{new notice}! Your noticing it has
-been noted, and \emph{will be reported to the authorities}!
-
-\end{infobox}
-
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
-
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, }\FloatTok{.1}\NormalTok{, }\FloatTok{.1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{designing_and_building_data_science_solutions_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
@@ -256,8 +176,8 @@ Part 2 focuses on offering more concrete, practical advice. In Chapter 7 we prov
 \part*{Part I}\label{part-part-i}}
 \addcontentsline{toc}{part}{Part I}
 
-\hypertarget{what-success-looks-like-the-four-levels-of-project-evaluation}{%
-\chapter{What success looks like: the four levels of project evaluation}\label{what-success-looks-like-the-four-levels-of-project-evaluation}}
+\hypertarget{levels}{%
+\chapter{What success looks like: the four levels of project evaluation}\label{levels}}
 
 When approaching a data science project, we often look to the end: knowing what a successful outcome would look like is a good way to determine the direction of a project and the steps required to get there. The idea is that if you meet those criteria -- if you deliver something that resembles this desired outcome -- you have succeeded. However, while faithful production of the agreed-upon deliverables is, indeed, important, this is often only part of a much larger picture.
 
@@ -265,11 +185,11 @@ In early conversations with a stakeholder, you may have agreed upon a certain se
 
 Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend reading the paper.)
 
-(ref:fig1\_legend) \textbf{Figure 1: The four levels of project evaluation.} We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
 
-\textbackslash begin\{figure\}
-\includegraphics[width=0.7\linewidth]{figures/Figure_1-eval_levels} \textbackslash caption\{(ref:fig1\_legend)\}\label{fig:eval-levels}
-\textbackslash end\{figure\}
+
+\begin{figure}
+\includegraphics[width=0.7\linewidth]{figures/Figure_1-eval_levels} \caption{\textbf{The four levels of project evaluation.} We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)}\label{fig:eval-levels}
+\end{figure}
 
 In the sections below we discuss each of these levels in detail. If you are involved with defining and scoping a project, we strongly recommend you think carefully about how your proposed work satisfies each of these levels. As a consultant, this will be an important part of your role and an important step in developing a project that has real value to its stakeholders. Even if your specific role does not involve project design, we recommend you take the time to consider these levels at both the beginning and the end of a project: if nothing else, it's a good thought exercise that will be important if you are ever involved in project design.
 
@@ -382,7 +302,11 @@ We have provided a lot of information about evaluating projects, and you might b
 
 Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
 
-\includegraphics[width=1\linewidth]{figures/phases-flow}
+\begin{figure}
+\includegraphics[width=1\linewidth]{figures/Figure_2-phases} \caption{\textbf{Six phases of a project.} When designing and delivering a project, we find it useful to break the process down into these major phases.}\label{fig:bottom-fig}
+\end{figure}
+
+
 
 \hypertarget{phase-1-define-the-business-casequestion}{%
 \section{Phase 1: Define the business case/question}\label{phase-1-define-the-business-casequestion}}
@@ -630,7 +554,18 @@ If handover to an actual person is not possible for whatever reason, eg. if a pe
 
 Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.
 
-\includegraphics[width=1\linewidth]{figures/Framework phases}
+\hypertarget{chapter-summary}{%
+\section{Chapter summary}\label{chapter-summary}}
+
+In this chapter we have given you a lot of information about how we approach the projects that we design and execute. We hope that you find our suggestions useful. Naturally, projects come in different sizes and scopes, and whether or not all of these phases are appropriate for a given project depends on many factors.
+
+While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter \ref{levels}, the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project, when the business case is being discussed. The lower levels, such as the \emph{project process} phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{figures/Framework phases} \caption{\textbf{Combined project evaluation and phases.}}\label{fig:full-figure}
+\end{figure}
+
+
 
 \hypertarget{deep-dive-into-phase-4-project-definition}{%
 \chapter{Deep dive into Phase 4 -- project definition}\label{deep-dive-into-phase-4-project-definition}}

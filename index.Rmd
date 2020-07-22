@@ -10,25 +10,31 @@ link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
-# Prerequisites
+# Welcome {-}
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent [Gartner study](https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence), 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting. 
 
-The **bookdown** package can be installed from CRAN or Github:
+With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.
 
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
-```
+When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success. 
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+## About us {-}
+Your authors have each worn many hats: data scientists, project managers, mentors and consultants. We have designed and executed hundreds of projects using data science, machine learning and artificial intelligence (AI), most of which we would consider “successful” (you can read much, much more on the topic of “success” in Chapter \@ref(levels)). 
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'pander'
-), 'packages.bib')
-```
+Like many data scientists, we have both come to the field via routes in other disciplines. Jon obtained his PhD in Biology from the University of London, studying blood vessel formation at the Cancer Research UK London Research Institute. After 22 years in biomedical research, he turned to data science and founded a freelance consultancy business. In 2017 he joined [Pivigo](https://www.pivigo.com), where he is now the Director of Data Science. He is passionate about promoting open-source software and routinely volunteers as a mentor in the R-programming and data science communities.
+
+**NERI'S BIO GOES HERE**
+
+We met via the [S2DS](http://www.s2ds.org/) programme, where they worked together as project mentors. 
+
+We have also made countless mistakes along the way and have done our best to learn from them. Designing projects, ensuring stakeholder buy-in and delivering successful, relevant outcomes is a difficult task, and it doesn’t come naturally to anyone. We hope that you can benefit from the mistakes we have made and the learnings we have acquired in our own careers. 
+
+## Acknowledgements {-}
+We would like to thank a number of people who have contributed to this work. Without you, this would never have happened. We thank Andras Szabo and Kim Nilsson, who spent many hours carefully reading our drafts and providing invaluable feedback. We would also like to thank Ole Moeller Nilsson, Maryam Qurashi, Mandeep Soor, Jason Muller, Neil Forest and Deepak Mahtani for their many suggestions and useful comments. We are especially grateful to our families for their patience and support. 
+
+This book is written in [RMarkdown](https://rmarkdown.rstudio.com/) with [bookdown](https://bookdown.org/). 
+
+
+
