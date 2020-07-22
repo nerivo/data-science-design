@@ -141,8 +141,9 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
-\hypertarget{intro}{%
-\chapter{Preface}\label{intro}}
+\hypertarget{preface-intro}{%
+\chapter*{Preface \{\#intro\}}\label{preface-intro}}
+\addcontentsline{toc}{chapter}{Preface \{\#intro\}}
 
 \begin{infobox}
 
@@ -251,6 +252,10 @@ This book is divided into two parts. In Part 1 we discuss our approach to design
 
 Part 2 focuses on offering more concrete, practical advice. In Chapter 7 we provide an example of a project proposal that we might use when working with a client to define a project. Chapters 8 covers our advice how to navigate different ``what-if'' situations and is currently under active development. Chapter 9 is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work. Chapter 10 lists some useful resources for where you can find help in the wider data science community.
 
+\hypertarget{part-part-i}{%
+\part*{Part I}\label{part-part-i}}
+\addcontentsline{toc}{part}{Part I}
+
 \hypertarget{what-success-looks-like-the-four-levels-of-project-evaluation}{%
 \chapter{What success looks like: the four levels of project evaluation}\label{what-success-looks-like-the-four-levels-of-project-evaluation}}
 
@@ -260,9 +265,11 @@ In early conversations with a stakeholder, you may have agreed upon a certain se
 
 Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend reading the paper.)
 
-\includegraphics[width=0.7\linewidth]{figures/Figure_1-eval_levels}
+(ref:fig1\_legend) \textbf{Figure 1: The four levels of project evaluation.} We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
 
-\textbf{Figure 1: The four levels of project evaluation.} We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
+\textbackslash begin\{figure\}
+\includegraphics[width=0.7\linewidth]{figures/Figure_1-eval_levels} \textbackslash caption\{(ref:fig1\_legend)\}\label{fig:eval-levels}
+\textbackslash end\{figure\}
 
 In the sections below we discuss each of these levels in detail. If you are involved with defining and scoping a project, we strongly recommend you think carefully about how your proposed work satisfies each of these levels. As a consultant, this will be an important part of your role and an important step in developing a project that has real value to its stakeholders. Even if your specific role does not involve project design, we recommend you take the time to consider these levels at both the beginning and the end of a project: if nothing else, it's a good thought exercise that will be important if you are ever involved in project design.
 
@@ -925,6 +932,10 @@ Whenever problems do occur don't avoid them, they don't go away just because you
 
 As a data scientist, you are your client's/manager's guide. You need to take responsibility for the entire project's lifecycle. This process is in no way easy but if you define success correctly, plan, execute and communicate effectively then your project will succeed.
 
+\hypertarget{part-part-ii}{%
+\part*{Part II}\label{part-part-ii}}
+\addcontentsline{toc}{part}{Part II}
+
 \hypertarget{example-project-plan}{%
 \chapter{Example project plan}\label{example-project-plan}}
 
@@ -1187,7 +1198,6 @@ End of Week 9\strut
 \hypertarget{going-independent-building-a-client-base-and-developing-your-business}{%
 \chapter{Going independent: building a client base and developing your business}\label{going-independent-building-a-client-base-and-developing-your-business}}
 
-Going independent: building a client base and developing your business
 For many, the idea of working as an independent freelancer is an appealing alternative to a more traditional role as an employed member of staff. Indeed, contracting has many advantages over permanent roles -- it can give you flexibility in your work schedule, the ability to choose what work you do and the gratification that comes with having built a business on your own, to name just a few. But in order to have a viable business, you have to have customers, and exactly how to find those customers is an important question for any business.
 
 This chapter is aimed at those who would like to establish themselves as independent data scientists and data science consultants and provides advice and learnings from our own experiences as contractors. Starting a business comes with many challenges and there are many good resources on entrepreneurship readily available. We will focus our attention primarily on the unique aspects of operating a data science consulting practice.
