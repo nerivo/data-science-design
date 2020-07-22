@@ -113,7 +113,7 @@
 
 \title{Designing and Building Data Science Solutions: A Practical Guide}
 \author{Jonathan Leslie and Neri Van Otten}
-\date{2020-07-14}
+\date{2020-07-22}
 
 \begin{document}
 \maketitle
@@ -235,14 +235,14 @@ In this book, we share our learnings about sensible approaches to designing data
 
 For data scientists who are new to the field, perhaps the single most challenging aspect of the role is not technical but rather conceptual: learning how to design a successful data science project. Often this means breaking down a complex business case into concrete objectives and specific questions. In our roles as mentors and project managers, we too-often see data scientists attack an analysis without first identifying the underlying questions. These can be specific questions about the scientific approach -- ``What is the hypothesis of this experiment?'' or ``What statistical question am I asking my model to answer? -- to more general ones, such as, ``Why are we doing this?'', ``What is an ideal outcome?'', ``What would constitute a failure?'' or ``What is the business problem we are trying to solve?'' As we tell our mentees, this approach is like building a house without a blueprint: you might hammer together some bits of wood in a useful way, but without understanding the objectives of the project as a whole, success is essentially impossible.
 
-Project design is difficult: it can be loosely structured and often has no single correct answer. This can often be disorienting. How-best to approach this task has been considered and discussed often, and many learnings have been derived from the methodologies found in fields such as product design or design engineering. For an excellent discussion of this topic, we recommend a recent series of the podcast Not So Standard Deviations, in which hosts Roger Peng and Hilary Parker discuss the Nigel Cross book Design Thinking and draw parallels to applications in data science.
+Project design is difficult: it can be loosely structured and often has no single correct answer. This can often be disorienting. How-best to approach this task has been considered and discussed often, and many learnings have been derived from the methodologies found in fields such as product design or design engineering. For an excellent discussion of this topic, we recommend a recent series of \href{http://nssdeviations.com/108-it-depends}{the podcast Not So Standard Deviations}, in which hosts Roger Peng and Hilary Parker discuss the Nigel Cross book \href{https://www.amazon.co.uk/Design-Thinking-Understanding-Designers-Blac14/dp/1847886361/ref=sr_1_2?keywords=Nigel+Cross+book+Design+Thinking\&qid=1576333690\&sr=8-2}{Design Thinking} and draw parallels to applications in data science.
 
 We often think of data science as a process by which we frame a business problem as a scientific question and apply scientific methodologies to answer that question and derive insights. But how do we identify the business question in the first place? As a data scientist, a good first step is to ask different stakeholders. Yet in our experience, this can often be an unsatisfying approach: more often than not, our clients/managers will not have a clearly-defined business problem or a concrete objective for the project. We believe our framework can help drive this conversation, setting the stage for well-planned project design and giving projects the best chances for success.
 
 \hypertarget{our-framework}{%
 \section{Our framework}\label{our-framework}}
 
-Our framework has two related components: project execution and project evaluation. While the temptation may be to view these in series, we have found that these components are in fact intertwined; each has a use on its own, but the framework yields the best results when they are used together. In the following chapters we outline these components, counterintuitively starting with evaluation and then moving on to execution. Why do we start with evaluation? We have found that thinking about what you want the final successful project to look like can help in planning how to get there. In short, we recommend starting with a zoomed-out view of the project as a whole and the context into which fits before considering the details of how you might get there. We can think of the analogy of taking a road-trip across the country: a sensible approach is to first think about what you want to get out of the journey and what are the major milestones you want to achieve before determining exactly which roads you will take to get there. This has echoes in Test Driven Development (TDD), a common approach to software development in which one first defines the criteria that the final code should adhere to and creates the corresponding tests before writing the actual code.
+Our framework has two related components: \textbf{project execution} and \textbf{project evaluation}. While the temptation may be to view these in series, we have found that these components are in fact intertwined; each has a use on its own, but the framework yields the best results when they are used together. In the following chapters we outline these components, counterintuitively starting with evaluation and then moving on to execution. Why do we start with evaluation? We have found that thinking about what you want the final successful project to look like can help in planning how to get there. In short, we recommend starting with a zoomed-out view of the project as a whole and the context into which fits before considering the details of how you might get there. We can think of the analogy of taking a road-trip across the country: a sensible approach is to first think about what you want to get out of the journey and what are the major milestones you want to achieve before determining exactly which roads you will take to get there. This has echoes in Test Driven Development (TDD), a common approach to software development in which one first defines the criteria that the final code should adhere to and creates the corresponding tests before writing the actual code.
 
 \hypertarget{organisation-of-this-book}{%
 \section{Organisation of this book}\label{organisation-of-this-book}}
@@ -260,15 +260,9 @@ In early conversations with a stakeholder, you may have agreed upon a certain se
 
 Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend reading the paper.)
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{'figures/Figure_1-eval_levels.png'}\NormalTok{, }\DecValTok{1}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 \includegraphics[width=0.7\linewidth]{figures/Figure_1-eval_levels}
 
-Figure 1: The four levels of project evaluation. We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
+\textbf{Figure 1: The four levels of project evaluation.} We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
 
 In the sections below we discuss each of these levels in detail. If you are involved with defining and scoping a project, we strongly recommend you think carefully about how your proposed work satisfies each of these levels. As a consultant, this will be an important part of your role and an important step in developing a project that has real value to its stakeholders. Even if your specific role does not involve project design, we recommend you take the time to consider these levels at both the beginning and the end of a project: if nothing else, it's a good thought exercise that will be important if you are ever involved in project design.
 
@@ -280,19 +274,29 @@ The first and highest level of the project evaluation framework is termed contex
 Contextual considerations often are related to business strategy, a good understanding of which is key when designing a project that is going to have an impact well into the future. A company's business strategy describes it's vision, culture and image. At its core is an understanding of the business's goals and how its leaders intend to achieve those goals. Naturally, business goals are often centred around performance: attracting customers, increasing profits and reducing costs are almost always major driving forces. But the strategy can also extend beyond that to include things such as organisational culture, brand and image and the company's place in the wider community. It is important to note that the underlying goals driving strategy can vary across sectors. For example, the goals of a government agency will surely be very different from those of private-sector or not-for-profit organisations.
 
 Understanding an organisation's strategy will help you to more clearly see how a data science project fits in. Often such projects are part of an overall move towards innovation, so it can be helpful to clarify what the business is hoping to achieve with that initiative. In our experience, we generally turn to a number of key questions that can help paint a picture of what the business strategy is:
-What are your business drivers and your strategic imperatives?
-What are the main pain points or challenges in delivering your strategy?
-Who are your competitors, and what do you think you need to do to stay or get ahead of them?
-Where do you think you may be missing opportunities?
-Do you have any particular business objectives in mind, such as increasing revenue, reducing costs or improving your products or services?
-Do you have any ongoing data science work already? What is its focus, and how does the current project fit into it?
+
+\begin{itemize}
+\tightlist
+\item
+  What are your business drivers and your strategic imperatives?
+\item
+  What are the main pain points or challenges in delivering your strategy?
+\item
+  Who are your competitors, and what do you think you need to do to stay or get ahead of them?
+\item
+  Where do you think you may be missing opportunities?
+\item
+  Do you have any particular business objectives in mind, such as increasing revenue, reducing costs or improving your products or services?
+\item
+  Do you have any ongoing data science work already? What is its focus, and how does the current project fit into it?
+\end{itemize}
 
 These questions are ones that we, ourselves, often use to help understand the context of the project. They are gleaned from a number of existing frameworks that can help you to identify the business strategy. We have highlighted a few below.
 
 \hypertarget{swot-analysis}{%
 \subsection{SWOT analysis}\label{swot-analysis}}
 
-SWOT (Strengths, Weaknesses, Opportunities and Threats) analysis is a simple, yet powerful tool that is often used to develop a business strategy. While your job as a data scientist or a consultant is not to define your client's overall business strategy, the exercise of going through a SWOT analysis can help you to understand how the company views its position in the market. In short, this analysis allows you to identify internal capabilities (strengths and weaknesses) and external factors (opportunities and threats) in order to understand the business's competitive advantage and the factors that are favourable or unfavourable to achieving its objectives. LivePlan has an excellent blog post that provides an overview of the process along with example and questions to help drive the conversation (\url{https://www.liveplan.com/blog/what-is-a-swot-analysis-and-how-to-do-it-right-with-examples/})
+SWOT (Strengths, Weaknesses, Opportunities and Threats) analysis is a simple, yet powerful tool that is often used to develop a business strategy. While your job as a data scientist or a consultant is not to define your client's overall business strategy, the exercise of going through a SWOT analysis can help you to understand how the company views its position in the market. In short, this analysis allows you to identify internal capabilities (strengths and weaknesses) and external factors (opportunities and threats) in order to understand the business's competitive advantage and the factors that are favourable or unfavourable to achieving its objectives. \href{https://www.liveplan.com/blog/what-is-a-swot-analysis-and-how-to-do-it-right-with-examples/}{LivePlan has an excellent blog post} that provides an overview of the process along with example and questions to help drive the conversation.
 
 \hypertarget{porters-five-forces}{%
 \subsection{Porter's Five Forces}\label{porters-five-forces}}
@@ -317,14 +321,19 @@ Naturally, projects must be feasible in order to generate business value. Thus w
 
 In the best cases, the business value generated from a project can be expressed in concrete terms: increased revenue, time saved or measurable increases in customer satisfaction are a few examples. Exactly how a project's outcome results in changes to these values is often confounded by other factors. In other words, your data science project will likely be one of many factors that, collectively, have an effect on revenue or costs. Therefore, defining KPIs (Key Performance Indicators) that can accurately and quantifiably assess the impact of your work in an isolated environment will help when assessing your project's value at the business level. We recommend that you work with your client or internal stakeholders to identify the relevant KPIs during the design stages of your project. This is covered in Chapter 4.2.1 in more detail.
 
-For a more detailed discussion of this topic, we recommend this (\url{https://www.oreilly.com/radar/what-you-need-to-know-about-product-management-for-ai/}) piece by Peter Skomoroch and Mike Loukides.
+For a more detailed discussion of this topic, we recommend \href{https://www.oreilly.com/radar/what-you-need-to-know-about-product-management-for-ai/}{this piece by Peter Skomoroch and Mike Loukides}.
 
 Sometimes the business value from a project cannot be measured in an objective way. Indeed, the value of exploratory and proof-of-concept projects is often in the knowledge generated or insights into the potential for future investments. For example, many of our clients undertake proof-of-concept projects in order to answer specific questions such as, ``Is it worth it for us to invest in hiring a data science team to take this work further?'' While it's hard to place a dollar value on generating a reliable answer to this question, the value is certainly high given the strategic aspirations of the client.
 
 One way to assess a project's value in such cases is to align it to the stakeholder's OKRs (Objectives and Key Results; see accompanying text box).
 
-\textbf{\textless start text box, ``OKRs and business goals''\textgreater{}
-The OKR framework is a system by which a company aligns priorities across all levels of the organisation. For example, three to five objectives could be set for the organisation as a whole, with multiple concrete, measurable key results attached to each. The idea is that the key results will provide evidence as to what extent the objectives have been met. Each level of the company should go through the process, such that company objectives inform departmental OKRs, which in turn help to define the team and individual OKRs. Thus, everyone in the company can be aligned as to what the business priorities are. Often OKRs are defined, and reviewed, on a quarterly basis. }
+\begin{infobox}
+
+\textbf{OKRs and business goals}
+
+The OKR framework is a system by which a company aligns priorities across all levels of the organisation. For example, three to five objectives could be set for the organisation as a whole, with multiple concrete, measurable key results attached to each. The idea is that the key results will provide evidence as to what extent the objectives have been met. Each level of the company should go through the process, such that company objectives inform departmental OKRs, which in turn help to define the team and individual OKRs. Thus, everyone in the company can be aligned as to what the business priorities are. Often OKRs are defined, and reviewed, on a quarterly basis.
+
+\end{infobox}
 
 Understanding your client's OKRs can help you to identify key metrics that may be important for assessing a project's success. For example, your project may be aimed at improving customer insights. Exactly how you would assess the degree to which your project has succeeded is imprecise, and your idea of success may be very different from your client's. If framed as an objective in an OKR framework, however, you are forced to define a series of key results -- measurable outcomes that you can use to assess how you have met the objective. Key results in this example could be, ``Define five features that are associated with increased customer churn'', ``Build a model that can accurately identify those customers who churned last year 90\% of the time'' or ``Identify which customer segments are most likely to churn.'' If your project achieves these key results, you can feel safe in declaring it a success.
 
@@ -366,12 +375,6 @@ We have provided a lot of information about evaluating projects, and you might b
 
 Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{'figures/phases-flow.png'}\NormalTok{, }\DecValTok{1}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 \includegraphics[width=1\linewidth]{figures/phases-flow}
 
 \hypertarget{phase-1-define-the-business-casequestion}{%
@@ -383,9 +386,16 @@ Every project is different and the exact way you approach it may vary. That said
 You may find that your client already has a clear idea of possible projects. If that's the case, then we encourage you to go through each and view them through the lens of the contextual understandings identified above. If your client does not have preconceived ideas about possible projects, then you might want to view this conversation as a brainstorming session.
 
 Questions that can help to drive the conversation can include:
-Do you have any ideas already that you would like to consider?
-If you could improve three aspects of your business, what would they be?
-Do you have a concrete objective or are you trying to implement a more general innovation in your business?
+
+\begin{itemize}
+\tightlist
+\item
+  Do you have any ideas already that you would like to consider?
+\item
+  If you could improve three aspects of your business, what would they be?
+\item
+  Do you have a concrete objective or are you trying to implement a more general innovation in your business?
+\end{itemize}
 
 As you drill down into specific project ideas, you should consider the practical aspects to delivering the project. For example, we often ask our clients to describe to us what a successful outcome would be, what would be acceptable and what would be outstanding. These questions can be in terms of concrete modelling metrics (such as accuracy, precision, recall, etc) or in terms of business value (for instance, to save at least £10,000 in lost annual revenue from customer churn). Asking for concrete examples of outcomes can help you to get a sense of your client's expectations and will allow you to manage these in advance.
 
@@ -406,10 +416,13 @@ A common pre-conception is that artificial intelligence is complicated and canno
 
 Machine learning models at the core are mathematical models, data is manipulated through a series of mathematical operations. These operations aren't random but should be well chosen to produce favourable results. Understanding this process lets you understand the limitations and the overall behaviour of the model. Once this is properly understood, one can make deliberate changes that improve the model overall, remove bias or simply deal better with outliers that had been neglected previously.
 
-``''''''''
-What is open source
+\begin{infobox}
+
+\textbf{What is open source}
+
 Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.
-``''''
+
+\end{infobox}
 
 As a side note be aware when choosing your machine learning toolkit. When using closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that data scientists will lose visibility and the ability to understand the system fully.
 
@@ -417,7 +430,7 @@ When talking to your stakeholders, do not be shy: understanding what the differe
 
 In this phase, you should be focusing on the contextual and business levels. As a data scientist, it is your responsibility to make sure you and your teammates have thought carefully about what will bring value to the business and whether or not the candidate project aligns with the business strategy long-term. Fully consider how the business will change over time and what will be needed to keep this new part of the system up to date so that it can remain relevant.
 
-Systems are in development constantly, the more you learn about the overall product and future of the product through the roadmap, the more you can use this knowledge to make your own part of the system more robust. Is one of the data sources being replaced by a richer data source in future? If so how can you build your system so that this can be easily incorporated in your model when this data arrives and how will your models deal with the inconsistency in your old and new data? Writing a recommendation engine for an e-commerce site can be straightforward but how can your model use the clickstream data that will be collected in the future if you do not have this data now? These scenarios, as well as many others, can lead to technical debt in a data science pipeline. While a comprehensive review of how to minimise technical debt is beyond the scope of this article, we recommend Managing Technical Debt.
+Systems are in development constantly, the more you learn about the overall product and future of the product through the roadmap, the more you can use this knowledge to make your own part of the system more robust. Is one of the data sources being replaced by a richer data source in future? If so how can you build your system so that this can be easily incorporated in your model when this data arrives and how will your models deal with the inconsistency in your old and new data? Writing a recommendation engine for an e-commerce site can be straightforward but how can your model use the clickstream data that will be collected in the future if you do not have this data now? These scenarios, as well as many others, can lead to technical debt in a data science pipeline. While a comprehensive review of how to minimise technical debt is beyond the scope of this article, we recommend \href{https://www.amazon.com/Managing-Technical-Debt-Development-Engineering/dp/013564593X}{Managing Technical Debt}.
 
 \hypertarget{phase-2-define-success.}{%
 \section{Phase 2: Define success.}\label{phase-2-define-success.}}
@@ -437,24 +450,49 @@ Most companies will already be working with a way to keep track of and define su
 \hypertarget{key-performance-indicator-kpi}{%
 \subsection{Key Performance Indicator (KPI)}\label{key-performance-indicator-kpi}}
 
-Definition
+\begin{infobox}
+
+\textbf{Definition}
+
 A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.
+
+\end{infobox}
 
 KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:
 
-What is your desired outcome?
-Why does this outcome matter?
-How are you going to measure progress?
-How can you influence the outcome?
-Who is responsible for the business outcome?
-How will you know you've achieved your outcome?
-How often will you review progress towards the outcome?
-One way to evaluate the relevance of a performance indicator is to use the SMART criteria. The letters are typically taken to stand for Specific, Measurable, Attainable, Relevant, Time-bound. In other words:
-Is your objective Specific?
-Can you Measure progress towards that goal?
-Is the goal realistically Attainable?
-How Relevant is the goal to your organization?
-What is the Time-frame for achieving this goal?
+\begin{itemize}
+\tightlist
+\item
+  What is your desired outcome?
+\item
+  Why does this outcome matter?
+\item
+  How are you going to measure progress?
+\item
+  How can you influence the outcome?
+\item
+  Who is responsible for the business outcome?
+\item
+  How will you know you've achieved your outcome?
+\item
+  How often will you review progress towards the outcome?
+\end{itemize}
+
+One way to evaluate the relevance of a performance indicator is to use \href{http://en.wikipedia.org/wiki/SMART_criteria}{the SMART criteria}. The letters are typically taken to stand for \textbf{Specific, Measurable, Attainable, Relevant, Time-bound}. In other words:
+
+\begin{itemize}
+\tightlist
+\item
+  Is your objective \textbf{Specific}?
+\item
+  Can you \textbf{Measure} progress towards that goal?
+\item
+  Is the goal realistically \textbf{Attainable}?
+\item
+  How \textbf{Relevant} is the goal to your organization?
+\item
+  What is the \textbf{Time-frame} for achieving this goal?
+\end{itemize}
 
 \hypertarget{feasibility-study}{%
 \subsection{Feasibility Study}\label{feasibility-study}}
@@ -467,12 +505,22 @@ A feasibility study aims to objectively and rationally uncover the strengths and
 The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.
 
 This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken to consideration:
-A brief description of the business to assess more possible factors which could affect the study
-The part of the business being examined
-The human and economic factor
-The possible solutions to the problem
-Methods of producing the solution
-Detailed project requirements
+
+\begin{itemize}
+\tightlist
+\item
+  A brief description of the business to assess more possible factors which could affect the study
+\item
+  The part of the business being examined
+\item
+  The human and economic factor
+\item
+  The possible solutions to the problem
+\item
+  Methods of producing the solution
+\item
+  Detailed project requirements
+\end{itemize}
 
 This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren't technically feasible and it could be as complex as the requirements aren't simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it's technically possible to do so.
 
@@ -505,15 +553,17 @@ The scheduling feasibility assessment is the most important study for the projec
 
 This is the phase where we start to look at and clean some data and test some of our hypotheses and assumptions. Note that this is not a proof of concept and should not be treated as such. This phase has no concrete deliverables and is more open-ended. We get access to some data and start manipulating it. The main goal of this exercise is to get a clearer understanding of the problem and get an initial understanding of what a solution would look like. Start with the data, is it in a clean usable format? If not what manual/automated effort would be required in order to get the data in a usable format? How complex are the transformations required? And if you do have usable data, what abnormalities does the data set have? What do the distributions look like? Is the dataset uniformly distributed or is it sparse and does it have a lot of outliers?
 
-`'''
+\begin{infobox}
+
 Getting access to data can often be a challenge due to security policies governing the data. There are many ways of making data access secure so work with the data administrators to work out a safe and secure plan that works for them. I have personally had to sit in data rooms with no internet access, have had encrypted laptops sent to me and have worked with countless VPN and cloud-based servers that restricted access based on multi-factor authentication. For some industries, I have even had to go through extensive background checks. There are often quite a few hurdles to jump through.
-`''
+
+\end{infobox}
 
 What defines clean data can vary greatly across professions and industries. For some people, hundreds of differently structured excel files that are human-readable would be considered clean data while for data scientists this would require a substantial investment to merge all of the files in order for them to be a coherent whole. The same applies to databases or data warehouses. Even though data can be easily accessed via a database querying language, that doesn't necessarily mean that the data is clean. There could be loads of duplicates or missing data that needs manual sorting through.
 
-The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. We are dealing with a scientific question that relies on several assumptions, so the more we can validate these assumptions the better we will be able to predict the eventual outcome of the overall project. One common assumption is that having sufficient data will automatically lead to predictive power. The size of your dataset sadly doesn't indicate how good the individual features are at predicting a specific behaviour. It is also good to remember that data alone isn't ground truth.
+The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. We are dealing with a scientific question that relies on several assumptions, so the more we can validate these assumptions the better we will be able to predict the eventual outcome of the overall project. One common assumption is that having sufficient data will automatically lead to predictive power. The size of your dataset sadly doesn't indicate how good the individual features are at predicting a specific behaviour. It is also good to remember that \href{https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4}{data alone isn't ground truth}.
 
-It is essential that this phase is time-boxed, for example, a 2-week POC (Proof of Concept) for research projects or just a couple of hours to look through data. This allows the team to focus their efforts on the most pressing concerns without starting to implement the entire project. The goal is not to get started but rather to reduce risk and explore possible solutions. In software engineering, this is often done in the form of a design sprint. In data science, we can also work in sprints but the process is slightly different as we need to validate a hypothesis, and so the process is far more scientific. Doing this work beforehand helps us drastically reduce uncertainties and even guarantees that projects that are doomed to fail don't even get started. If at this stage we discover there is insufficient or insignificant data to reach the goal then we can go back and collect more data and delay the project until its goals are achievable.
+It is essential that this phase is time-boxed, for example, a 2-week POC (Proof of Concept) for research projects or just a couple of hours to look through data. This allows the team to focus their efforts on the most pressing concerns without starting to implement the entire project. \textbf{The goal is not to get started but rather to reduce risk and explore possible solutions.} In software engineering, this is often done in the form of a design sprint. In data science, we can also work in sprints but the process is slightly different as we need to validate a hypothesis, and so the process is far more scientific. Doing this work beforehand helps us drastically reduce uncertainties and even guarantees that projects that are doomed to fail don't even get started. If at this stage we discover there is insufficient or insignificant data to reach the goal then we can go back and collect more data and delay the project until its goals are achievable.
 
 The reader might think that doing this phase is hindering the project -- delaying it from really getting started and providing little in the way of tangible outcomes. In our experience, this is absolutely untrue: when we scope out a project we can more accurately predict what the ultimate outcome will be and what resources are needed to achieve the end goal. This translates into less risk for clients and data scientists alike. Being able to quickly demonstrate progress or build a basic proof-of-concept reassures all stakeholders that the project will be successful. This also stops us from adding large margins to project proposals to combat the uncertainty and ultimately delivers project proposals that better reflect reality, which is better for all stakeholders involved. We have personally had a 100\% success rate of winning project proposals as an independent consultant once we embarked on this stage. The reason is clear, having had time to scope out the project our proposal was more competitive as we didn't have the need to add large margins for project uncertainty.
 
@@ -554,27 +604,24 @@ If you are creating a system, remember to deploy the solution according to the p
 
 For the long term success of any project, it is essential that there is also a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. Model How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?
 
-``''''
-The concept `drift' explained
+\begin{infobox}
+
+\textbf{The concept `drift' explained}
+
 In most challenging data analysis applications, data evolve over time and must be analyzed in near real-time. Patterns and relations in such data often evolve over time, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.
-``''''
+
+\end{infobox}
 
 Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location then a developer making changes would need to remember to also update the documentation.
 
-There are many great tools that can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend Sphynx as it is widely used and gives you loads of great styles to choose from.
-Regarding proper coding style, we recommend you follow PEP8 for python and for R, the R style guide. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use Black. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is however important to note that once you use a formatter, you can't really override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your own preferred format.
+There are many great tools that can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend \href{https://www.sphinx-doc.org/en/master/}{Sphynx} as it is widely used and gives you loads of great styles to choose from.
+Regarding proper coding style, we recommend you follow \href{https://www.python.org/dev/peps/pep-0008/}{PEP8} for python and for R, the \href{http://adv-r.had.co.nz/Style.html}{R style guide}. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use \href{https://github.com/psf/black}{Black}. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is however important to note that once you use a formatter, you can't really override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your own preferred format.
 
 When you reach the end of your project, find the person responsible for maintaining the system and run through how it works. Do a complete handover running through both the code and the documentation, adding comments and notes to clarify points that aren't clear to the person you are handing over to.
 
 If handover to an actual person is not possible for whatever reason, eg. if a permanent data scientist is not yet hired, then make sure you make your documentation as clear as possible. Do not leave it to chance and write it as if you are writing for a very junior person. More documentation is definitely recommended in these cases.
 
 Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{'figures/Framework phases.png'}\NormalTok{, }\DecValTok{1}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
 
 \includegraphics[width=1\linewidth]{figures/Framework phases}
 
@@ -589,10 +636,13 @@ It isn't always possible to have a robust plan but having a flawed plan is alway
 
 This phase uses a different type of thinking than is normally found in scientific research. While research generally uses deductive (the reasoning of logic) and inductive (the reasoning of forming general rules from observations) reasoning, the synthesis required for design thinking uses intuition, or more accurately, abductive reasoning -- the reasoning of developing one of several possible solutions for a problem. More specifically it is seeking the simplest solution to a problem without any formal validation. For a more detailed explanation of how designers think, we recommend the book Design Thinking by Nigel Cross. For the purposes of this writing, what is important is to understand that this relates to the process of identifying a set of required functionalities or purposes and crafting a solution that satisfies those purposes.
 
-``''''''
-What is abductive reasoning?
+\begin{infobox}
+
+\textbf{What is abductive reasoning?}
+
 Abductive reasoning starts with an observation or set of observations and then seeks to find the simplest and most likely conclusion from the observations. This process, unlike deductive reasoning, yields a plausible conclusion but does not positively verify it. Abductive conclusions are thus qualified as having a remnant of uncertainty or doubt, which is expressed in terms such as ``best available'' or ``most likely''.
-``''''
+
+\end{infobox}
 
 For many, project design is difficult, ambiguous, stressful and downright unpleasant. Indeed, this phase requires you to commit to delivering a given bit of work in exchange for a certain budget, and you want to get it right -- who wouldn't find that responsibility stressful? You inherently can't know exactly what it will take to deliver a successful outcome because that insight only really comes from the work itself. But if you have done a good job of scoping the project in Phases 2 and 3, then you should have a fairly good idea of the complexity of the task in front of you.
 
@@ -616,7 +666,9 @@ As you plan your project, the required technical and non-technical skills should
 
 Your approach to meeting the skills required for a project is, of course, dependent upon the composition of your team. If you are designing a project that you will work on individually, then it is up to you to make sure you have the skills required in your repertoire. If you don't, you may need to consider bringing in outside help or budgeting for the time it will take to level-up your shortfall. Often projects are designed for teams of data scientists, in which case you will want to make sure that the skills required are matched collectively by the team. Data Science as software development is a team sport.
 
+\begin{quote}
 ``If you want to go fast, go alone. If you want to go far, go together.'' -- African Proverb
+\end{quote}
 
 \hypertarget{how-much-will-it-cost}{%
 \section{How much will it cost?}\label{how-much-will-it-cost}}
@@ -633,24 +685,90 @@ It is also useful to consider the business when budgeting for a project. Have yo
 
 On the other hand, if the project is exploratory, if your client/manager is just looking to see the ``art of the possible'' or if your project is restricted to creating insights, you may feel a bit braver and choose a slightly lower budget: the costs of underestimating the time required are lower. Or, to think of it in another way, even if you only accomplish 95\% of what you would have liked, that is still very valuable for the business.
 
-Potential benefits
-Risks
-Under-budgeting
-Your proposal may be more attractive to the stakeholders.
-The potential to show your client/manager good value-for-money
-get a ``foot in the door''/opportunity to prove yourself
-
-Your client/manager may be sceptical that you can deliver
-You may not be able to deliver
-You are vulnerable to expected problems
-setting the expectation too low for the follow on work (assuming you get it)
-
-Over-budgeting
-Extra time padding can give you a greater chance of success
-greater chance of overdelivering and delighting the client/manager
-greater chance of more work, due to happy client/manager
-
-Your price may be too high/losing the work
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.23\columnwidth}\raggedright
+Pricing\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+Potential\_benefits\strut
+\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+Risks\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.23\columnwidth}\raggedright
+Under-budgeting\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Your proposal may
+  be more attractive
+  to the stakeholders.
+\item
+  The potential to
+  show your
+  client/manager good
+  value-for-money
+\item
+  Get a ``foot in
+  the
+  door''/opportunity
+  to prove yourself
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Your
+  client/manager may
+  be sceptical that
+  you can deliver
+  -You may not be
+  able to deliver
+\item
+  You are
+  vulnerable to
+  expected problems
+\item
+  Setting the
+  expectation too low
+  for the follow on
+  work (assuming you
+  get it)
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.23\columnwidth}\raggedright
+Over-budgeting\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Extra time padding
+  can give you a
+  greater chance of
+  success
+\item
+  Greater chance of
+  overdelivering and
+  delighting the
+  client/manager
+\item
+  Greater chance of
+  more work, due to
+  happy client/manager
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  Your price may be
+  too high/losing the
+  work
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 It's also useful to think about aspects of the project that are ``must-haves'' versus those that are ``nice-to-haves''. At the very least, your budget should give you enough time to safely deliver the must-haves. Taking a slightly more risky approach to the nice-to-haves may be more aligned with your client's or manager's appetite. This is especially true if your client/manager is on a tight budget. In such cases, an approach we often take is to write a proposal with several costs: a cost for the essential (must-have) work and additional add-on costs for the nice-to-have bits. We find this resonates with clients/managers who are nervous about spending a lot of money on a project that has yet to show good ROI (return-on-investment). We also recommend treating your proposal as a step in a back-and-forth conversation with the client/manager. Invite the client/manager to comment on the content and the plan, and be open to the possibility of changing the plan if the client/manager is not comfortable with the initial version. While you may not be willing to make sacrifices in your rate (and generally you should not be), you can adjust the scope of the project to better align with your client's/manager's needs, wishes, concerns and budget. This will not only help you to find the right balance for your client/manager, but it will also help to build trust with your client/manager in the fact that you are trying to work with them to produce something that is useful and has good value-for-money.
 
@@ -669,7 +787,7 @@ For some teams, a scrum approach can be useful, although you should bear in mind
 
 In addition to planning out how you will work and communicate with your team, you should also make a plan for how you will interact with your client/manager. You should consider how you will communicate with your client/manager on a day-to-day basis (we have found Slack to be very useful) as well as how and when you will give progress reports and project updates.
 
-We also encourage you to think about how you intend to structure your codebase. We generally use Git and GitHub for version control and code sharing, and we would encourage you to build your repository's directory structure before any code is added. We highly recommend the ``cookiecutter'' family of project templates (\url{https://github.com/cookiecutter/cookiecutter}) and have found the Python-based data science template (\url{http://drivendata.github.io/cookiecutter-data-science/}) to be a good fit for most of our Python-based projects. It includes a guide to best practices for directory structure and naming conventions and contains a built-in make functionality that can be useful for managing the steps required to build the requisite datasets and functions for your project. For R-based projects, one option is the ProjectTemplate (\url{http://projecttemplate.net/}), although others also exist. At the minimum, we encourage you to work within the framework of an R Project (\url{https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects}).
+We also encourage you to think about how you intend to structure your codebase. We generally use Git and GitHub for version control and code sharing, and we would encourage you to build your repository's directory structure before any code is added. We highly recommend the \href{https://github.com/cookiecutter/cookiecutter}{``cookiecutter'' family of project templates} and have found the \href{http://drivendata.github.io/cookiecutter-data-science/}{Python-based data science template} to be a good fit for most of our Python-based projects. It includes a guide to best practices for directory structure and naming conventions and contains a built-in make functionality that can be useful for managing the steps required to build the requisite datasets and functions for your project. For R-based projects, one option is the \href{http://projecttemplate.net/}{ProjectTemplate}, although others also exist. At the minimum, we encourage you to work within the \href{https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects}{framework of an R Project}.
 
 \hypertarget{check-back-on-the-four-levels-and-evaluate-the-plan-in-the-context-of-each.}{%
 \section{Check back on the four levels and evaluate the plan in the context of each.}\label{check-back-on-the-four-levels-and-evaluate-the-plan-in-the-context-of-each.}}
@@ -749,34 +867,34 @@ If you or a colleague has made changes to some code and want to replace the old 
 Another common use case for unit testing in software is to ensure things work properly before automatic deployment to a production environment.
 For machine learning models in a production environment you can run code that retrains your model on new data and automatically redeploys your updated model to production. In this situation, you may want the deployment to fail if your updated model fails to meet certain conditions. To handle that, abort the deployment if your retraining script throws an error. This allows you to build any gatekeeping checks you while ensuring consistent quality.
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
-\begin{minipage}[t]{0.13\columnwidth}\raggedright
-A note on notes\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.13\columnwidth}\raggedright
-Any experience researcher will know that a critical part of the work is in keeping detailed records. This is no different for the data scientist -- keeping track of results, as well as detailed records of assumptions and choices that you make, is essential. Aside from the fact that this is scientific best-practice, it also makes practical sense: it is not uncommon to examine your final results and realise that something doesn't make intuitive sense. In this case, you will have to do some detective work to figure out why. Good notes that include information about the assumptions and potential errors you made along the way will make that task a lot easier.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.13\columnwidth}\raggedright
+\begin{infobox}
+
+\textbf{\emph{A note on notes}}
+
+Any experience researcher will know that a critical part of the work is in keeping detailed records. This is no different for the data scientist -- keeping track of results, as well as detailed records of assumptions and choices that you make, is essential. Aside from the fact that this is scientific best-practice, it also makes practical sense: it is not uncommon to examine your final results and realise that something doesn't make intuitive sense. In this case, you will have to do some detective work to figure out why. Good notes that include information about the assumptions and potential errors you made along the way will make that task a lot easier.
+
 In a recent episode of one of our favourite podcasts, Not So Standard Deviations, host Roger Peng and guest Jenna Krall discussed the topic of how assumptions and undocumented workflows can impact data science research. If you are interested in hearing more about this topic, you can find the episode at \url{http://nssdeviations.com/85-oldold-with-special-guest-jenna-krall}
-\url{https://www.projecttier.org/}.\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.13\columnwidth}\raggedright
-While saying that you should take good notes may seem obvious in principle, it is very easy to fall short in practice. Data science projects can move fast, and we all get caught up in the excitement of discovery or writing code that works well. It's good to be excited -- the work is exciting -- but don't let yourself forget to be a good scientist in the process.\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\url{https://www.projecttier.org/}.
+
+While saying that you should take good notes may seem obvious in principle, it is very easy to fall short in practice. Data science projects can move fast, and we all get caught up in the excitement of discovery or writing code that works well. It's good to be excited -- the work is exciting -- but don't let yourself forget to be a good scientist in the process.
+
+\end{infobox}
 
 \hypertarget{evaluate}{%
 \section{Evaluate}\label{evaluate}}
 
 As you are building, it's a good idea to keep in mind the four levels of project evaluation we outlined in Chapter 4. Recall that we described them as such:
 
-The process level is focused on the actions taken towards producing deliverables.
-The product level is concerned with the deliverables themselves and whether they meet the technical requirements of the project.
-The business level describes how well the project brings value to your client/manager.
-The contextual level is the most abstract and relates to the circumstances surrounding a project and the externalities that affect it.
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{process level} is focused on the actions taken towards producing deliverables.
+\item
+  The \textbf{product} level is concerned with the deliverables themselves and whether they meet the technical requirements of the project.
+\item
+  The \textbf{business level} describes how well the project brings value to your client/manager.
+  = The \textbf{contextual level} is the most abstract and relates to the circumstances surrounding a project and the externalities that affect it.
+\end{itemize}
 
 We encourage you to revisit these levels often throughout your project. During the Build stage, you will mostly focus on the process and product levels. But it is also important to not lose sight of the higher business and contextual levels. When you have finished building and are ready to hand over your work to your client/manager, consider how well your project, as a whole, has satisfied these higher, more abstract levels of evaluation. If you feel that you have done a good job on all four levels, then you can be reasonably confident that you have designed, executed and delivered something of value.
 
@@ -814,11 +932,16 @@ Between the two of us, we have designed, managed or delivered hundreds of projec
 
 We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.
 
-Proposal for Client X
-Introduction:
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Proposal for Client X}
+
+\emph{Introduction:}
+
 Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers.
 
-Project description:
+\emph{Project description:}
+
 In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers' tastes and preferences and will allow them to deliver a more personalised customer experience.
 
 In Objective 1, ``Customer Insights'', we will perform a customer segmentation analysis on data from Client X's CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset.
@@ -827,65 +950,247 @@ When performing cluster analysis, an important consideration is in determining t
 
 In Objective 2, ``Product recommendations'', we will focus on building a recommender system that can be used to suggest products to Client X customers. Our plan is to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches with a view to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.
 
-We outline the plan for this project in the table below.
+We outline the plan for this project in below.
 
-Project plan:
-Project Proposal: Customer insights and recommendations
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-Objective:
-This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.
+\textbf{Project Proposal: Customer Insights and Recommendations}
 
-Objective 1: Customer insights
+\emph{Objective:This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.}
 
-Work carried out
-Outcome/Deliverable
-Completion date
-Milestone 1
-Exploratory data analysis
+\textbf{Objective 1: Customer insights}
 
-We will explore the data available to support the project.
-We will ensure that data are accessible and will perform a preliminary analysis with a view to identifying a subset of features that best-suited for cluster analysis in Milestone 2.
+\begin{longtable}[]{@{}ll@{}}
+\caption{Table continues below}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.18\columnwidth}\raggedright
+milestone\strut
+\end{minipage} & \begin{minipage}[b]{0.43\columnwidth}\raggedright
+work\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.18\columnwidth}\raggedright
+milestone\strut
+\end{minipage} & \begin{minipage}[b]{0.43\columnwidth}\raggedright
+work\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.18\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+Work carried out\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.18\columnwidth}\raggedright
+Milestone 1\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Exploratory data
+  analysis}
+\item
+  We will explore the data
+  available to support the
+  project.
+\item
+  We will ensure that data
+  are accessible and will
+  perform a preliminary analysis
+  with a view to identifying a
+  subset of features that
+  best-suited for cluster
+  analysis in Milestone 2.
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.18\columnwidth}\raggedright
+Milestone 2\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Cluster analysis}
+\item
+  Using the learnings from
+  Milestone 1, we will
+  experiment with various
+  clustering algorithms.
+\item
+  The best candidate will be
+  selected for further
+  improvements.
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
-A presentation showing the initial findings of relationships between features.
-A list of features to use for clustering.
-End of Week 2
-Milestone 2
-Cluster analysis
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.43\columnwidth}\raggedright
+outcome\strut
+\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
+completion\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.43\columnwidth}\raggedright
+Outcome/Deliverable\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+Completion date\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.43\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  A presentation showing the
+  initial findings of
+  relationships between
+  features.
+\item
+  A list of features to use
+  for clustering.
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+End of Week 2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.43\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  A GitHub repository
+  containing Python code driving
+  a segmentation model.
+\item
+  A report and presentation
+  highlighting findings.
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
+End of Week 4\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
-Using the learnings from Milestone 1, we will experiment with various clustering algorithms.
-The best candidate will be selected for further improvements.
+\textbf{Objective 2: Product recommendations}
 
-A GitHub repository containing Python code driving a segmentation model.
-A report and presentation highlighting findings.
-End of Week 4
-Objective 2: Product recommendations
+\begin{longtable}[]{@{}lll@{}}
+\caption{Table continues below}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+milestone\strut
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
+work\strut
+\end{minipage} & \begin{minipage}[b]{0.40\columnwidth}\raggedright
+outcome\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+milestone\strut
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
+work\strut
+\end{minipage} & \begin{minipage}[b]{0.40\columnwidth}\raggedright
+outcome\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+Work carried out\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Outcome/Deliverable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+Milestone 3\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Research}
+\item
+  We will examine the data
+  available to identify a
+  feature space to use for
+  collaborative filtering.
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  A presentation showing
+  initial findings of possible
+  approaches to the
+  recommendation engine.
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+Milestone 4\strut
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Build}
+\item
+  We will focus on
+  productionising the
+  recommender system and
+  integrating it into the
+  existing Client X data
+  infrastructure
+\end{itemize}\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\begin{itemize}
+\tightlist
+\item
+  A deployed recommender
+  system that runs on the Client
+  X GCP instance.
+\item
+  A demonstration,
+  presentation and report
+  outlining experimental
+  approach and deployment
+  specifications, as well as
+  recommendations for model
+  improvements and retraining.
+\item
+  A GitHub repo containing
+  all code used.
+  .
+\end{itemize}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
-Work carried out
-Outcome/Deliverable
-Completion date
-Milestone 3
-Research
-
-We will examine the data available to identify a feature space to use for collaborative filtering.
-
-A presentation showing initial findings of possible approaches to the recommendation engine.
-End of Week 6
-Milestone 4
-Build
-
-We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure
-
-A deployed recommender system that runs on the Client X GCP instance.
-A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining.
-A GitHub repo containing all code used.
-End of Week 9
+\begin{longtable}[]{@{}l@{}}
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright
+completion\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+Completion date\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+End of Week 6\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.24\columnwidth}\raggedright
+End of Week 9\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 \hypertarget{going-independent-building-a-client-base-and-developing-your-business}{%
 \chapter{Going independent: building a client base and developing your business}\label{going-independent-building-a-client-base-and-developing-your-business}}
 
+Going independent: building a client base and developing your business
 For many, the idea of working as an independent freelancer is an appealing alternative to a more traditional role as an employed member of staff. Indeed, contracting has many advantages over permanent roles -- it can give you flexibility in your work schedule, the ability to choose what work you do and the gratification that comes with having built a business on your own, to name just a few. But in order to have a viable business, you have to have customers, and exactly how to find those customers is an important question for any business.
 
-This chapter is aimed at those who would like to establish themselves as independent data scientists and data science consultants and provides advice and learnings from our own experiences as contractors. Starting a business comes with many challenges and there are many good resources on entrepreneurship readily available. We will focus our attention primarily on the unique aspects of starting a data science consulting practice.
+This chapter is aimed at those who would like to establish themselves as independent data scientists and data science consultants and provides advice and learnings from our own experiences as contractors. Starting a business comes with many challenges and there are many good resources on entrepreneurship readily available. We will focus our attention primarily on the unique aspects of operating a data science consulting practice.
 
 \hypertarget{finding-clients-and-helping-clients-find-you}{%
 \section{Finding clients and helping clients find you}\label{finding-clients-and-helping-clients-find-you}}
@@ -904,12 +1209,6 @@ For many of us networking doesn't come naturally, and the prospect of having to 
 You should bear in mind that in professional contexts, most people are going through the same thing you are: they want to meet people and grow their networks, but may not feel entirely comfortable doing so. At the end of the day, consulting is a people business, and you need to learn to talk to people who may be very different from yourself. In other words, cast a wide net and practice the skill of bridging a communication gap between yourself and someone with a completely different background or role.
 
 Data science is an exciting field with a vibrant, dynamic community. Most cities have regular Meetups and with the recent COVID-19-induced social distancing measures, many of these have been transformed into virtual formats that can help to remove geographical barriers. We strongly recommend that you find a Meetup or two that aligns with your interests and get involved. Similarly, conferences can also be a great way to meet people. Both Meetups and conferences can give you a chance to speak, and many have built-in systems to promote people who are at the early stages of their careers, such as lightning talks or travel scholarships for more junior people or those from underrepresented groups.
-
-\hypertarget{listen-to-people}{%
-\subsection{Listen to people}\label{listen-to-people}}
-
-As with building a network and talking to people, listening to people who are facing business challenges can be a great way to establish a relationship and discover potential opportunities.
-Find out what their challenges are and brain-storm with them about possible ways data science could help. While this may seem hard, in our experience most companies realise they need to be investing in data science but absolutely don't know how. Start having conversations about what they are doing and how you could help with those issues.
 
 \hypertarget{promote-yourself}{%
 \subsection{Promote yourself}\label{promote-yourself}}
@@ -943,20 +1242,57 @@ We also recommend contributing to open source software projects. For many who ar
 
 When embarking on consulting it is important to remember that you are not applying for jobs, rather you are building relationships and partnerships where you align your goals on projects. In a way, you are creating your own job.
 
-These opportunities often come about because your skills satisfy a very specific set of requirements: you provide a level of expertise that the client wants and, hopefully, you have a demonstrated track record of delivering good work. However, even if you have the right skills, expertise and track-record, you may not necessarily be the right fit for every client or project. It's important to remember that even for large companies, the people who make decisions are\ldots well\ldots people. Gut feeling and matching temperament will have a large impact on how decisions are made: sometimes they will work in your favour, and sometimes they won't.
+These opportunities often come about because your skills satisfy a very specific set of requirements: you provide a level of expertise that the client wants and, hopefully, you have a demonstrated track record of delivering good work. However, even if you have the right skills, expertise and track-record, you may not necessarily be the right fit for every client or project. It's important to remember that even for large companies, the people who make decisions are\ldots well\ldots people. Gut feeling and matching temperament will have a large impact on how decisions are made: sometimes they will work in your favour and sometimes they won't.
 
 When building your business, some things are within your control and some things are not. You can't control how prospective clients are going to make their decisions, naturally. But you can control how you present yourself to them, and having a realistic picture of how you can help them overcome their business challenges will go a long way in showing that you deserve their business.
 
 At its core, consulting is about improving the position of your client -- creating value and showing stakeholders the value you can add. Therefore, when you work with a potential client, it's important to convey that you are a problem-solver. The business problems you will face are often less defined and less structured than you might be used to. As we have discussed throughout this book, that puts more responsibility on your shoulders to create something valuable. But that also gives you the opportunity to be creative in how you design a solution. While it may be daunting, it's also incredibly exciting.
 
-Naturally, you also need to be technically sound. You should have the skills to deliver good work on time and within budget. As your career progresses, referrals will become increasingly important for capturing new clients, so be sure that those who know your work will be in a position to say good things about it. As a side-note, your technical development is an ongoing process that will never be complete. This field moves fast and changes frequently, so be sure to make time to keep up with current trends and improve your own skills and knowledge.
+Naturally, you also need to be technically sound. You should have the skills to deliver good work on time and within budget. As your career progresses, referrals will become increasingly important for capturing new clients, so be sure that those who know your work will be in a position to say good things about it. As a side-note, your technical development is an ongoing process that will never be complete. This field moves fast and changes frequently, so be sure to make time to keep up with current trends and improve your own skills and knowledge. Think of this time as an investment in yourself.
 
-In the early stages of your career, it's likely that you will be desperate for work and eager to take any job that comes your way. That can be opposed by a concern that taking a job without being 100\% sure about how you would deliver a successful outcome can be risky. Both feelings are normal and, with experience, you will become more comfortable with committing to work when you are not 100\% sure of how to deliver it. You have to strike a balance between ambition and safety, and exactly where that balance lies for you is something that only you know. We often tell our students that, with experience, they will start to develop a faith in the process of data science -- in the fact that the solutions to these uncertainties will be revealed naturally through the work itself, so long as you do the work well.
+In the early stages of your career, it's likely that you will be desperate for work and eager to take any job that comes your way. That can be opposed by a concern that taking a job without being 100\% sure about how you would deliver a successful outcome can be risky. Both feelings are normal and, with experience, you will become more comfortable with committing to work when you are not 100\% sure of how to deliver it. You have to strike a balance between ambition and safety, and exactly where that balance lies for you is something that only you know. We often tell our students that, with experience, they will start to develop a faith in the \emph{process} of data science -- in the fact that the solutions to these uncertainties will be revealed naturally through the work itself, so long as you do the work well.
 
-You should always remember that a contract for a project is not unidirectional: you also play an active role in the decision to take a partnership forward. Some clients are difficult, and you will most likely encounter some that you are not willing to work with. You have a right to be selective in who you work with and in what you expect from your client; if a client relationship is likely to be difficult or draining, you should be prepared to turn the work down. No one wants to renege on an agreement and it is much easier to turn work down than to walk away after a project has started, so keep your eyes open when first interacting with a potential client and don't ignore it if your instincts tell you that the relationship will not be a good one.
+You should always remember that a contract for a project is not unidirectional: you, as well as your client, also play an active role in the decision to take a partnership forward. Some clients are difficult, and you will most likely encounter some that you are not willing to work with. You have a right to be selective in who you work with and in what you expect from your client; if a client relationship is likely to be difficult or draining, you should be prepared to turn the work down. No one wants to renege on an agreement and it is much easier to turn work down than to walk away after a project has started, so keep your eyes open when first interacting with a potential client and don't ignore it if your instincts tell you that the relationship will not be a good one.
 
 \hypertarget{freelancing-versus-permanent-roles}{%
 \section{Freelancing versus permanent roles}\label{freelancing-versus-permanent-roles}}
+
+Many of our students are drawn to the notion of working independently.
+Indeed, freelancing can be a dynamic and exhilarating way to make a living. It gives you flexibility, almost always comes with great variety in terms of the work you do and allows you to be your own boss. Permanent roles can also be dynamic and exhilarating, although it's fair to say that they are less flexible than freelancing and rarely allow you to be your own boss. Which type of role is right for you? Naturally, that's a question only you can answer. To help you to better understand the realities of these two paths, we discuss below some aspects that you may not have considered.
+
+\hypertarget{flexibility}{%
+\subsection{Flexibility}\label{flexibility}}
+
+While freelancing does afford you the ability to pick and choose what work you do and the flexibility to work when and where you want to, this notion can become romanticised and may not always be realistic, especially for early-career data scientists. Many clients expect you to work normal business hours and will want to have you on-sight. While remote working is becoming increasingly accepted, buy-in is not 100\%. Furthermore, some companies will have strict legal restrictions on where their data can be used; the financial services industry is a notable example. When trying to build a business, you are often so focused on getting work that you will paradoxically have less freedom than someone in a permanent position. In other words, until your business is established, your need to build a client base and generate revenue can drive you to take nearly any job. While we don't recommend you take work out of desperation, it is often the case that early-stage freelancers have less flexibility than expected. As your business grows, so will your ability to adopt a more flexible system of work. The flexibility of freelancing is real and it can be fantastically liberating. But it may not be as easy to realise as you might expect.
+
+\hypertarget{variety}{%
+\subsection{Variety}\label{variety}}
+
+Freelancing can be a great way to work on a wide range of problems. That said, many permanent roles also come with high degrees of variety. While you may not have as much freedom to decide exactly which problems you choose to work on, you may find that you are exposed to other aspects of the business in a permanent role that you might not otherwise have access to as a freelancer.
+
+For example, many senior data scientists will become responsible for leading teams, with a career trajectory that moves towards roles that are more strategic and managerial than hands-on. The skills required for such a role are much different than those technical skills required for a job that is more focused on coding. As a freelancer, unless you want to expand your business to include staff, you would not have this sort of exposure. Of course, managerial roles are not right for everyone and are not a necessary eventuality, but the point remains that permanent roles may give you different types of variety than you may get as an independent contractor.
+
+\hypertarget{job-stability}{%
+\subsection{Job stability}\label{job-stability}}
+
+One of the major differences between operating as an independent contractor and being a permanent member of staff lies in job stability. As a freelancer, you are responsible for your own stability and for determining what sort of spending runway you would like to have for your business. Of course, no business is 100\% safe from economic instability, however companies do tend to provide more stability than does the market for short-term contracts. If such stability is important to you, this may be an important factor to consider.
+
+Similarly, different \emph{types} of companies differ widely in their stability. In general, larger, more established companies will be more stable as compared to small companies and start-ups. Naturally, there are no certainties. For instance, in 2007 we saw a massive financial crisis in which numerous ``too big to fail'' companies went bankrupt. Of the many sectors available, government/civil service roles are among the most stable, although again, this is not a certainty.
+
+Similarly, permanent roles will often come with benefits that can be massively important as well. For example, planning for your retirement is hugely important and should never be ignored, but it is something that many early-career professionals tend to overlook. As an independent contractor, it will be up to you to plan for your own retirement. Similarly, in many countries health insurance is provided by your job, at least in part. This can be a benefit that could translate into immense amounts of money in the event that you need health care, and its importance should not be overlooked.
+
+Relatedly, your ability to borrow money will be affected by your employment position. In the UK, for instance, it is difficult to be considered for a mortgage unless you have at least three years of positive financial records for your operation to support your application. If buying property is on your radar, this could be an important factor in your decision.
+
+\hypertarget{legal-considerations-and-responsibilities}{%
+\subsection{Legal considerations and responsibilities}\label{legal-considerations-and-responsibilities}}
+
+Whenever you get paid for a service, it is important to protect yourself legally. As an independent contractor, this usually means having indemnity insurance. While indemnity insurance is not usually expensive to purchase, \emph{not} having it can be very costly should things go wrong.
+
+Many freelancers choose to operate as a limited liability company. One advantage of this arrangement is that there exists a legal distinction between you (the person doing the work) and the company. If a client wants to sue you, for example, only the company is liable (unless you, as an individual, are grossly negligent). This gives you a layer of protection\ldots legally your own possessions are protected, and only the assets of the company are vulnerable. In the UK (where both of us registered our companies), the process of setting up a company is fairly straightforward. However, there are certain legal aspects to running a company that you have to be aware of. Our advice is to find an accountant who can help you set up the company, advise on the financial operations and oversee payroll and adherence to tax and other legal obligations.
+
+Operating as a business can have another benefit that is important to understand. In the UK, if a contractor works for a client in what \emph{looks like} a permanent role, the government can stipulate that the person essentially \emph{is} a permanent employee and should be granted all the benefits of a regular employee. For example, if you are working on a 12-month full-time contract, you will look just like a permanent member of staff. This leaves the client in a vulnerable position as they could be liable to pay back-taxes and national insurance contributions should the government deem it appropriate. For this reason, many clients will not work with sole traders -- those who operate individually outside of the context of a company. If, on the other hand, you operate as a limited liability company, then legally you already have employment (you are employed by your own company) and your client will not be at-risk. The net effect is that you may find it easier to get contracts as a limited company than as a sole trader.
+
+Those who are employed in permanent positions, in contrast to independent contractors (sole traders or limited companies) will generally be protected by the legal framework of their employer, so these legal issues are generally eliminated.
 
 \hypertarget{finding-help}{%
 \chapter{Finding help}\label{finding-help}}
