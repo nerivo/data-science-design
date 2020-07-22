@@ -1,4 +1,4 @@
-# The phases of a project
+# The phases of a project {#phases}
 Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project. 
 
 ```{r bottom-fig, fig.cap='(ref:fig2)', out.width='100%', fig.show='hold', echo=FALSE}

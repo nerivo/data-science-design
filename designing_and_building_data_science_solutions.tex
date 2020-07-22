@@ -41,46 +41,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -126,21 +86,35 @@
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent \href{https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence}{Gartner study}, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.
 
-The \textbf{bookdown} package can be installed from CRAN or Github:
+With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{# or the development version}
-\CommentTok{# devtools::install_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
+When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
+This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+\hypertarget{about-us}{%
+\section*{About us}\label{about-us}}
+\addcontentsline{toc}{section}{About us}
+
+Your authors have each worn many hats: data scientists, project managers, mentors and consultants. We have designed and executed hundreds of projects using data science, machine learning and artificial intelligence (AI), most of which we would consider ``successful'' (you can read much, much more on the topic of ``success'' in Chapter \ref{levels}).
+
+Like many data scientists, we have both come to the field via routes in other disciplines. Jon obtained his PhD in Biology from the University of London, studying blood vessel formation at the Cancer Research UK London Research Institute. After 22 years in biomedical research, he turned to data science and founded a freelance consultancy business. In 2017 he joined \href{https://www.pivigo.com}{Pivigo}, where he is now the Director of Data Science. He is passionate about promoting open-source software and routinely volunteers as a mentor in the R-programming and data science communities.
+
+\textbf{NERI'S BIO GOES HERE}
+
+We met via the \href{http://www.s2ds.org/}{S2DS} programme, where they worked together as project mentors.
+
+We have also made countless mistakes along the way and have done our best to learn from them. Designing projects, ensuring stakeholder buy-in and delivering successful, relevant outcomes is a difficult task, and it doesn't come naturally to anyone. We hope that you can benefit from the mistakes we have made and the learnings we have acquired in our own careers.
+
+\hypertarget{acknowledgements}{%
+\section*{Acknowledgements}\label{acknowledgements}}
+\addcontentsline{toc}{section}{Acknowledgements}
+
+We would like to thank a number of people who have contributed to this work. Without you, this would never have happened. We thank Andras Szabo and Kim Nilsson, who spent many hours carefully reading our drafts and providing invaluable feedback. We would also like to thank Ole Moeller Nilsson, Maryam Qurashi, Mandeep Soor, Jason Muller, Neil Forest and Deepak Mahtani for their many suggestions and useful comments. We are especially grateful to our families for their patience and support.
+
+This book is written in \href{https://rmarkdown.rstudio.com/}{RMarkdown} with \href{https://bookdown.org/}{bookdown}.
 
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
@@ -168,9 +142,9 @@ Our framework has two related components: \textbf{project execution} and \textbf
 \hypertarget{organisation-of-this-book}{%
 \section{Organisation of this book}\label{organisation-of-this-book}}
 
-This book is divided into two parts. In Part 1 we discuss our approach to designing and executing data science projects. Chapter 3 covers the four levels of project evaluation in more detail and provides examples of how to assess each. In Chapter 4 we move on to the phases of project delivery. Two of these phases are then explored in more detail: Project Definition (Chapter 5) and Project Execution (Chapter 6).
+This book is divided into two parts. In Part 1 we discuss our approach to designing and executing data science projects. Chapter \ref{levels} covers the four levels of project evaluation in more detail and provides examples of how to assess each. In Chapter \ref{phases} we move on to the phases of project delivery. Two of these phases are then explored in more detail: Project Definition (Chapter \ref{definition}) and Project Execution (Chapter \ref{execution}).
 
-Part 2 focuses on offering more concrete, practical advice. In Chapter 7 we provide an example of a project proposal that we might use when working with a client to define a project. Chapters 8 covers our advice how to navigate different ``what-if'' situations and is currently under active development. Chapter 9 is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work. Chapter 10 lists some useful resources for where you can find help in the wider data science community.
+Part 2 focuses on offering more concrete, practical advice. In Chapter \ref{example} we provide an example of a project proposal that we might use when working with a client to define a project. Chapter \ref{whatif} covers our advice how to navigate different ``what-if'' situations and is currently under active development. Chapter \ref{consulting} is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work. Chapter \ref{help} lists some useful resources for where you can find help in the wider data science community.
 
 \hypertarget{part-part-i}{%
 \part*{Part I}\label{part-part-i}}
@@ -297,8 +271,8 @@ The reader may also notice some overlap between the levels. For example, we plac
 
 We have provided a lot of information about evaluating projects, and you might be wondering if thinking about all of this is really necessary. We feel that the answer is yes, although exactly how much you think about each level will very-much vary depending on the needs of the engagement and your role. Indeed, we do not expect junior data scientists to sit down with a company's CEO to hammer out the business's long-term strategic imperatives. However, understanding how your project fits into those imperatives is important, and it will allow you to deliver a more relevant, valuable project if you do. Moreover, as you mature as a data scientist, it will become increasingly important to think about your work in this way. Thus, we strongly encourage you to take the time to consider these levels whenever you embark on a project and to keep them in mind as you work. At the least, it will be a valuable thought exercise; in all likelihood it will be valuable practice that will be more and more important as you mature in your field.
 
-\hypertarget{the-phases-of-a-project}{%
-\chapter{The phases of a project}\label{the-phases-of-a-project}}
+\hypertarget{phases}{%
+\chapter{The phases of a project}\label{phases}}
 
 Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
 
@@ -567,8 +541,8 @@ While we have presented project evaluation and project phases as different conce
 
 
 
-\hypertarget{deep-dive-into-phase-4-project-definition}{%
-\chapter{Deep dive into Phase 4 -- project definition}\label{deep-dive-into-phase-4-project-definition}}
+\hypertarget{definition}{%
+\chapter{Deep dive into Phase 4 -- project definition}\label{definition}}
 
 If you have followed the steps outlined in phases 1-3, you will have now determined that the project is viable. You will have confirmed that, in principle, the project makes contextual sense and that it is likely to bring value to your stakeholder, and you are now ready to think in terms of the specifics about how you will deliver the work. Congratulations! This represents a major crossroads for any project, and you should be proud of yourself for having had the discipline to work through Phases 1 -- 3 carefully. Now you are ready to start your project in earnest!
 
@@ -742,8 +716,8 @@ As a parting piece of advice, we suggest that you take the time to make a shortl
 
 Bear in mind that if your client is a company, the person you have been liaising with may not be the final decision-maker or the one who controls the money. The proposal you write may be passed on to executives in the company who you have never met and who don't have any understanding of the project. Explicitly explaining why your proposed project is likely to bring value to them on both the business and contextual levels will make it easier for that person to say ``yes''.
 
-\hypertarget{deep-dive-into-phase-5-exploration-execution-and-pivots}{%
-\chapter{Deep dive into Phase 5 -- exploration, execution and pivots}\label{deep-dive-into-phase-5-exploration-execution-and-pivots}}
+\hypertarget{execution}{%
+\chapter{Deep dive into Phase 5 -- exploration, execution and pivots}\label{execution}}
 
 At this point, you have done your homework. You have explored the project's feasibility, you have scoped the work and you have put together a project plan that resonates with your client/manager. You have determined that the proposed work makes sense in terms of feasibility and business value to your client/manager, and you have decided that it passes muster in a larger, contextual sense. You have prepared, worked hard and thought about what lies ahead of you. It's time to start with the implementation phase!
 
@@ -871,8 +845,8 @@ As a data scientist, you are your client's/manager's guide. You need to take res
 \part*{Part II}\label{part-part-ii}}
 \addcontentsline{toc}{part}{Part II}
 
-\hypertarget{example-project-plan}{%
-\chapter{Example project plan}\label{example-project-plan}}
+\hypertarget{example}{%
+\chapter{Example project plan}\label{example}}
 
 Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it's a subjective endeavour with no right answers -- what might be best for one project may be well off-the-mark for another.
 
@@ -1130,8 +1104,8 @@ End of Week 9\strut
 \bottomrule
 \end{longtable}
 
-\hypertarget{going-independent-building-a-client-base-and-developing-your-business}{%
-\chapter{Going independent: building a client base and developing your business}\label{going-independent-building-a-client-base-and-developing-your-business}}
+\hypertarget{consulting}{%
+\chapter{Going independent: building a client base and developing your business}\label{consulting}}
 
 For many, the idea of working as an independent freelancer is an appealing alternative to a more traditional role as an employed member of staff. Indeed, contracting has many advantages over permanent roles -- it can give you flexibility in your work schedule, the ability to choose what work you do and the gratification that comes with having built a business on your own, to name just a few. But in order to have a viable business, you have to have customers, and exactly how to find those customers is an important question for any business.
 
@@ -1239,8 +1213,8 @@ Operating as a business can have another benefit that is important to understand
 
 Those who are employed in permanent positions, in contrast to independent contractors (sole traders or limited companies) will generally be protected by the legal framework of their employer, so these legal issues are generally eliminated.
 
-\hypertarget{finding-help}{%
-\chapter{Finding help}\label{finding-help}}
+\hypertarget{help}{%
+\chapter{Finding help}\label{help}}
 
 A number of kind and generous data professionals make themselves available to help others. Three of our favourite collections are:
 
