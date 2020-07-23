@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Designing and Building Data Science Solutions</title>
+  <title>2.2 Business level | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="2.2 Business level | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="2.2 Business level | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-us.html"/>
+<link rel="prev" href="contextual-level.html"/>
+<link rel="next" href="product-level.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,27 +163,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Designing and Building Data Science Solutions</h1>
-<h2 class="subtitle"><em>A Practical Guide</em></h2>
-<p class="author"><em>Jonathan Leslie</em></p>
-<p class="author"><em>Neri Van Otten</em></p>
-<p class="date"><em>2020-07-23</em></p>
+<div id="business-level" class="section level2">
+<h2><span class="header-section-number">2.2</span> Business level</h2>
+<p>The second level of the framework corresponds to the business. In short, this describes how much value the project brings to the business. Unlike concrete deliverables, which are generally tangible, business value can be hard to measure. Success on this level may not be realised immediately, but rather may only be understood well after the project has been completed.</p>
+<p>How does one plan for business-level success when designing a project? This is a complicated question with no single right answer, however, this is often where the creative beauty of project design comes into play. To do this well, you will want to engage with stakeholders to identify opportunities for business value based on an understanding of the organisation’s strategy, therefore the identification of business-level goals should be thought of as a collaborative effort between the data scientist and the business partner.</p>
+<p>Naturally, projects must be feasible in order to generate business value. Thus when defining the business case in Phase 1 (Chapter 4), you will often find yourself moving between high-level discussions about what sorts of outcomes would be useful to the organisation and more concrete discussions about feasibility in terms of objectives, budget, data availability and appetite for risk. We discuss ways to drive this conversation during the stages of project design in Chapter 4.</p>
+<p>In the best cases, the business value generated from a project can be expressed in concrete terms: increased revenue, time saved or measurable increases in customer satisfaction are a few examples. Exactly how a project’s outcome results in changes to these values is often confounded by other factors. In other words, your data science project will likely be one of many factors that, collectively, have an effect on revenue or costs. Therefore, defining KPIs (Key Performance Indicators) that can accurately and quantifiably assess the impact of your work in an isolated environment will help when assessing your project’s value at the business level. We recommend that you work with your client or internal stakeholders to identify the relevant KPIs during the design stages of your project. This is covered in Chapter 4.2.1 in more detail.</p>
+<p>For a more detailed discussion of this topic, we recommend <a href="https://www.oreilly.com/radar/what-you-need-to-know-about-product-management-for-ai/" target="_blank">this piece by Peter Skomoroch and Mike Loukides</a>.</p>
+<p>Sometimes the business value from a project cannot be measured in an objective way. Indeed, the value of exploratory and proof-of-concept projects is often in the knowledge generated or insights into the potential for future investments. For example, many of our clients undertake proof-of-concept projects in order to answer specific questions such as, “Is it worth it for us to invest in hiring a data science team to take this work further?” While it’s hard to place a dollar value on generating a reliable answer to this question, the value is certainly high given the strategic aspirations of the client.</p>
+<p>One way to assess a project’s value in such cases is to align it to the stakeholder’s OKRs (Objectives and Key Results; see accompanying text box).</p>
+<div class="infobox">
+<p><strong>OKRs and business goals</strong></p>
+<p>The OKR framework is a system by which a company aligns priorities across all levels of the organisation. For example, three to five objectives could be set for the organisation as a whole, with multiple concrete, measurable key results attached to each. The idea is that the key results will provide evidence as to what extent the objectives have been met. Each level of the company should go through the process, such that company objectives inform departmental OKRs, which in turn help to define the team and individual OKRs. Thus, everyone in the company can be aligned as to what the business priorities are. Often OKRs are defined, and reviewed, on a quarterly basis.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent <a href="https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence">Gartner study</a>, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.</p>
-<p>With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.</p>
-<p>When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.</p>
-<p>This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.</p>
+<p>Understanding your client’s OKRs can help you to identify key metrics that may be important for assessing a project’s success. For example, your project may be aimed at improving customer insights. Exactly how you would assess the degree to which your project has succeeded is imprecise, and your idea of success may be very different from your client’s. If framed as an objective in an OKR framework, however, you are forced to define a series of key results – measurable outcomes that you can use to assess how you have met the objective. Key results in this example could be, “Define five features that are associated with increased customer churn”, “Build a model that can accurately identify those customers who churned last year 90% of the time” or “Identify which customer segments are most likely to churn.” If your project achieves these key results, you can feel safe in declaring it a success.</p>
+<p>In cases where it really is a struggle to attach metrics to a project’s outcome, consider less tangible benefits to the work. For example, the fact that your client is undertaking a data science project shows that they are adopting a more data-driven approach to their business; while the project itself may not have a tangible ROI (return on investment), this could allow them to position themselves as a data-driven player in the market. In many cases, this resonates with higher-level stakeholders, such as boards of directors or investors. While it may not seem impactful in terms of concrete outcomes, this could certainly have contextual implications such as those outlined in the preceding section.</p>
+<p>Similarly, a common problem we encounter with organisations that are new to data science or advanced analytics is siloed teams that rarely interact. For example, a marketing team may have one set of data, the sales team may have another and the IT department may have still another. Your project’s value could be in bringing these disparate datasets together to generate a more clear picture of the organisation’s data landscape. While it’s hard to place a number on the value of this outcome, it is probably hugely important to the client and would be a critical first step in improving customer insights in the example above.</p>
+<p>Whether thinking in terms of measurable quantities or insight generation, we encourage you to look back at the defined project objectives often and consider whether your work is addressing them. It can be easy to lose sight of the target when immersed in a project – reminding yourself about the project goals can help keep you on track.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-us.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="contextual-level.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="product-level.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

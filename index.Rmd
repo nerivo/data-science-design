@@ -5,7 +5,8 @@ author:
 - "Jonathan Leslie"
 - "Neri Van Otten"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+site: "bookdown::bookdown_site"
+knit: "bookdown::render_book"
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -13,9 +14,17 @@ link-citations: yes
 linestretch: 1.5
 description: "A guide as to how to make data science projects successful."
 output: 
-  html_document:
+  bookdown::gitbook:
     includes:
        in_header: GA_Script.html
+    toc_depth: 3
+    split_by: section
+    number_sections: true
+    split_bib: true
+    config:
+      toc:
+        scroll_highlight: yes
+        collapse: section
 ---
 
 # Welcome {-}

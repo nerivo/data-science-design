@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Designing and Building Data Science Solutions</title>
+  <title>3.3 Phase 3: Scoping. | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="3.3 Phase 3: Scoping. | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="3.3 Phase 3: Scoping. | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-us.html"/>
+<link rel="prev" href="phase-2-define-success-.html"/>
+<link rel="next" href="phase-4-project-definition.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,27 +163,27 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Designing and Building Data Science Solutions</h1>
-<h2 class="subtitle"><em>A Practical Guide</em></h2>
-<p class="author"><em>Jonathan Leslie</em></p>
-<p class="author"><em>Neri Van Otten</em></p>
-<p class="date"><em>2020-07-23</em></p>
+<div id="phase-3-scoping." class="section level2">
+<h2><span class="header-section-number">3.3</span> Phase 3: Scoping.</h2>
+<p>This is the phase where we start to look at and clean some data and test some of our hypotheses and assumptions. Note that this is not a proof of concept and should not be treated as such. This phase has no concrete deliverables and is more open-ended. We get access to some data and start manipulating it. The main goal of this exercise is to get a clearer understanding of the problem and get an initial understanding of what a solution would look like. Start with the data, is it in a clean usable format? If not what manual/automated effort would be required in order to get the data in a usable format? How complex are the transformations required? And if you do have usable data, what abnormalities does the data set have? What do the distributions look like? Is the dataset uniformly distributed or is it sparse and does it have a lot of outliers?</p>
+<div class="infobox">
+<p>Getting access to data can often be a challenge due to security policies governing the data. There are many ways of making data access secure so work with the data administrators to work out a safe and secure plan that works for them. I have personally had to sit in data rooms with no internet access, have had encrypted laptops sent to me and have worked with countless VPN and cloud-based servers that restricted access based on multi-factor authentication. For some industries, I have even had to go through extensive background checks. There are often quite a few hurdles to jump through.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent <a href="https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence">Gartner study</a>, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.</p>
-<p>With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.</p>
-<p>When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.</p>
-<p>This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.</p>
+<p>What defines clean data can vary greatly across professions and industries. For some people, hundreds of differently structured excel files that are human-readable would be considered clean data while for data scientists this would require a substantial investment to merge all of the files in order for them to be a coherent whole. The same applies to databases or data warehouses. Even though data can be easily accessed via a database querying language, that doesn’t necessarily mean that the data is clean. There could be loads of duplicates or missing data that needs manual sorting through.</p>
+<p>The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. We are dealing with a scientific question that relies on several assumptions, so the more we can validate these assumptions the better we will be able to predict the eventual outcome of the overall project. One common assumption is that having sufficient data will automatically lead to predictive power. The size of your dataset sadly doesn’t indicate how good the individual features are at predicting a specific behaviour. It is also good to remember that <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4" target="_blank">data alone isn’t ground truth</a>.</p>
+<p>It is essential that this phase is time-boxed, for example, a 2-week POC (Proof of Concept) for research projects or just a couple of hours to look through data. This allows the team to focus their efforts on the most pressing concerns without starting to implement the entire project. <strong>The goal is not to get started but rather to reduce risk and explore possible solutions.</strong> In software engineering, this is often done in the form of a design sprint. In data science, we can also work in sprints but the process is slightly different as we need to validate a hypothesis, and so the process is far more scientific. Doing this work beforehand helps us drastically reduce uncertainties and even guarantees that projects that are doomed to fail don’t even get started. If at this stage we discover there is insufficient or insignificant data to reach the goal then we can go back and collect more data and delay the project until its goals are achievable.</p>
+<p>The reader might think that doing this phase is hindering the project – delaying it from really getting started and providing little in the way of tangible outcomes. In our experience, this is absolutely untrue: when we scope out a project we can more accurately predict what the ultimate outcome will be and what resources are needed to achieve the end goal. This translates into less risk for clients and data scientists alike. Being able to quickly demonstrate progress or build a basic proof-of-concept reassures all stakeholders that the project will be successful. This also stops us from adding large margins to project proposals to combat the uncertainty and ultimately delivers project proposals that better reflect reality, which is better for all stakeholders involved. We have personally had a 100% success rate of winning project proposals as an independent consultant once we embarked on this stage. The reason is clear, having had time to scope out the project our proposal was more competitive as we didn’t have the need to add large margins for project uncertainty.</p>
+<p>It is essential to note that general engineering projects differ from data science projects. Data science projects need to be scientifically correct and for this, you need to follow a scientific process. It is not enough to make a library call to train a model and assume it will perform a certain way just because you tested a few cases. Models you create need to be robust or you will get large varying results that cannot be explained. Making models robust to outliers is an important step in modelling. So be warned, it is not enough for somebody to have used a machine learning library in the past, they should be capable of following a scientific process required to build what is necessary for a data science project to succeed.</p>
+<p>In this phase, it is also essential to start thinking about testing. How will you test your final solution? Can you use TDD (test-driven development)? This strategy requires you to set up extensive test cases now that you will use to validate your final solution later. Doing this will let you think through the problem more clearly and actually write down what criteria the end result will adhere to.</p>
+<p>The last thing to consider in this phase is that you might not get the desired outcome. It is essential that you allow the scoping project to fail if need be. At the very least you saved yourself from failing at a larger scale. Most probably you will discover shortcomings that will not allow the project to be successful. How can these issues be addressed? Can more data be collected, can the data be enriched with another source or can data be cleaned even further to get a better sample? A valid outcome is to make a good recommendation as to how the project can still be successful by doing other work. For example, can clickstream data be collected from the website if there are insufficient orders to make decent recommendations for customers who have never bought an item?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-us.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-2-define-success-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phase-4-project-definition.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

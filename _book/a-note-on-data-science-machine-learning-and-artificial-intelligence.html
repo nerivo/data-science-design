@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Designing and Building Data Science Solutions</title>
+  <title>1.2 A note on data science, machine learning and artificial intelligence | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="1.2 A note on data science, machine learning and artificial intelligence | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="1.2 A note on data science, machine learning and artificial intelligence | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-us.html"/>
+<link rel="prev" href="the-challenges-when-embarking-on-a-data-science-project.html"/>
+<link rel="next" href="our-framework.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,27 +163,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Designing and Building Data Science Solutions</h1>
-<h2 class="subtitle"><em>A Practical Guide</em></h2>
-<p class="author"><em>Jonathan Leslie</em></p>
-<p class="author"><em>Neri Van Otten</em></p>
-<p class="date"><em>2020-07-23</em></p>
+<div id="a-note-on-data-science-machine-learning-and-artificial-intelligence" class="section level2">
+<h2><span class="header-section-number">1.2</span> A note on data science, machine learning and artificial intelligence</h2>
+<p>“Data science”, “machine learning” and “artificial intelligence” are terms that can be used in imprecise ways and can have overlapping meanings. Many will be familiar with the phenomenon of a job advertisement that is billed as a data scientist role but in reality is more of a data analyst or an IT specialist. AI is perhaps the most liberally-used of the terms, sure to increase one’s chances of writing a successful grant application or tender for a piece of work. It is safe to say that all of these terms can be susceptible to over-hype, and the choice of which to use often appears as a matter of marketing.</p>
+<p>But there are differences between them and it’s important to understand what those differences are. One of our <a href="http://varianceexplained.org/r/ds-ml-ai/" target="_blank">favourite discussions about how these terms relate to one another comes from David Robinson</a>:</p>
+<ul>
+<li><strong>Data science</strong> produces <strong>insights</strong></li>
+<li><strong>Machine learning</strong> produces <strong>predictions</strong></li>
+<li><strong>Artificial intelligence</strong> produces <strong>actions</strong></li>
+</ul>
+<p>To expand on this slightly, the goal of data science work is to gain insights and understanding into data. While the numerical patterns revealed may be clear and objective, the way these findings are interpreted requires a human in the loop. One way it differs from machine learning is that data science doesn’t necessarily involve modelling. We would also argue that it doesn’t necessarily involve coding or programming: there are plenty of data scientists that combine domain expertise with statistical inference using spreadsheets to acquire valuable insight.</p>
+<p>Machine learning extends data analytics into the realm of predictive modelling. This can be done in a highly automated way, although no machine learning system should be allowed to impact decision-making without a human in the loop. Machine learning models can range in complexity and interpretability. For example, linear regression is at the straight-forward end of the spectrum, so much so that many do not consider it machine learning at all. Deep learning models reside at the opposite end of the spectrum, with inner workings that are so opaque that it is essentially impossible to understand how the model makes its predictions. The difference between data science and machine learning is clearly not black and white but rather a spectrum or two domains that tend to overlap.</p>
+<br/>
+<center>
+<div class="figure"><span id="fig:xkcd-fig"></span>
+<img src="figures/xkcd.png" alt="(ref:xkcd)" width="50%" />
+<p class="caption">
+Figure 1.1: (ref:xkcd)
+</p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent <a href="https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence">Gartner study</a>, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.</p>
-<p>With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.</p>
-<p>When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.</p>
-<p>This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.</p>
+</center>
+<p>xkcd.com Machine Learning</p>
+<p>Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning.</p>
+<p>For the purpose of the book, we use the term data science throughout, just because we feel that this most accurately represents the type of projects we tackle but the reader can substitute the term with machine learning or artificial intelligence to suit their own needs.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-us.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-challenges-when-embarking-on-a-data-science-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="our-framework.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

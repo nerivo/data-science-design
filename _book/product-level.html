@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Designing and Building Data Science Solutions</title>
+  <title>2.3 Product level | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="2.3 Product level | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="2.3 Product level | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-us.html"/>
+<link rel="prev" href="business-level.html"/>
+<link rel="next" href="project-process-level.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,27 +163,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Designing and Building Data Science Solutions</h1>
-<h2 class="subtitle"><em>A Practical Guide</em></h2>
-<p class="author"><em>Jonathan Leslie</em></p>
-<p class="author"><em>Neri Van Otten</em></p>
-<p class="date"><em>2020-07-23</em></p>
-</div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent <a href="https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence">Gartner study</a>, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.</p>
-<p>With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.</p>
-<p>When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.</p>
-<p>This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.</p>
+<div id="product-level" class="section level2">
+<h2><span class="header-section-number">2.3</span> Product level</h2>
+<p>The product level is concerned with the deliverables themselves and whether they meet the technical requirements of the project. In data science, this could include factors such as model performance or robustness, the accuracy of predictions or the performance of a data product such as a dashboard or interactive visualisation. It may also correspond to the code base and reports; it is important that these meet the requirements and expectations of a project’s stakeholders. One of the most frustrating project outcomes is the delivery of a fantastic code base that the rest of the company does not know how to use: while the project may have succeeded on a project process level (discussed below), it may not be useful on a product level.</p>
+<p>Consider, for example, a project where the final deliverable is a productionised solution, such as a recommendation engine. Naturally, the ability to make accurate recommendations is crucial. This should be evaluated empirically, with a metric such as <a href="mailto:MAP@K" class="email">MAP@K</a> (mean average precision at K). You will want to test it on a subset of actual customers and compare its performance to a benchmark of previously used models using an A/B test. You will also likely want to include a functionality that measures <a href="mailto:MAP@K" class="email">MAP@K</a> going forward and integrate a model retraining protocol that will be activated (automatically or manually) when the metric dips below a certain threshold. For the recommendation engine to work efficiently, it will have to be integrated into the larger data infrastructure of the client’s system, so your product will also include the plumbing that connects it. For instance, your recommendation engine could be contained in an API. How that API is built and the structure of data coming in and out of it are important considerations, as is the speed with which the API can communicate with the rest of the system. These are a few examples of the considerations that fall under product-level evaluation.</p>
+<p>Success at this level also corresponds to more granular aspects of your delivered product, such as the code base itself and associated documentation. Rarely are products intended to be completely static, rather they need to be updated, modified and looked after. It’s likely that you won’t be the person who does this in the future so it is your responsibility as the product designer and creator to ensure that you leave your software in a state that others can work with, including future you. Complicated, cryptic and brittle code will make that difficult. If you take pride in your work (and you should!), leaving your project in a fit state is essential.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-us.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="business-level.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="project-process-level.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

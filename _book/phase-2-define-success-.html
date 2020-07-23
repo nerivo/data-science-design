@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Designing and Building Data Science Solutions</title>
+  <title>3.2 Phase 2: Define success. | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="3.2 Phase 2: Define success. | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="3.2 Phase 2: Define success. | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-us.html"/>
+<link rel="prev" href="phase-1-define-the-business-casequestion.html"/>
+<link rel="next" href="phase-3-scoping-.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -163,27 +163,84 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Designing and Building Data Science Solutions</h1>
-<h2 class="subtitle"><em>A Practical Guide</em></h2>
-<p class="author"><em>Jonathan Leslie</em></p>
-<p class="author"><em>Neri Van Otten</em></p>
-<p class="date"><em>2020-07-23</em></p>
+<div id="phase-2-define-success." class="section level2">
+<h2><span class="header-section-number">3.2</span> Phase 2: Define success.</h2>
+<p>After going through Phase 1, you and your client/manager should have a clear picture of what the main objectives of the project are. Now it’s time to narrow in on some details. In this phase, you will address specific requirements to make sure that you and your client/manager agree on what a successful outcome will look like in concrete terms.</p>
+<p>As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is all about negotiation, negotiate with the different parties until you get everybody to align to the same vision. Note that without alignment you can’t proceed, if you do proceed by choosing to align to the main stakeholder, the other stakeholders will be hostile towards you and the project. If there really is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.</p>
+<p>When fleshing out your feature list, It can be useful to make two different lists, one with the must-have requirements and one with the nice to have. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements.</p>
+<p>At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?</p>
+<p>In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter 3 and define success on the four different levels; the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent.</p>
+<p>Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.</p>
+<div id="key-performance-indicator-kpi" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Key Performance Indicator (KPI)</h3>
+<div class="infobox">
+<p><strong>Definition</strong></p>
+<p>A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent <a href="https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence">Gartner study</a>, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.</p>
-<p>With this guide, we wish to de-risk the process and help practitioners succeed by providing a step-through guide on how to best tackle the entire process from designing to delivering a successful project. This guide can also be useful for managers, executives and project managers, they will gain insight into how the entire data science project process works.</p>
-<p>When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.</p>
-<p>This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.</p>
+<p>KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:</p>
+<ul>
+<li>What is your desired outcome?</li>
+<li>Why does this outcome matter?</li>
+<li>How are you going to measure progress?</li>
+<li>How can you influence the outcome?</li>
+<li>Who is responsible for the business outcome?</li>
+<li>How will you know you’ve achieved your outcome?</li>
+<li>How often will you review progress towards the outcome?</li>
+</ul>
+<p>One way to evaluate the relevance of a performance indicator is to use <a href="http://en.wikipedia.org/wiki/SMART_criteria" target="_blank">the SMART criteria</a>. The letters are typically taken to stand for <strong>Specific, Measurable, Attainable, Relevant, Time-bound</strong>. In other words:</p>
+<ul>
+<li>Is your objective <strong>Specific</strong>?</li>
+<li>Can you <strong>Measure</strong> progress towards that goal?</li>
+<li>Is the goal realistically <strong>Attainable</strong>?</li>
+<li>How <strong>Relevant</strong> is the goal to your organization?</li>
+<li>What is the <strong>Time-frame</strong> for achieving this goal?</li>
+</ul>
+</div>
+<div id="feasibility-study" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Feasibility Study</h3>
+<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of an existing business to uncover the opportunities and threats present that will ultimately lead to project success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibility.</p>
+<div id="technical-feasibility" class="section level4">
+<h4><span class="header-section-number">3.2.2.1</span> Technical Feasibility</h4>
+<p>The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.</p>
+<p>This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken to consideration:</p>
+<ul>
+<li>A brief description of the business to assess more possible factors which could affect the study</li>
+<li>The part of the business being examined</li>
+<li>The human and economic factor</li>
+<li>The possible solutions to the problem</li>
+<li>Methods of producing the solution</li>
+<li>Detailed project requirements</li>
+</ul>
+<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it’s technically possible to do so.</p>
+</div>
+<div id="economic-feasibility" class="section level4">
+<h4><span class="header-section-number">3.2.2.2</span> Economic Feasibility</h4>
+<p>An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
+serves as an independent project assessment and enhances project
+credibility—helping decision makers determine the positive economic benefits to the organization that the proposed project will provide.</p>
+</div>
+<div id="legal-feasibility" class="section level4">
+<h4><span class="header-section-number">3.2.2.3</span> Legal Feasibility</h4>
+<p>The legal feasibility assessment investigates whether any aspect of the proposed project conflicts with legal requirements like zoning laws, data protection acts, or social media laws. Let’s say an organization wants to store customer information for the use in a recommendation engine on their e-commerce site. A feasibility study might reveal that the laws governing this data differ depending on where the customer is located. Therefore, simply storing this data isn’t possible and a more in depth analysis of the law needs to be made and different data stored for different customers. This might mean that the recommendation engine isn’t feasible for the organisation right now as this would add extra costs and technical difficulty.</p>
+</div>
+<div id="operational-feasibility" class="section level4">
+<h4><span class="header-section-number">3.2.2.4</span> Operational Feasibility</h4>
+<p>The operational feasibility study involves undertaking a study to analyze and determine whether—and how well—the organization’s needs can be met by completing the project. Operational feasibility studies also analyze how a project plan satisfies the requirements identified in the requirements analysis phase of system development.</p>
+<p>To ensure success, desired operational outcomes must be imparted during design and development. These include such design-dependent parameters as reliability, maintainability, supportability, usability, producibility, disposability, sustainability, affordability and others. These parameters are required to be considered at the early stages of design if desired operational behaviours are to be realised. A system design and development requires appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters. A system may serve its intended purpose most effectively when its technical and operating characteristics are engineered into the design. Therefore, operational feasibility is a critical aspect of systems engineering that needs to be an integral part of the early design phases</p>
+</div>
+<div id="scheduling-feasibility" class="section level4">
+<h4><span class="header-section-number">3.2.2.5</span> Scheduling Feasibility</h4>
+<p>The scheduling feasibility assessment is the most important study for the project’s success; after all a project that is delivered too late to be useful is an automatic failure. In this study we estimate how long the system will take to develop, and if it can be completed in a given time period. Time feasibility is a measure of how reasonable the project timetable is. Given our technical expertise, are the project deadlines reasonable? Some projects are initiated with specific deadlines. It is necessary to determine whether the deadlines are mandatory or desirable.</p>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-us.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-1-define-the-business-casequestion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phase-3-scoping-.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
