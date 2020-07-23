@@ -12,6 +12,10 @@ biblio-style: apalike
 link-citations: yes
 linestretch: 1.5
 description: "A guide as to how to make data science projects successful."
+output: 
+  html_document:
+    includes:
+       in_header: GA_Script.html
 ---
 
 # Welcome {-}
