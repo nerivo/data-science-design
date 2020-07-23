@@ -40,11 +40,11 @@ A common pre-conception is that artificial intelligence is complicated and canno
 
 Machine learning models at the core are mathematical models, data is manipulated through a series of mathematical operations. These operations aren’t random but should be well chosen to produce favourable results. Understanding this process lets you understand the limitations and the overall behaviour of the model. Once this is properly understood, one can make deliberate changes that improve the model overall, remove bias or simply deal better with outliers that had been neglected previously.
 
-::: {.infobox}
+<div class="infobox">
 **What is open source**
 
 Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.
-:::
+</div>
 
 As a side note be aware when choosing your machine learning toolkit. When using closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that data scientists will lose visibility and the ability to understand the system fully.
 
@@ -69,11 +69,11 @@ Most companies will already be working with a way to keep track of and define su
 
 ### Key Performance Indicator (KPI)
 
-::: {.infobox}
+<div class="infobox">
 **Definition**
 
 A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.
-:::
+</div>
 
 KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:
 
@@ -129,9 +129,9 @@ The scheduling feasibility assessment is the most important study for the projec
 ## Phase 3: Scoping.
 This is the phase where we start to look at and clean some data and test some of our hypotheses and assumptions. Note that this is not a proof of concept and should not be treated as such. This phase has no concrete deliverables and is more open-ended. We get access to some data and start manipulating it. The main goal of this exercise is to get a clearer understanding of the problem and get an initial understanding of what a solution would look like. Start with the data, is it in a clean usable format? If not what manual/automated effort would be required in order to get the data in a usable format? How complex are the transformations required? And if you do have usable data, what abnormalities does the data set have? What do the distributions look like? Is the dataset uniformly distributed or is it sparse and does it have a lot of outliers?
 
-::: {.infobox}
+<div class="infobox">
 Getting access to data can often be a challenge due to security policies governing the data. There are many ways of making data access secure so work with the data administrators to work out a safe and secure plan that works for them. I have personally had to sit in data rooms with no internet access, have had encrypted laptops sent to me and have worked with countless VPN and cloud-based servers that restricted access based on multi-factor authentication. For some industries, I have even had to go through extensive background checks. There are often quite a few hurdles to jump through.
-:::
+</div>
 
 What defines clean data can vary greatly across professions and industries. For some people, hundreds of differently structured excel files that are human-readable would be considered clean data while for data scientists this would require a substantial investment to merge all of the files in order for them to be a coherent whole. The same applies to databases or data warehouses. Even though data can be easily accessed via a database querying language, that doesn’t necessarily mean that the data is clean. There could be loads of duplicates or missing data that needs manual sorting through. 
 
@@ -173,11 +173,11 @@ If you are creating a system, remember to deploy the solution according to the p
 
 For the long term success of any project, it is essential that there is also a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. Model  How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?
 
-::: {.infobox}
+<div class="infobox">
 **The concept ‘drift’ explained**
 
 In most challenging data analysis applications, data evolve over time and must be analyzed in near real-time. Patterns and relations in such data often evolve over time, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.
-:::
+</div>
 
 Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location then a developer making changes would need to remember to also update the documentation. 
 

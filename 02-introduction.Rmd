@@ -29,7 +29,7 @@ Machine learning extends data analytics into the realm of predictive modelling. 
 
 <br/>
 <center>
-```{r bottom-fig, fig.cap='(ref:fig2)', out.width='50%', fig.show='hold', echo=FALSE}
+```{r xkcd-fig, fig.cap='(ref:xkcd)', out.width='50%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/xkcd.png', 1))
 ```
 </center>

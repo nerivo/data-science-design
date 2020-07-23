@@ -5,6 +5,7 @@
 \documentclass[
 ]{book}
 \usepackage{lmodern}
+\usepackage{setspace}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -36,8 +37,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Designing and Building Data Science Solutions: A Practical Guide},
-  pdfauthor={Jonathan Leslie and Neri Van Otten},
+  pdftitle={Designing and Building Data Science Solutions},
+  pdfauthor={Jonathan Leslie; Neri Van Otten},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -71,8 +72,15 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Designing and Building Data Science Solutions: A Practical Guide}
-\author{Jonathan Leslie and Neri Van Otten}
+\title{Designing and Building Data Science Solutions}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{A Practical Guide}
+\author{Jonathan Leslie \and Neri Van Otten}
 \date{2020-07-23}
 
 \begin{document}
@@ -82,6 +90,7 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\setstretch{1.5}
 \hypertarget{welcome}{%
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
@@ -134,6 +143,37 @@ Project design is difficult: it can be loosely structured and often has no singl
 
 We often think of data science as a process by which we frame a business problem as a scientific question and apply scientific methodologies to answer that question and derive insights. But how do we identify the business question in the first place? As a data scientist, a good first step is to ask different stakeholders. Yet in our experience, this can often be an unsatisfying approach: more often than not, our clients/managers will not have a clearly-defined business problem or a concrete objective for the project. We believe our framework can help drive this conversation, setting the stage for well-planned project design and giving projects the best chances for success.
 
+\hypertarget{a-note-on-data-science-machine-learning-and-artificial-intelligence}{%
+\section{A note on data science, machine learning and artificial intelligence}\label{a-note-on-data-science-machine-learning-and-artificial-intelligence}}
+
+``Data science'', ``machine learning'' and ``artificial intelligence'' are terms that can be used in imprecise ways and can have overlapping meanings. Many will be familiar with the phenomenon of a job advertisement that is billed as a data scientist role but in reality is more of a data analyst or an IT specialist. AI is perhaps the most liberally-used of the terms, sure to increase one's chances of writing a successful grant application or tender for a piece of work. It is safe to say that all of these terms can be susceptible to over-hype, and the choice of which to use often appears as a matter of marketing.
+
+But there are differences between them and it's important to understand what those differences are. One of our \href{http://varianceexplained.org/r/ds-ml-ai/}{favourite discussions about how these terms relate to one another comes from David Robinson}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data science} produces \textbf{insights}
+\item
+  \textbf{Machine learning} produces \textbf{predictions}
+\item
+  \textbf{Artificial intelligence} produces \textbf{actions}
+\end{itemize}
+
+To expand on this slightly, the goal of data science work is to gain insights and understanding into data. While the numerical patterns revealed may be clear and objective, the way these findings are interpreted requires a human in the loop. One way it differs from machine learning is that data science doesn't necessarily involve modelling. We would also argue that it doesn't necessarily involve coding or programming: there are plenty of data scientists that combine domain expertise with statistical inference using spreadsheets to acquire valuable insight.
+
+Machine learning extends data analytics into the realm of predictive modelling. This can be done in a highly automated way, although no machine learning system should be allowed to impact decision-making without a human in the loop. Machine learning models can range in complexity and interpretability. For example, linear regression is at the straight-forward end of the spectrum, so much so that many do not consider it machine learning at all. Deep learning models reside at the opposite end of the spectrum, with inner workings that are so opaque that it is essentially impossible to understand how the model makes its predictions. The difference between data science and machine learning is clearly not black and white but rather a spectrum or two domains that tend to overlap.
+
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{figures/xkcd} \caption{(ref:xkcd)}\label{fig:xkcd-fig}
+\end{figure}
+
+xkcd.com Machine Learning
+
+Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning.
+
+For the purpose of the book, we use the term data science throughout, just because we feel that this most accurately represents the type of projects we tackle but the reader can substitute the term with machine learning or artificial intelligence to suit their own needs.
+
 \hypertarget{our-framework}{%
 \section{Our framework}\label{our-framework}}
 
@@ -157,7 +197,7 @@ When approaching a data science project, we often look to the end: knowing what 
 
 In early conversations with a stakeholder, you may have agreed upon a certain set of outcomes and deliverables for the project based on the circumstances and understanding at the time. However, circumstances can change. Similarly, simply because you have achieved a predetermined goal for a project does not necessarily mean that this goal is the best outcome for the business. Part of our jobs as data scientists, especially if tasked with designing a project, is to understand what the business needs and help stakeholders clearly see what is the most beneficial. Thus, simply focusing on deliverables falls short when assessing how successful a project has been. Similarly, we often find that while we may not find exactly what we expect, we almost always come up with something valuable.
 
-Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend reading the paper.)
+Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed context, business, product and project process (**ref; Figure 1). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend \href{https://www.researchgate.net/publication/263164826_The_four-level_project_success_framework_application_and_assessment}{reading the paper}.)
 
 
 
@@ -603,84 +643,77 @@ On the other hand, if the project is exploratory, if your client/manager is just
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-\begin{minipage}[b]{0.23\columnwidth}\raggedright
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
 Pricing\strut
-\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
 Potential\_benefits\strut
-\end{minipage} & \begin{minipage}[b]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.35\columnwidth}\raggedright
 Risks\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
 Under-budgeting\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
 \begin{itemize}
 \tightlist
 \item
-  Your proposal may
-  be more attractive
-  to the stakeholders.
+  Your proposal may be
+  more attractive to the
+  stakeholders.
 \item
-  The potential to
-  show your
-  client/manager good
+  The potential to show
+  your client/manager good
   value-for-money
 \item
-  Get a ``foot in
-  the
-  door''/opportunity
-  to prove yourself
+  Get a ``foot in the
+  door''/opportunity to
+  prove yourself
 \end{itemize}\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
 \begin{itemize}
 \tightlist
 \item
-  Your
-  client/manager may
-  be sceptical that
-  you can deliver
-  -You may not be
-  able to deliver
+  Your client/manager may
+  be sceptical that you can
+  deliver
+  -You may not be able to
+  deliver
 \item
-  You are
-  vulnerable to
+  You are vulnerable to
   expected problems
 \item
   Setting the
-  expectation too low
-  for the follow on
-  work (assuming you
-  get it)
+  expectation too low for
+  the follow on work
+  (assuming you get it)
 \end{itemize}\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.23\columnwidth}\raggedright
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
 Over-budgeting\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
 \begin{itemize}
 \tightlist
 \item
-  Extra time padding
-  can give you a
-  greater chance of
-  success
+  Extra time padding can
+  give you a greater chance
+  of success
 \item
   Greater chance of
   overdelivering and
   delighting the
   client/manager
 \item
-  Greater chance of
-  more work, due to
-  happy client/manager
+  Greater chance of more
+  work, due to happy
+  client/manager
 \end{itemize}\strut
-\end{minipage} & \begin{minipage}[t]{0.29\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[t]{0.35\columnwidth}\raggedright
 \begin{itemize}
 \tightlist
 \item
-  Your price may be
-  too high/losing the
-  work
+  Your price may be too
+  high/losing the work
 \end{itemize}\strut
 \end{minipage}\tabularnewline
 \bottomrule
