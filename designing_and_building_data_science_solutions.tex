@@ -73,7 +73,7 @@
 
 \title{Designing and Building Data Science Solutions: A Practical Guide}
 \author{Jonathan Leslie and Neri Van Otten}
-\date{2020-07-22}
+\date{2020-07-23}
 
 \begin{document}
 \maketitle
@@ -130,7 +130,7 @@ In this book, we share our learnings about sensible approaches to designing data
 
 For data scientists who are new to the field, perhaps the single most challenging aspect of the role is not technical but rather conceptual: learning how to design a successful data science project. Often this means breaking down a complex business case into concrete objectives and specific questions. In our roles as mentors and project managers, we too-often see data scientists attack an analysis without first identifying the underlying questions. These can be specific questions about the scientific approach -- ``What is the hypothesis of this experiment?'' or ``What statistical question am I asking my model to answer? -- to more general ones, such as, ``Why are we doing this?'', ``What is an ideal outcome?'', ``What would constitute a failure?'' or ``What is the business problem we are trying to solve?'' As we tell our mentees, this approach is like building a house without a blueprint: you might hammer together some bits of wood in a useful way, but without understanding the objectives of the project as a whole, success is essentially impossible.
 
-Project design is difficult: it can be loosely structured and often has no single correct answer. This can often be disorienting. How-best to approach this task has been considered and discussed often, and many learnings have been derived from the methodologies found in fields such as product design or design engineering. For an excellent discussion of this topic, we recommend a recent series of \href{http://nssdeviations.com/108-it-depends}{the podcast Not So Standard Deviations}, in which hosts Roger Peng and Hilary Parker discuss the Nigel Cross book \href{https://www.amazon.co.uk/Design-Thinking-Understanding-Designers-Blac14/dp/1847886361/ref=sr_1_2?keywords=Nigel+Cross+book+Design+Thinking\&qid=1576333690\&sr=8-2}{Design Thinking} and draw parallels to applications in data science.
+Project design is difficult: it can be loosely structured and often has no single correct answer. This can often be disorienting. How-best to approach this task has been considered and discussed often, and many learnings have been derived from the methodologies found in fields such as product design or design engineering. For an excellent discussion of this topic, we recommend eppisodes 63 - 70 of the podcast \href{http://nssdeviations.com/}{Not So Standard Deviations}, in which hosts Roger Peng and Hilary Parker discuss the Nigel Cross book \href{https://www.amazon.co.uk/Design-Thinking-Understanding-Designers-Blac14/dp/1847886361/ref=sr_1_2?keywords=Nigel+Cross+book+Design+Thinking\&qid=1576333690\&sr=8-2}{Design Thinking} and draw parallels to applications in data science.
 
 We often think of data science as a process by which we frame a business problem as a scientific question and apply scientific methodologies to answer that question and derive insights. But how do we identify the business question in the first place? As a data scientist, a good first step is to ask different stakeholders. Yet in our experience, this can often be an unsatisfying approach: more often than not, our clients/managers will not have a clearly-defined business problem or a concrete objective for the project. We believe our framework can help drive this conversation, setting the stage for well-planned project design and giving projects the best chances for success.
 
@@ -144,7 +144,7 @@ Our framework has two related components: \textbf{project execution} and \textbf
 
 This book is divided into two parts. In Part 1 we discuss our approach to designing and executing data science projects. Chapter \ref{levels} covers the four levels of project evaluation in more detail and provides examples of how to assess each. In Chapter \ref{phases} we move on to the phases of project delivery. Two of these phases are then explored in more detail: Project Definition (Chapter \ref{definition}) and Project Execution (Chapter \ref{execution}).
 
-Part 2 focuses on offering more concrete, practical advice. In Chapter \ref{example} we provide an example of a project proposal that we might use when working with a client to define a project. Chapter \ref{whatif} covers our advice how to navigate different ``what-if'' situations and is currently under active development. Chapter \ref{consulting} is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work. Chapter \ref{help} lists some useful resources for where you can find help in the wider data science community.
+Part 2 focuses on offering more concrete, practical advice. In Chapter \ref{example} we provide an example of a project proposal that we might use when working with a client to define a project. Chapter \ref{consulting} is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work. Chapter \ref{help} lists some useful resources for where you can find help in the wider data science community.
 
 \hypertarget{part-part-i}{%
 \part*{Part I}\label{part-part-i}}
@@ -1218,12 +1218,29 @@ Those who are employed in permanent positions, in contrast to independent contra
 
 A number of kind and generous data professionals make themselves available to help others. Three of our favourite collections are:
 
-Data Helpers by Angela Bassa (a list of people who are happy to help and mentor data scientists)
-\url{https://www.datahelpers.org/}
-Stephanie Hurlburt's lists of engineers willing to offer mentorship
-\url{http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you}
-\url{https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/})
-The R for Data Science Online Learning Community, where R users and learners can find one another and share ideas (\url{https://www.rfordatasci.com/}).
+\begin{itemize}
+\tightlist
+\item
+  Data Helpers by Angela Bassa (a list of people who are happy to help and mentor data scientists)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://www.datahelpers.org/}
+  \end{itemize}
+\item
+  Stephanie Hurlburt's lists of engineers willing to offer mentorship
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you}
+  \item
+    \url{https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/}
+  \end{itemize}
+\item
+  The R for Data Science Online Learning Community, where R users and learners can find one another and share ideas (\url{https://www.rfordatasci.com/}).
+\end{itemize}
 
 The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise\ldots don't be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another.
 

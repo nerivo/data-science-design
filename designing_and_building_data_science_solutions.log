@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.22)  22 JUL 2020 20:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.7.22)  23 JUL 2020 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,9 +770,6 @@ LaTeX Warning: Reference `execution' on page 9 undefined on input line 145.
 LaTeX Warning: Reference `example' on page 9 undefined on input line 147.
 
 
-LaTeX Warning: Reference `whatif' on page 9 undefined on input line 147.
-
-
 LaTeX Warning: Reference `consulting' on page 9 undefined on input line 147.
 
 
@@ -812,10 +809,10 @@ Type  H <return>  for immediate help.
 l.231 \begin{infobox}
                       
 Here is how much of TeX's memory you used:
- 16881 strings out of 481704
- 297971 string characters out of 5929986
+ 16880 strings out of 481704
+ 297963 string characters out of 5929986
  728341 words of memory out of 5000000
- 33767 multiletter control sequences out of 15000+600000
+ 33766 multiletter control sequences out of 15000+600000
  538694 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,6n,118p,1358b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
