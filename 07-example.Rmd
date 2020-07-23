@@ -40,6 +40,7 @@ We outline the plan for this project in below.
 <center>**Objective 1: Customer insights**</center>
 
 ```{r echo=FALSE}
+
 mytable = data.frame(
     'Milestone'     = c("Milestone 1", "Milestone 2"),
     
