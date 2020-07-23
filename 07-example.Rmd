@@ -37,7 +37,6 @@ We outline the plan for this project in below.
 
 <center>**Objective 1: Customer insights**</center>
 
-myt
 ```{r echo=FALSE}
 mytable = data.frame(
     'Milestone'     = c("Milestone 1", "Milestone 2"),
@@ -51,18 +50,18 @@ mytable = data.frame(
 pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
 ```
 
-
+<br/><br/>
 <center>**Objective 2: Product recommendations**</center>
-
 
 ```{r echo=FALSE}
 mytable = data.frame(
-    milestone     = c("", "Milestone 3", "Milestone 4"),
+    'Milestone'     = c("Milestone 3", "Milestone 4"),
     
-    work =c("Work carried out", "- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
-    outcome = c("Outcome/Deliverable", "- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
+    "Work Carried Out" =c("- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
+    "Outcome/Deliverable" = c("- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
 ."),
-    completion = c("Completion date", "End of Week 6", "End of Week 9")
+    "Completion Date" = c("End of Week 6", "End of Week 9"),
+check.names = FALSE
 )
 
 pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
