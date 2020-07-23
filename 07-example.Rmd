@@ -35,31 +35,36 @@ We outline the plan for this project in below.
 
 </center>
 
-**Objective 1: Customer insights**
+<br/>
+
+<center>**Objective 1: Customer insights**</center>
 
 ```{r echo=FALSE}
 mytable = data.frame(
-    milestone     = c("", "Milestone 1", "Milestone 2"),
+    'Milestone'     = c("Milestone 1", "Milestone 2"),
     
-    work =c("Work carried out", "- **Exploratory data analysis** \n - We will explore the data available to support the project.\n - We will ensure that data are accessible and will perform a preliminary analysis with a view to identifying a subset of features that best-suited for cluster analysis in Milestone 2.", "- **Cluster analysis** \n - Using the learnings from Milestone 1, we will experiment with various clustering algorithms. \n - The best candidate will be selected for further improvements."),
-    outcome = c("Outcome/Deliverable", "- A presentation showing the initial findings of relationships between features.\n - A list of features to use for clustering.", "- A GitHub repository containing Python code driving a segmentation model.\n - A report and presentation highlighting findings."),
-    completion = c("Completion date", "End of Week 2", "End of Week 4")
+    'Work\ Carried\ Out' =c("- **Exploratory data analysis** \n - We will explore the data available to support the project.\n - We will ensure that data are accessible and will perform a preliminary analysis with a view to identifying a subset of features that best-suited for cluster analysis in Milestone 2.", "- **Cluster analysis** \n - Using the learnings from Milestone 1, we will experiment with various clustering algorithms. \n - The best candidate will be selected for further improvements."),
+    'Outcome//Deliverables' = c("- A presentation showing the initial findings of relationships between features.\n - A list of features to use for clustering.", "- A GitHub repository containing Python code driving a segmentation model.\n - A report and presentation highlighting findings."),
+    'Completion\ Date' = c("End of Week 2", "End of Week 4"),
+    check.names = FALSE
 )
 
-pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left')
+pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
 ```
 
-**Objective 2: Product recommendations**
+<br/><br/>
+<center>**Objective 2: Product recommendations**</center>
 
 ```{r echo=FALSE}
 mytable = data.frame(
-    milestone     = c("", "Milestone 3", "Milestone 4"),
+    'Milestone'     = c("Milestone 3", "Milestone 4"),
     
-    work =c("Work carried out", "- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
-    outcome = c("Outcome/Deliverable", "- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
+    "Work Carried Out" =c("- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
+    "Outcome/Deliverable" = c("- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
 ."),
-    completion = c("Completion date", "End of Week 6", "End of Week 9")
+    "Completion Date" = c("End of Week 6", "End of Week 9"),
+check.names = FALSE
 )
 
-pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left')
+pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
 ```
