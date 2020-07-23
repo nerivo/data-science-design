@@ -1,13 +1,17 @@
 --- 
-title: "Designing and Building Data Science Solutions: A Practical Guide"
-author: "Jonathan Leslie and Neri Van Otten"
+title: "Designing and Building Data Science Solutions"
+subtitle: "A Practical Guide"
+author:
+- "Jonathan Leslie"
+- "Neri Van Otten"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+linestretch: 1.5
+description: "A guide as to how to make data science projects successful."
 ---
 
 # Welcome {-}

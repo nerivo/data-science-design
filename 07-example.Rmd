@@ -35,6 +35,8 @@ We outline the plan for this project in below.
 
 </center>
 
+<br/>
+
 <center>**Objective 1: Customer insights**</center>
 
 ```{r echo=FALSE}

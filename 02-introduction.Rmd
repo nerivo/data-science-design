@@ -13,6 +13,33 @@ Project design is difficult: it can be loosely structured and often has no singl
 
 We often think of data science as a process by which we frame a business problem as a scientific question and apply scientific methodologies to answer that question and derive insights. But how do we identify the business question in the first place? As a data scientist, a good first step is to ask different stakeholders. Yet in our experience, this can often be an unsatisfying approach: more often than not, our clients/managers will not have a clearly-defined business problem or a concrete objective for the project.  We believe our framework can help drive this conversation, setting the stage for well-planned project design and giving projects the best chances for success. 
 
+## A note on data science, machine learning and artificial intelligence
+
+“Data science”, “machine learning” and “artificial intelligence” are terms that can be used in imprecise ways and can have overlapping meanings. Many will be familiar with the phenomenon of a job advertisement that is billed as a data scientist role but in reality is more of a data analyst or an IT specialist. AI is perhaps the most liberally-used of the terms, sure to increase one’s chances of writing a successful grant application or tender for a piece of work. It is safe to say that all of these terms can be susceptible to over-hype, and the choice of which to use often appears as a matter of marketing. 
+
+But there are differences between them and it’s important to understand what those differences are. One of our [favourite discussions about how these terms relate to one another comes from David Robinson](http://varianceexplained.org/r/ds-ml-ai/){target="_blank"}: 
+
+- **Data science** produces **insights**
+-	**Machine learning** produces **predictions**
+- **Artificial intelligence** produces **actions**
+
+To expand on this slightly, the goal of data science work is to gain insights and understanding into data. While the numerical patterns revealed may be clear and objective, the way these findings are interpreted requires a human in the loop. One way it differs from machine learning is that data science doesn’t necessarily involve modelling. We would also argue that it doesn’t necessarily involve coding or programming: there are plenty of data scientists that combine domain expertise with statistical inference using spreadsheets to acquire valuable insight.
+
+Machine learning extends data analytics into the realm of predictive modelling. This can be done in a highly automated way, although no machine learning system should be allowed to impact decision-making without a human in the loop. Machine learning models can range in complexity and interpretability. For example, linear regression is at the straight-forward end of the spectrum, so much so that many do not consider it machine learning at all. Deep learning models reside at the opposite end of the spectrum, with inner workings that are so opaque that it is essentially impossible to understand how the model makes its predictions. The difference between data science and machine learning is clearly not black and white but rather a spectrum or two domains that tend to overlap.
+
+<br/>
+<center>
+```{r bottom-fig, fig.cap='(ref:fig2)', out.width='50%', fig.show='hold', echo=FALSE}
+knitr::include_graphics(rep('figures/xkcd.png', 1))
+```
+</center>
+xkcd.com Machine Learning
+
+Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning. 
+
+For the purpose of the book, we use the term data science throughout, just because we feel that this most accurately represents the type of projects we tackle but the reader can substitute the term with machine learning or artificial intelligence to suit their own needs.
+
+
 ## Our framework
 Our framework has two related components: **project execution** and **project evaluation**. While the temptation may be to view these in series, we have found that these components are in fact intertwined; each has a use on its own, but the framework yields the best results when they are used together. In the following chapters we outline these components, counterintuitively starting with evaluation and then moving on to execution. Why do we start with evaluation? We have found that thinking about what you want the final successful project to look like can help in planning how to get there. In short, we recommend starting with a zoomed-out view of the project as a whole and the context into which fits before considering the details of how you might get there. We can think of the analogy of taking a road-trip across the country: a sensible approach is to first think about what you want to get out of the journey and what are the major milestones you want to achieve before determining exactly which roads you will take to get there. This has echoes in Test Driven Development (TDD), a common approach to software development in which one first defines the criteria that the final code should adhere to and creates the corresponding tests before writing the actual code.
 
