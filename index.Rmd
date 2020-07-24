@@ -18,7 +18,7 @@ output:
     includes:
        in_header: GA_Script.html
     toc_depth: 3
-    split_by: section
+    split_by: chapter
     number_sections: true
     split_bib: true
     config:
