@@ -1,33 +1,37 @@
 --- 
 title: "Designing and Building Data Science Solutions"
 author:
-- "Jonathan Leslie"
-- "Neri Van Otten"
+- Jonathan Leslie
+- Neri Van Otten
 date: "`r Sys.Date()`"
-site: "bookdown::bookdown_site"
-knit: "bookdown::render_book"
-documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
-linestretch: 1.5
-cover-image: "figures/Designing and bulding data science solutions.png"
-url: "https://datasciencedesign.com/"
-description: "A guide as to how to make data science projects successful."
-output: 
+output:
+  pdf_document:
+    toc_depth: '3'
+  bookdown::pdf_book:
+    keep_tex: yes
   bookdown::gitbook:
     includes:
-       in_header: "GA_Script.html"
+      in_header: GA_Script.html
     toc_depth: 3
     split_by: chapter
-    number_sections: true
-    split_bib: true
+    number_sections: yes
+    split_bib: yes
     config:
       toc:
         scroll_highlight: yes
         collapse: section
-  bookdown::pdf_book:
-    keep_tex: yes
+knit: bookdown::render_book
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
+linestretch: 1.5
+cover-image: figures/Designing and bulding data science solutions.png
+url: https://datasciencedesign.com
+description: A guide as to how to make data science projects successful.
+site: bookdown::bookdown_site
 ---
 
 # Welcome {-}
