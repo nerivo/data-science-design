@@ -27,13 +27,14 @@ To expand on this slightly, the goal of data science work is to gain insights an
 
 Machine learning extends data analytics into the realm of predictive modelling. This can be done in a highly automated way, although no machine learning system should be allowed to impact decision-making without a human in the loop. Machine learning models can range in complexity and interpretability. For example, linear regression is at the straight-forward end of the spectrum, so much so that many do not consider it machine learning at all. Deep learning models reside at the opposite end of the spectrum, with inner workings that are so opaque that it is essentially impossible to understand how the model makes its predictions. The difference between data science and machine learning is clearly not black and white but rather a spectrum or two domains that tend to overlap.
 
-<br/>
+(ref:xkcd) xkcd.com Machine Learning
+
 <center>
 ```{r xkcd-fig, fig.cap='(ref:xkcd)', out.width='50%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/xkcd.png', 1))
 ```
 </center>
-xkcd.com Machine Learning
+
 
 Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning. 
 
