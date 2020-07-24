@@ -1,6 +1,5 @@
 --- 
 title: "Designing and Building Data Science Solutions"
-subtitle: "A Practical Guide"
 author:
 - "Jonathan Leslie"
 - "Neri Van Otten"
@@ -12,11 +11,13 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 linestretch: 1.5
+cover-image: "figures/Designing and bulding data science solutions.png"
+url: "https://datasciencedesign.com/"
 description: "A guide as to how to make data science projects successful."
 output: 
   bookdown::gitbook:
     includes:
-       in_header: GA_Script.html
+       in_header: "GA_Script.html"
     toc_depth: 3
     split_by: chapter
     number_sections: true
