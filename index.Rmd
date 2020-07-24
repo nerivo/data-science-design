@@ -16,7 +16,7 @@ description: "A guide as to how to make data science projects successful."
 output: 
   bookdown::gitbook:
     includes:
-       in_header: GA_Script.html
+       in_header: "GA_Script.html"
     toc_depth: 3
     split_by: chapter
     number_sections: true

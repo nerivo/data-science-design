@@ -95,7 +95,7 @@
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
 
-\includegraphics[width=0.5\linewidth]{figures/Designing and bulding data science solutions}
+\includegraphics[width=0.5\linewidth,style="float:right; padding:10px"]{figures/Designing and bulding data science solutions}
 
 Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent \href{https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence}{Gartner study}, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting.
 
@@ -104,8 +104,6 @@ With this guide, we wish to de-risk the process and help practitioners succeed b
 When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success.
 
 This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.
-
-Copyright © 2020 Jonathan Leslie and Neri Van Otten
 
 \hypertarget{about-us}{%
 \section*{About us}\label{about-us}}
@@ -124,6 +122,8 @@ We have designed and executed hundreds of projects using data science, machine l
 \addcontentsline{toc}{section}{Acknowledgements}
 
 We would like to thank a number of people who have contributed to this work. Without you, this would never have happened. We thank Andras Szabo and Kim Nilsson, who spent many hours carefully reading our drafts and providing invaluable feedback. We would also like to thank Ole Moeller Nilsson, Maryam Qurashi, Mandeep Soor, Jason Muller, Neil Forest and Deepak Mahtani for their many suggestions and useful comments. We are especially grateful to our families for their patience and support.
+
+Copyright © 2020 Jonathan Leslie and Neri Van Otten
 
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
@@ -164,11 +164,11 @@ To expand on this slightly, the goal of data science work is to gain insights an
 
 Machine learning extends data analytics into the realm of predictive modelling. This can be done in a highly automated way, although no machine learning system should be allowed to impact decision-making without a human in the loop. Machine learning models can range in complexity and interpretability. For example, linear regression is at the straight-forward end of the spectrum, so much so that many do not consider it machine learning at all. Deep learning models reside at the opposite end of the spectrum, with inner workings that are so opaque that it is essentially impossible to understand how the model makes its predictions. The difference between data science and machine learning is clearly not black and white but rather a spectrum or two domains that tend to overlap.
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{figures/xkcd} \caption{(ref:xkcd)}\label{fig:xkcd-fig}
-\end{figure}
 
-xkcd.com Machine Learning
+
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{figures/xkcd} \caption{xkcd.com Machine Learning}\label{fig:xkcd-fig}
+\end{figure}
 
 Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning.
 
