@@ -58,11 +58,11 @@ Sometimes the business value from a project cannot be measured in an objective w
 
 One way to assess a project’s value in such cases is to align it to the stakeholder’s OKRs (Objectives and Key Results; see accompanying text box). 
 
-<div class="infobox">
+::: {.infobox}
 **OKRs and business goals**
 
 The OKR framework is a system by which a company aligns priorities across all levels of the organisation. For example, three to five objectives could be set for the organisation as a whole, with multiple concrete, measurable key results attached to each. The idea is that the key results will provide evidence as to what extent the objectives have been met. Each level of the company should go through the process, such that company objectives inform departmental OKRs, which in turn help to define the team and individual OKRs. Thus, everyone in the company can be aligned as to what the business priorities are. Often OKRs are defined, and reviewed, on a quarterly basis.
-</div>
+:::
 
 Understanding your client’s OKRs can help you to identify key metrics that may be important for assessing a project’s success. For example, your project may be aimed at improving customer insights. Exactly how you would assess the degree to which your project has succeeded is imprecise, and your idea of success may be very different from your client’s. If framed as an objective in an OKR framework, however, you are forced to define a series of key results – measurable outcomes that you can use to assess how you have met the objective. Key results in this example could be, “Define five features that are associated with increased customer churn”, “Build a model that can accurately identify those customers who churned last year 90% of the time” or “Identify which customer segments are most likely to churn.” If your project achieves these key results, you can feel safe in declaring it a success. 
 

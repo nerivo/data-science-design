@@ -173,11 +173,11 @@ If you are creating a system, remember to deploy the solution according to the p
 
 For the long term success of any project, it is essential that there is also a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. Model  How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?
 
-<div class="infobox">
+::: {.infobox}
 **The concept ‘drift’ explained**
 
 In most challenging data analysis applications, data evolve over time and must be analyzed in near real-time. Patterns and relations in such data often evolve over time, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.
-</div>
+:::
 
 Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location then a developer making changes would need to remember to also update the documentation. 
 

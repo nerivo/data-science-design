@@ -35,11 +35,11 @@ Machine learning extends data analytics into the realm of predictive modelling. 
 
 (ref:xkcd) xkcd.com Machine Learning
 
-<center>
+::: {.center}
 ```{r xkcd-fig, fig.cap='(ref:xkcd)', out.width='50%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/xkcd.png', 1))
 ```
-</center>
+:::
 
 
 Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their own view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning. 

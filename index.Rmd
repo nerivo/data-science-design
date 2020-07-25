@@ -36,10 +36,10 @@ site: bookdown::bookdown_site
 
 # Welcome {-}
 
-```{r cover-fig, out.width='50%', fig.show='hold', echo=FALSE, out.extra='style="float:right; padding:10px"'}
+```{r cover-fig, out.width='50%', fig.show='hold', echo=FALSE}
+# out.extra='style="float:right; padding:10px"'
 knitr::include_graphics(rep('figures/Designing and bulding data science solutions.jpg', 1))
 ```
-
 
 
 Data science is a dynamic field that, when successful, can have a game-changing impact for a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent [Gartner study](https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence){target="_blank"}, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting. 
@@ -49,6 +49,7 @@ With this guide, we wish to de-risk the process and help practitioners succeed b
 When building groundbreaking systems or conducting cutting-edge research, one can never be sure where the work will take you. As a data scientist, you can never take all of the uncertainty and risk away. But you CAN approach your projects in a sensible way that can give your projects the best chances of success. 
 
 This guide covers our approach. It includes two different frameworks: one for evaluating project success and the other for navigating a data science project lifecycle. We use this system in our own work and have found it to be invaluable in helping us to avoid common pitfalls and to give our projects the best chances for impactful outcomes. We hope it is useful to you as well.
+
 
 ## About us {-}
 Your authors have each worn many hats: data scientists, project managers, mentors and consultants. We met via the [S2DS](http://www.s2ds.org/){target="_blank"} programme, where we worked together as project mentors. 

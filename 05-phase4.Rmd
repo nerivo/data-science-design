@@ -7,11 +7,11 @@ It isn’t always possible to have a robust plan but having a flawed plan is alw
 
 This phase uses a different type of thinking than is normally found in scientific research. While research generally uses deductive (the reasoning of logic) and inductive (the reasoning of forming general rules from observations) reasoning, the synthesis required for design thinking uses intuition, or more accurately, abductive reasoning – the reasoning of developing one of several possible solutions for a problem. More specifically it is seeking the simplest solution to a problem without any formal validation. For a more detailed explanation of how designers think, we recommend the book Design Thinking by Nigel Cross. For the purposes of this writing, what is important is to understand that this relates to the process of identifying a set of required functionalities or purposes and crafting a solution that satisfies those purposes.
 
-<div class="infobox">
+::: {.infobox}
 **What is abductive reasoning?**
 
 Abductive reasoning starts with an observation or set of observations and then seeks to find the simplest and most likely conclusion from the observations. This process, unlike deductive reasoning, yields a plausible conclusion but does not positively verify it. Abductive conclusions are thus qualified as having a remnant of uncertainty or doubt, which is expressed in terms such as "best available" or "most likely".
-</div>
+:::
 
 For many, project design is difficult, ambiguous, stressful and downright unpleasant. Indeed, this phase requires you to commit to delivering a given bit of work in exchange for a certain budget, and you want to get it right – who wouldn’t find that responsibility stressful? You inherently can’t know exactly what it will take to deliver a successful outcome because that insight only really comes from the work itself. But if you have done a good job of scoping the project in Phases 2 and 3, then you should have a fairly good idea of the complexity of the task in front of you. 
 
