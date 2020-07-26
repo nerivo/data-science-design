@@ -39,6 +39,8 @@ We outline the plan for this project in below.
 
 <center>**Objective 1: Customer insights**</center>
 
+:::{.smaller}
+
 ```{r echo=FALSE}
 
 mytable = data.frame(
@@ -53,8 +55,12 @@ mytable = data.frame(
 pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
 ```
 
+:::
+
 <br/><br/>
 <center>**Objective 2: Product recommendations**</center>
+
+:::{.smaller}
 
 ```{r echo=FALSE}
 mytable = data.frame(
@@ -69,3 +75,5 @@ check.names = FALSE
 
 pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(1,22,22,1))
 ```
+
+:::

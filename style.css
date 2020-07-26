@@ -29,3 +29,7 @@ pre code {
   float:right; 
   padding:10px;
 }
+
+.smaller{
+  font-size: 11pt;
+}

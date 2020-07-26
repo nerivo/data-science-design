@@ -49,15 +49,18 @@ It is also useful to consider the business when budgeting for a project. Have yo
 
 On the other hand, if the project is exploratory, if your client/manager is just looking to see the “art of the possible” or if your project is restricted to creating insights, you may feel a bit braver and choose a slightly lower budget: the costs of underestimating the time required are lower. Or, to think of it in another way, even if you only accomplish 95% of what you would have liked, that is still very valuable for the business. 
 
+:::{.smaller}
+
 ```{r echo=FALSE}
 mytable = data.frame(
     Pricing     = c("Under-budgeting", "Over-budgeting"),
     Potential_benefits = c('- Your proposal may be more attractive to the stakeholders. \n- The potential to show your client/manager good value-for-money \n- Get a “foot in the door”/opportunity to prove yourself', '- Extra time padding can give you a greater chance of success \n- Greater chance of overdelivering and delighting the client/manager \n- Greater chance of more work, due to happy client/manager'),
-    Risks     = c("- Your client/manager may be sceptical that you can deliver \n -You may not be able to deliver \n - You are vulnerable to expected problems \n - Setting the expectation too low for the follow on work (assuming you get it)
-","- Your price may be too high/losing the work"))
+    Risks     = c("- Your client/manager may be sceptical that you can deliver \n - You may not be able to deliver \n - You are vulnerable to expected problems \n - Setting the expectation too low for the follow on work (assuming you get it)","- Your price may be too high/losing the work"))
 
-pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(3,25,25))
+pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left', split.cells = c(5,25,25))
 ```
+
+:::
 
 <br/>
 
