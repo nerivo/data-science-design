@@ -4,7 +4,7 @@ output:
   html_document: default
 ---
 # The phases of a project {#phases}
-Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project. 
+Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters 5 and 6. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
 
 <br/>
 
@@ -71,7 +71,7 @@ In order to be successful, it is essential to consider how we will measure succe
 
 Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.
 
-### Key Performance Indicator (KPI)
+### Key Performance Indicators (KPI){#KPIs}
 
 <div class="infobox">
 **Definition**
