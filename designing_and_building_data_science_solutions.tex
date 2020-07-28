@@ -1,44 +1,56 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{book}
+\documentclass[
+]{book}
 \usepackage{lmodern}
 \usepackage{setspace}
-\setstretch{1.5}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={Designing and Building Data Science Solutions},
-            pdfauthor={Jonathan Leslie; Neri Van Otten},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  pdftitle={Designing and Building Data Science Solutions},
+  pdfauthor={Jonathan Leslie; Neri Van Otten},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -48,33 +60,25 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 
 \title{Designing and Building Data Science Solutions}
 \author{Jonathan Leslie \and Neri Van Otten}
 \date{2020-07-27}
 
 \begin{document}
+\frontmatter
 \maketitle
 
+\setstretch{1.5}
+\mainmatter
 \hypertarget{welcome}{%
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
@@ -158,7 +162,7 @@ especially grateful to our families for their patience and support:
 Mariam Orme, Daryan Leslie, Zara Leslie (for Jon) and Thea Van Otten,
 Paul Van Otten and Hilde De Boeck (for Neri).
 
- Copyright © 2020 Jonathan Leslie and Neri Van Otten
+Copyright © 2020 Jonathan Leslie and Neri Van Otten
 
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
@@ -719,7 +723,7 @@ managed through project management methodologies like SCRUM or Kanban.
 
 For many data scientists, this is where most of your time and energy is
 spent. It somewhat describes the way in which you use your
-tools\ldots{}your scientific chops. When we think of project process
+tools\ldots your scientific chops. When we think of project process
 level success, we consider things like the quality of your code, your
 fluency in coding, your knowledge of existing methodologies and
 approaches, how well you understand the algorithms that drive your
@@ -1472,7 +1476,7 @@ you must plan the project -- that is what Phase 4 is about. This is the
 design phase, where you lay out in detail the approach you will take,
 the steps that will be included and the resources that will be required.
 We often hear people say things such as, ``Data science is
-research\ldots{}how can I say how long it will take if I don't know what
+research\ldots how can I say how long it will take if I don't know what
 I'm going to find?'' This is a valid concern -- in an ideal world, you
 would have all the time and money you need. Sadly, this is an example of
 the difference between the ideal world and reality: if you are working
@@ -2780,7 +2784,7 @@ client wants and, hopefully, you have a demonstrated track record of
 delivering good work. However, even if you have the right skills,
 expertise and track-record, you may not necessarily be the right fit for
 every client or project. It's important to remember that even for large
-companies, the people who make decisions are\ldots{}well\ldots{}people.
+companies, the people who make decisions are\ldots well\ldots people.
 Gut feeling and matching temperament will have a large impact on how
 decisions are made: sometimes they will work in your favour and
 sometimes they won't.
@@ -2947,7 +2951,7 @@ advantage of this arrangement is that there exists a legal distinction
 between you (the person doing the work) and the company. If a client
 wants to sue you, for example, only the company is liable (unless you,
 as an individual, are grossly negligent). This gives you a layer of
-protection\ldots{}legally your own possessions are protected, and only
+protection\ldots legally your own possessions are protected, and only
 the assets of the company are vulnerable. In the UK (where both of us
 registered our companies), the process of setting up a company is fairly
 straightforward. However, there are certain legal aspects to running a
@@ -3012,7 +3016,7 @@ available to help others. Three of our favourite collections are:
 
 The resources listed above are great places to turn for help and advice.
 Similarly, you may have your own network of colleagues who have domain
-expertise\ldots{}don't be afraid to reach out to them for advice. Most
+expertise\ldots don't be afraid to reach out to them for advice. Most
 people are happy to help, so use your network. But do so respectfully:
 understand that people are busy and may not have the time to spare. If
 you do reach out, be clear about what you want and how much time it will
@@ -3026,4 +3030,5 @@ Howsawi, Eskander, David Eager, Ravindra Bagia, and Klaus Niebecker.
 Assessment.'' \emph{Organisational Project Management} 1 (May).
 \url{https://doi.org/10.5130/.v1i0.3865}.
 
+\backmatter
 \end{document}
