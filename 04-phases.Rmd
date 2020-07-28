@@ -69,7 +69,7 @@ When fleshing out your feature list, It can be useful to make two different list
 
 At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?
 
-In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter \@ref(levels) and define success on the four different levels; the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here,  ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent. 
+In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter \@ref(levels) and define success on the four different levels: the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here,  ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent. 
 
 Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.
 
@@ -100,7 +100,7 @@ One way to evaluate the relevance of a performance indicator is to use [the SMAR
 - What is the **Time-frame** for achieving this goal?
  
 ### Feasibility Study
-A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of an existing business to uncover the opportunities and threats present that will ultimately lead to project success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibility. 
+A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project in order to assess the likelihood of its success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibilities. 
 
 #### Technical Feasibility
 The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.
@@ -114,7 +114,7 @@ This assessment is based on an outline design of system requirements, to determi
 - Methods of producing the solution
 - Detailed project requirements
 
-This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it’s technically possible to do so.
+This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it is technically possible to do so.
 
 #### Economic Feasibility 
 An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
