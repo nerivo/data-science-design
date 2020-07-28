@@ -1,4 +1,5 @@
 # Finding help {#help}
+
 A number of kind and generous data professionals make themselves available to help others. Three of our favourite collections are:
 
 - Data Helpers by Angela Bassa (a list of people who are happy to help and mentor data scientists)

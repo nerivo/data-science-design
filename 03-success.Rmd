@@ -1,6 +1,7 @@
 # (PART\*) Part I{-}
 
 # What success looks like: the four levels of project evaluation {#levels}
+
 When approaching a data science project, we often look to the end: knowing what a successful outcome would look like is a good way to determine the direction of a project and the steps required to get there. The idea is that if you meet those criteria -- if you deliver something that resembles this desired outcome -- you have succeeded. However, while faithful production of the agreed-upon deliverables is indeed important, this is often only part of a much larger picture. 
 
 In early conversations with a stakeholder, you may have agreed upon a certain set of outcomes and deliverables for the project based on the circumstances and understanding at the time. However, circumstances can change. Similarly, simply because you have achieved a predetermined goal for a project does not necessarily mean that this goal is the best outcome for the business. Part of our jobs as data scientists, especially if tasked with designing a project, is to understand what the business needs and help stakeholders clearly see what is the most beneficial. Thus, simply focusing on deliverables falls short when assessing how successful a project has been. Moreover, often in data science project we make discoveries that are unexpected. If we view these solely through the lens of agreed project objectives they could be considered mistakes or shortcomings, however the unexpected outcomes are often the most valuable to the business. 
