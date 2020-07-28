@@ -1,15 +1,12 @@
 # Finding help {#help}
 
-Numerous kind and generous data professionals make themselves available to help others. Three of our favourite collections are:
+Numerous kind and generous data professionals make themselves available to help others. Four of our favourite collections are:
 
-- Data Helpers by Angela Bassa (a list of people who are happy to help and mentor data scientists)
-  - https://www.datahelpers.org/ 
-  
-- Stephanie Hurlburt’s lists of engineers willing to offer mentorship
-  - http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you
-  - https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/
-- The R for Data Science Online Learning Community, where R users and learners can find one another and share ideas (https://www.rfordatasci.com/). 
+- [Data Helpers](https://www.datahelpers.org/){target="_blank"} by Angela Bassa (a list of people who are happy to help and mentor data scientists)
+- [Stephanie Hurlburt’s list](http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you){target="_blank"} of engineers willing to offer mentorship or find a mentor on these [replies on twitter](https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/){target="_blank"}.
+- The [R for Data Science Online Learning Community](https://www.rfordatasci.com/){target="_blank"}, where R users and learners can find one another and share ideas. 
+- [PyData](https://pydata.org/){target="_blank"} provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. They run conferences and meet-ups world wide. It is a good place to connect with others that use predominantly python.
 
 The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise...don’t be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another. 
 
-
+If you would like to gain more experience using your data science skills or use them for good cause you can always get involved with [Data Kind](https://www.datakind.org/){target="_blank"}.
