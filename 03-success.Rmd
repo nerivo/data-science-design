@@ -58,7 +58,7 @@ In the best cases, the business value generated from a project can be expressed 
 
 Sometimes the business value from a project cannot be measured objectively. Indeed, the value of exploratory and proof-of-concept projects is often in the knowledge generated or insights into the potential for future investments. For example, many of our clients undertake proof-of-concept projects to answer specific questions such as, “Is it worth it for us to invest in hiring a data science team to take this work further?” While it’s hard to place a dollar value on generating a reliable answer to this question, the value is certainly high given the strategic aspirations of the client. 
 
-One way to assess a project’s value in such cases is to align it to the stakeholder’s OKRs (Objectives and Key Results; see accompanying text box). 
+One way to assess a project’s value in such cases is to align it to the stakeholder’s OKRs (Objectives and Key Results). 
 
 ::: {.infobox}
 **OKRs and business goals**
