@@ -25,7 +25,7 @@
 <meta name="author" content="Neri Van Otten" />
 
 
-<meta name="date" content="2020-07-28" />
+<meta name="date" content="2020-07-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -175,7 +175,7 @@
 <h1><span class="header-section-number">Chapter 3</span> The phases of a project</h1>
 <p>Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters <a href="definition.html#definition">4</a> and <a href="execution.html#execution">5</a>. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.</p>
 <p><br/></p>
-<div class="smaller">
+<div class="center">
 <div class="figure"><span id="fig:bottom-fig"></span>
 <img src="figures/Figure_2-phases.png" alt="Six phases of a project. When designing and delivering a project, we find it useful to break the process down into these major phases." width="100%" />
 <p class="caption">
@@ -222,7 +222,7 @@ Figure 3.1: <strong>Six phases of a project.</strong> When designing and deliver
 <p>As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is all about negotiation, negotiate with the different parties until you get everybody to align to the same vision. Note that without alignment you can’t proceed, if you do proceed by choosing to align to the main stakeholder, the other stakeholders will be hostile towards you and the project. If there is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.</p>
 <p>When fleshing out your feature list, It can be useful to make two different lists, one with the must-have requirements and one with the nice to have. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements.</p>
 <p>At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?</p>
-<p>To be successful, it is essential to consider how we will measure success. Refer back to Chapter <a href="levels.html#levels">2</a> and define success on the four different levels; the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent.</p>
+<p>In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter <a href="levels.html#levels">2</a> and define success on the four different levels: the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent.</p>
 <p>Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.</p>
 <div id="KPIs" class="section level3">
 <h3><span class="header-section-number">3.2.1</span> Key Performance Indicators (KPI)</h3>
@@ -251,7 +251,7 @@ Figure 3.1: <strong>Six phases of a project.</strong> When designing and deliver
 </div>
 <div id="feasibility-study" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> Feasibility Study</h3>
-<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of an existing business to uncover the opportunities and threats present that will ultimately lead to project success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibility.</p>
+<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project in order to assess the likelihood of its success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibilities.</p>
 <div id="technical-feasibility" class="section level4">
 <h4><span class="header-section-number">3.2.2.1</span> Technical Feasibility</h4>
 <p>The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.</p>
@@ -264,7 +264,7 @@ Figure 3.1: <strong>Six phases of a project.</strong> When designing and deliver
 <li>Methods of producing the solution</li>
 <li>Detailed project requirements</li>
 </ul>
-<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it’s technically possible to do so.</p>
+<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it is technically possible to do so.</p>
 </div>
 <div id="economic-feasibility" class="section level4">
 <h4><span class="header-section-number">3.2.2.2</span> Economic Feasibility</h4>
@@ -335,14 +335,14 @@ Regarding proper coding style, we recommend you follow <a href="https://www.pyth
 <h2><span class="header-section-number">3.7</span> Chapter summary</h2>
 <p>In this chapter, we have given you a lot of information about how we approach the projects that we design and execute. We hope that you find our suggestions useful. Naturally, projects come in different sizes and scopes, and whether or not all of these phases are appropriate for a given project depends on many factors.</p>
 <p>While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter <a href="levels.html#levels">2</a>, the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project when the business case is being discussed. The lower levels, such as the <em>project process</em> phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.</p>
-<div class="smaller">
+
+<div class="center">
 <div class="figure"><span id="fig:full-figure"></span>
-<img src="figures/Framework%20phases.png" alt="Combined project evaluation and phases." width="100%" />
+<img src="figures/Framework%20phases.png" alt="Combined project evaluation and phases" width="100%" />
 <p class="caption">
-Figure 3.2: <strong>Combined project evaluation and phases.</strong>
+Figure 3.2: Combined project evaluation and phases
 </p>
 </div>
-
 </div>
 
 </div>

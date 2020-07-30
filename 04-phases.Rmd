@@ -10,7 +10,7 @@ Every project is different and the exact way you approach it may vary. That said
 
 <br/>
 
-:::{.smaller}
+::: {.center}
 
 ```{r bottom-fig, fig.cap='(ref:fig2)', out.width='100%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/Figure_2-phases.png', 1))
@@ -201,11 +201,12 @@ In this chapter, we have given you a lot of information about how we approach th
 
 While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter \@ref(levels), the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project when the business case is being discussed. The lower levels, such as the *project process* phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.
 
-:::{.smaller}
+(ref:fig3) Combined project evaluation and phases
+
+::: {.center}
 
 ```{r full-figure, fig.cap='(ref:fig3)', fig.show='hold', message=FALSE, out.width='100%', echo=FALSE}
 knitr::include_graphics(rep('figures/Framework phases.png', 1))
 ```
-(ref:fig3) **Combined project evaluation and phases.**
 
 :::

@@ -8,17 +8,14 @@ In early conversations with a stakeholder, you may have agreed upon a certain se
 
 Eskander Howsawi and colleagues have proposed a framework for evaluating project success that has four levels, termed "context", "business", "product" and "project process" (@Howsawi; Figure \@ref(fig:eval-levels)). In our approach to data science project design, we have found striking parallels to the Howsawi framework. (For a more detailed explanation of these levels and this framework, we recommend [reading the paper](https://doi.org/10.5130/.v1i0.3865){target="_blank"}.)
 
-:::{.smaller}
 
-(ref:fig1) **The four levels of project evaluation.** We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
-
+(ref:fig1) **The four levels of project evaluation**. We evaluate project outcomes at four levels: project process (relating to the execution of the project), product (relating to the delivered final product), business (related to what value the project brings to the business) and contextual (related to circumstances surrounding the project). The higher levels (contextual, business) are more abstract, but also have more relevance to the business value of the work. We recommend you consider all of these when defining, and evaluating, a project. (Adapted from Eskander Howsawi and colleagues.)
 
 
 ```{r eval-levels, fig.cap='(ref:fig1)', out.width='70%', fig.show='hold', echo=FALSE}
 knitr::include_graphics(rep('figures/Figure_1-eval_levels.png', 1))
 ```
 
-:::
 
 In the sections below we discuss each of these levels in detail. If you are involved with defining and scoping a project, we strongly recommend you think carefully about how your proposed work satisfies each of these levels. As a consultant, this will be an important part of your role and an important step in developing a project that has real value to its stakeholders. Even if your specific role does not involve project design, we recommend you take the time to consider these levels at both the beginning and the end of a project: if nothing else, it’s a good thought exercise that will be important if you are ever involved in project design. 
 
