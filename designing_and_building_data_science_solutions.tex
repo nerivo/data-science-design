@@ -1,44 +1,56 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{book}
+\documentclass[
+]{book}
 \usepackage{lmodern}
 \usepackage{setspace}
-\setstretch{1.5}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={Designing and Building Data Science Solutions},
-            pdfauthor={Jonathan Leslie; Neri Van Otten},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  pdftitle={Designing and Building Data Science Solutions},
+  pdfauthor={Jonathan Leslie; Neri Van Otten},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -48,25 +60,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 \usepackage{booktabs}
 
 \usepackage{color}
@@ -85,7 +86,7 @@
 
 \title{Designing and Building Data Science Solutions}
 \author{Jonathan Leslie \and Neri Van Otten}
-\date{2020-07-30}
+\date{2020-07-31}
 
 \begin{document}
 \maketitle
@@ -94,6 +95,7 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\setstretch{1.5}
 \hypertarget{welcome}{%
 \chapter*{Welcome}\label{welcome}}
 \addcontentsline{toc}{chapter}{Welcome}
@@ -303,7 +305,7 @@ Success at this level also corresponds to more granular aspects of your delivere
 
 The lowest level is the project process level, which is focused on the actions taken towards producing deliverables. This can include working on-schedule and within budget. Within the context of data science, this can also pertain to actions related to data analysis: we place activities such as EDA (exploratory data analysis), model selection and statistical analyses at this level. In short, this represents the ``hands-on'' activities of the data scientist. These processes are often managed through project management methodologies like SCRUM or Kanban.
 
-For many data scientists, this is where most of your time and energy is spent. It somewhat describes how you use your tools\ldots{}your scientific chops. When we think of project process level success, we consider things like the quality of your code, your fluency in coding, your knowledge of existing methodologies and approaches, how well you understand the algorithms that drive your models and how you interpret the outcomes. Naturally, many of these items are things that you must improve upon over time. For example, becoming a skilled coder and developing a deep understanding of modelling approaches are skills that must be practised and honed over years, and few of us ever feel that we don't have room for improvement. Don't feel that you have to be a coding expert or that you must know the details of every algorithm in the world to have success at this level, but do understand that for those with less experience, it will take more time to deliver successfully at this level.
+For many data scientists, this is where most of your time and energy is spent. It somewhat describes how you use your tools\ldots your scientific chops. When we think of project process level success, we consider things like the quality of your code, your fluency in coding, your knowledge of existing methodologies and approaches, how well you understand the algorithms that drive your models and how you interpret the outcomes. Naturally, many of these items are things that you must improve upon over time. For example, becoming a skilled coder and developing a deep understanding of modelling approaches are skills that must be practised and honed over years, and few of us ever feel that we don't have room for improvement. Don't feel that you have to be a coding expert or that you must know the details of every algorithm in the world to have success at this level, but do understand that for those with less experience, it will take more time to deliver successfully at this level.
 
 \hypertarget{final-thoughts}{%
 \section{Final thoughts}\label{final-thoughts}}
@@ -609,7 +611,7 @@ While we have presented project evaluation and project phases as different conce
 
 If you have followed the steps outlined in phases 1-3, you will have now determined that the project is viable. You will have confirmed that, in principle, the project makes contextual sense and that it is likely to bring value to your stakeholder, and you are now ready to think in terms of the specifics about how you will deliver the work. Congratulations! This represents a major crossroads for any project, and you should be proud of yourself for having had the discipline to work through Phases 1 -- 3 carefully. Now you are ready to start your project in earnest!
 
-But hold on! Before you start writing code and delving into the work, you must plan the project -- that is what Phase 4 is about. This is the design phase, where you lay out in detail the approach you will take, the steps that will be included and the resources that will be required. We often hear people say things such as, ``Data science is research\ldots{}how can I say how long it will take if I don't know what I'm going to find?'' This is a valid concern -- in an ideal world, you would have all the time and money you need. Sadly, this is an example of the difference between the ideal world and reality: if you are working with a client/manager, you will need to inform that client/manager what will be required in terms of time and money. Can you be certain that your estimations are sufficient? No.~But you can make reasonable estimations with the information you have, and this is where the art of project design comes in.
+But hold on! Before you start writing code and delving into the work, you must plan the project -- that is what Phase 4 is about. This is the design phase, where you lay out in detail the approach you will take, the steps that will be included and the resources that will be required. We often hear people say things such as, ``Data science is research\ldots how can I say how long it will take if I don't know what I'm going to find?'' This is a valid concern -- in an ideal world, you would have all the time and money you need. Sadly, this is an example of the difference between the ideal world and reality: if you are working with a client/manager, you will need to inform that client/manager what will be required in terms of time and money. Can you be certain that your estimations are sufficient? No.~But you can make reasonable estimations with the information you have, and this is where the art of project design comes in.
 
 It isn't always possible to have a robust plan but having a flawed plan is always better than none at all. A plan helps break down the task into smaller more manageable tasks that can be done and progress can be shown. It also helps everyone understand the deliverables and the course of action. Changing a plan can always be done but operating without a plan will always be slower than without one.
 
@@ -1203,7 +1205,7 @@ We also recommend contributing to open-source software projects. For many who ar
 
 When embarking on consulting it is important to remember that you are not applying for jobs, rather you are building relationships and partnerships where you align your goals on projects. In a way, you are creating your job.
 
-These opportunities often come about because your skills satisfy a very specific set of requirements: you provide a level of expertise that the client wants and, hopefully, you have a demonstrated track record of delivering good work. However, even if you have the right skills, expertise and track-record, you may not necessarily be the right fit for every client or project. It's important to remember that even for large companies, the people who make decisions are\ldots{}well\ldots{}people. Gut feeling and matching temperament will have a large impact on how decisions are made: sometimes they will work in your favour and sometimes they won't.
+These opportunities often come about because your skills satisfy a very specific set of requirements: you provide a level of expertise that the client wants and, hopefully, you have a demonstrated track record of delivering good work. However, even if you have the right skills, expertise and track-record, you may not necessarily be the right fit for every client or project. It's important to remember that even for large companies, the people who make decisions are\ldots well\ldots people. Gut feeling and matching temperament will have a large impact on how decisions are made: sometimes they will work in your favour and sometimes they won't.
 
 When building your business, some things are within your control and some things are not. You can't control how prospective clients are going to make their decisions, naturally. But you can control how you present yourself to them, and having a realistic picture of how you can help them overcome their business challenges will go a long way in showing that you deserve their business.
 
@@ -1249,7 +1251,7 @@ Relatedly, your ability to borrow money will be affected by your employment posi
 
 Whenever you get paid for a service, it is important to protect yourself legally. As an independent contractor, this usually means having indemnity insurance. While indemnity insurance is not usually expensive to purchase, \emph{not} having it can be very costly should things go wrong.
 
-Many freelancers choose to operate as a limited liability company. One advantage of this arrangement is that there exists a legal distinction between you (the person doing the work) and the company. If a client wants to sue you, for example, only the company is liable (unless you, as an individual, are grossly negligent). This gives you a layer of protection\ldots{}legally your possessions are protected, and only the assets of the company are vulnerable. In the UK (where both of us registered our companies), the process of setting up a company is fairly straightforward. However, there are certain legal aspects of running a company that you have to be aware of. Our advice is to find an accountant who can help you set up the company, advise on the financial operations and oversee payroll and adherence to tax and other legal obligations.
+Many freelancers choose to operate as a limited liability company. One advantage of this arrangement is that there exists a legal distinction between you (the person doing the work) and the company. If a client wants to sue you, for example, only the company is liable (unless you, as an individual, are grossly negligent). This gives you a layer of protection\ldots legally your possessions are protected, and only the assets of the company are vulnerable. In the UK (where both of us registered our companies), the process of setting up a company is fairly straightforward. However, there are certain legal aspects of running a company that you have to be aware of. Our advice is to find an accountant who can help you set up the company, advise on the financial operations and oversee payroll and adherence to tax and other legal obligations.
 
 Operating as a business can have another benefit that is important to understand. In the UK, if a contractor works for a client in what \emph{looks like} a permanent role, the government can stipulate that the person essentially \emph{is} a permanent employee and should be granted all the benefits of a regular employee. For example, if you are working on a 12-month full-time contract, you will look just like a permanent member of staff. This leaves the client in a vulnerable position as they could be liable to pay back-taxes and national insurance contributions should the government deem it appropriate. For this reason, many clients will not work with sole traders -- those who operate individually outside of the context of a company. If, on the other hand, you operate as a limited liability company, then legally you already have employment (you are employed by your own company) and your client will not be at-risk. The net effect is that you may find it easier to get contracts as a limited company than as a sole trader.
 
@@ -1272,10 +1274,10 @@ Numerous kind and generous data professionals make themselves available to help 
   \href{https://pydata.org/}{PyData} provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. They run conferences and meet-ups world wide. It is a good place to connect with others that use predominantly python.
 \end{itemize}
 
-The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise\ldots{}don't be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another.
+The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise\ldots don't be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another.
 
 If you would like to gain more experience using your data science skills or use them for good cause you can always get involved with \href{https://www.datakind.org/}{Data Kind}.
 
-\bibliography{book.bib,packages.bib}
+  \bibliography{book.bib,packages.bib}
 
 \end{document}
