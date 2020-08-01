@@ -28,7 +28,7 @@ bibliography:
 biblio-style: apalike
 link-citations: yes
 linestretch: 1.5
-cover-image: "figures/Designing and bulding data science solutions.jpg"
+cover-image: "figures/Designing and bulding data science solutions seo.jpg"
 url: https://datasciencedesign.com
 description: A guide as to how to make data science projects successful.
 site: bookdown::bookdown_site
@@ -37,7 +37,7 @@ site: bookdown::bookdown_site
 # Welcome {-}
 
 ```{r cover-fig, out.width='50%', fig.show='hold', echo=FALSE, out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics(rep('figures/Designing and bulding data science solutions.jpg', 1))
+knitr::include_graphics(rep('figures/Designing and bulding data science solutions seo.jpg', 1))
 ```
 
 Data science is a dynamic field that, when successful, can have a game-changing impact on a business. Yet designing and delivering a successful data science project can be difficult. Indeed, in a recent [Gartner study](https://www.gartner.com/en/newsroom/press-releases/2018-02-13-gartner-says-nearly-half-of-cios-are-planning-to-deploy-artificial-intelligence){target="_blank"}, 85 percent of all data science projects fall short of expectations. The main cause of failure was found to be that replacing legacy systems and associated processes is not easy. Other found issues revolved around not having the right data for the project or not having the right talent. This grim statistic underscores the fact that, for a business, getting started on a data science journey can be risky and daunting. 
