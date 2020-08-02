@@ -4,6 +4,7 @@ author:
 - Jonathan Leslie
 - Neri Van Otten
 date: "`r Sys.Date()`"
+github-repo: "nerivo/data-science-design"
 output:
   pdf_document:
     toc_depth: '3'
