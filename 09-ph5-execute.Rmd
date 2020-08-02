@@ -59,6 +59,22 @@ Building is iterative by nature. This applies not only to the analysis but also 
 
 As you are building and testing the output, you will undoubtedly explore various possible approaches and assess their strengths and weaknesses as you refine the work. But how should you make these comparisons – what should you take into account when deciding on how to proceed? Assessment is a key part of this stage that can help ensure that you are making wise choices. 
 
+:::{.infobox}
+**Understanding what's going on inside your model**
+
+A common notion is that artificial intelligence is complicated and cannot be understood. It is often treated as a black box with a magical outcome. Developers who use machine learning libraries without fully understanding these often create or support this misconception. This viewpoint, however, originates from a lack of knowledge. Most machine learning libraries are open source and a skilled data scientist will be able to dig into their models and alter or understand the results it produces. 
+
+At their core, machine learning models are mathematical models -- data is manipulated through a series of mathematical operations. These operations are not random but should be well chosen to produce favourable results. Understanding this process lets you understand the limitations and the overall behaviour of the model. Once this is properly understood, one can make deliberate changes that improve the model overall, remove bias or simply deal better with outliers that had been neglected previously.
+
+**What is open source?**
+
+Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.
+
+As a side note be aware when choosing your machine learning toolkit. When using closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that data scientists will lose visibility and the ability to understand the system fully.
+
+:::
+
+
 When many non-specialists think of assessment the word “accuracy” comes to mind. Experienced data scientists dislike this term, as it means something very specific and is seldom a meaningful metric to evaluate model performance. You should consider other metrics such as precision, recall or F1 score. However, assessment extends far beyond model performance; many factors will dictate what the right choice is for your project. For example, you may need a highly interpretable model, or you may need something fast. Exactly what is important for your project can vary, and you should keep this in mind throughout this phase. How you assess your work should not be an afterthought; on the contrary, you should think about how you intend to measure performance from the outset. 
 
 Having a meaningful way to assess your work will also be important for bench-marking. Benchmarks are a handy way to set a standard against which you can compare your model’s performance. We encourage you to set benchmarks early in your project and set aside time to develop these benchmarks. Knowing what the standard was before your project can give you a demonstrable way to show added value from your work. Your final results should always be quantifiable, so set yourself up for success and define your KPI’s and measure your final success against them.
