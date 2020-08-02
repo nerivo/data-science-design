@@ -4,4 +4,4 @@ documentclass: book
 site: bookdown::bookdown_site
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: ""
