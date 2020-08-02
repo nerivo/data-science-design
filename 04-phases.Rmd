@@ -14,7 +14,7 @@ knitr::include_graphics(rep('figures/Figure_2-phases.png', 1))
 
 :::
 
-=======
+
 :::{.infobox}
 **Data access and security**
 
