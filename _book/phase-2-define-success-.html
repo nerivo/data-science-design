@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Example project plan | Designing and Building Data Science Solutions</title>
+  <title>Chapter 5 Phase 2: Define success. | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="Chapter 5 Phase 2: Define success. | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="Chapter 5 Phase 2: Define success. | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="phases-summary.html"/>
-<link rel="next" href="consulting.html"/>
+<link rel="prev" href="phase-1-define-the-business-casequestion.html"/>
+<link rel="next" href="phase-3-scoping.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -176,209 +176,85 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="example" class="section level1">
-<h1><span class="header-section-number">Chapter 11</span> Example project plan</h1>
-<p>Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers – what might be best for one project may be well off-the-mark for another.</p>
-<p>We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.</p>
-<hr />
-<center>
-<strong>Proposal for Client X</strong>
-</center>
-<p><em>Introduction:</em></p>
-<p>Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers.</p>
-<p><em>Project description:</em></p>
-<p>In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience.</p>
-<p>In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset.</p>
-<p>When performing cluster analysis, an important consideration is in determining the optimal number of clusters. While techniques such as the elbow method can be useful in arriving at this number, we feel it will also be important to sense-check the outcome with Client X stakeholders who understand their customers the best. Thus, throughout this project, we will have regular progress updates with Client X to show our findings and illustrate descriptive analyses of how the resultant clusters differ from one another.</p>
-<p>In Objective 2, “Product recommendations”, we will focus on building a recommender system that can be used to suggest products to Client X customers. We plan to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches intending to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.</p>
-<p>We outline the plan for this project below.</p>
-<hr />
-<center>
-<p><strong>Project Proposal: Customer Insights and Recommendations</strong></p>
-<p><em>Objective: This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.</em></p>
-</center>
-<p><br/></p>
-<center>
-<strong>Objective 1: Customer insights</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome//Deliverables</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-1</td>
-<td><ul>
-<li><strong>Exploratory data
-analysis</strong></li>
-<li>We will explore the
-data available to
-support the project.</li>
-<li>We will ensure that
-data are accessible
-and will perform a
-preliminary analysis
-with a view to
-identifying a subset
-of features that
-best-suited for
-cluster analysis in
-Milestone 2.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing the initial
-findings of
-relationships between
-features.</li>
-<li>A list of features
-to use for clustering.</li>
-</ul></td>
-<td>End
-of
-Week
-2</td>
-</tr>
-<tr class="even">
-<td>Milestone
-2</td>
-<td><ul>
-<li><strong>Cluster analysis</strong></li>
-<li>Using the learnings
-from Milestone 1, we
-will experiment with
-various clustering
-algorithms.</li>
-<li>The best candidate
-will be selected for
-further improvements.</li>
-</ul></td>
-<td><ul>
-<li>A GitHub repository
-containing Python code
-driving a segmentation
-model.</li>
-<li>A report and
-presentation
-highlighting findings.</li>
-</ul></td>
-<td>End
-of
-Week
-4</td>
-</tr>
-</tbody>
-</table>
+<div id="phase-2-define-success." class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Phase 2: Define success.</h1>
+<p>After going through Phase 1, you and your client/manager should have a clear picture of what the main objectives of the project are. Now it’s time to narrow in on some details. In this phase, you will address specific requirements to make sure that you and your client/manager agree on what a successful outcome will look like in concrete terms.</p>
+<p>As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is all about negotiation, negotiate with the different parties until you get everybody to align to the same vision. Note that without alignment you can’t proceed, if you do proceed by choosing to align to the main stakeholder, the other stakeholders will be hostile towards you and the project. If there is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.</p>
+<p>When fleshing out your feature list, It can be useful to make two different lists, one with the must-have requirements and one with the nice to have. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements.</p>
+<p>At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?</p>
+<p>In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter <a href="levels.html#levels">2</a> and define success on the four different levels: the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent.</p>
+<p>Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.</p>
+<div id="KPIs" class="section level2">
+<h2><span class="header-section-number">5.1</span> Key Performance Indicators (KPI)</h2>
+<div class="infobox">
+<p><strong>Definition</strong></p>
+<p>A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.</p>
 </div>
-<br/><br/>
-<center>
-<strong>Objective 2: Product recommendations</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome/Deliverable</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-3</td>
-<td><ul>
-<li><strong>Research</strong></li>
-<li>We will examine the
-data available to
-identify a feature
-space to use for
-collaborative
-filtering.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing initial
-findings of possible
-approaches to the
-recommendation engine.</li>
-</ul></td>
-<td>End
-of
-Week
-6</td>
-</tr>
-<tr class="even">
-<td>Milestone
-4</td>
-<td><ul>
-<li><strong>Build</strong></li>
-<li>We will focus on
-productionising the
-recommender system and
-integrating it into
-the existing Client X
-data infrastructure</li>
-</ul></td>
-<td><ul>
-<li>A deployed
-recommender system
-that runs on the
-Client X GCP instance.</li>
-<li>A demonstration,
-presentation and
-report outlining
-experimental approach
-and deployment
-specifications, as
-well as
-recommendations for
-model improvements and
-retraining.</li>
-<li>A GitHub repo
-containing all code
-used.
-.</li>
-</ul></td>
-<td>End
-of
-Week
-9</td>
-</tr>
-</tbody>
-</table>
+<p>KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:</p>
+<ul>
+<li>What is your desired outcome?</li>
+<li>Why does this outcome matter?</li>
+<li>How are you going to measure progress?</li>
+<li>How can you influence the outcome?</li>
+<li>Who is responsible for the business outcome?</li>
+<li>How will you know you’ve achieved your outcome?</li>
+<li>How often will you review progress towards the outcome?</li>
+</ul>
+<p>One way to evaluate the relevance of a performance indicator is to use <a href="http://en.wikipedia.org/wiki/SMART_criteria" target="_blank">the SMART criteria</a>. The letters are typically taken to stand for <strong>Specific, Measurable, Attainable, Relevant, Time-bound</strong>. In other words:</p>
+<ul>
+<li>Is your objective <strong>Specific</strong>?</li>
+<li>Can you <strong>Measure</strong> progress towards that goal?</li>
+<li>Is the goal realistically <strong>Attainable</strong>?</li>
+<li>How <strong>Relevant</strong> is the goal for your organization?</li>
+<li>What is the <strong>Time-frame</strong> for achieving this goal?</li>
+</ul>
 </div>
+<div id="feasibility-study" class="section level2">
+<h2><span class="header-section-number">5.2</span> Feasibility Study</h2>
+<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project in order to assess the likelihood of its success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibilities.</p>
+<div id="technical-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Technical Feasibility</h3>
+<p>The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.</p>
+<p>This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken into consideration:</p>
+<ul>
+<li>A brief description of the business to assess more possible factors which could affect the study</li>
+<li>The part of the business being examined</li>
+<li>The human and economic factor</li>
+<li>The possible solutions to the problem</li>
+<li>Methods of producing the solution</li>
+<li>Detailed project requirements</li>
+</ul>
+<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it is technically possible to do so.</p>
+</div>
+<div id="economic-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Economic Feasibility</h3>
+<p>An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
+serves as an independent project assessment and enhances project
+credibility – helping decision-makers determine the positive economic benefits to the organization that the proposed project will provide.</p>
+</div>
+<div id="legal-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Legal Feasibility</h3>
+<p>The legal feasibility assessment investigates whether any aspect of the proposed project conflicts with legal requirements like zoning laws, data protection acts or social media laws. Let’s say an organization wants to store customer information for the use in a recommendation engine on its e-commerce site. A feasibility study might reveal that the laws governing this data differ depending on where the customer is geographically located. Therefore, simply storing this data isn’t possible and a more in-depth analysis of the law needs to be made. Different data will need to be stored for different customers. This might mean that the recommendation engine isn’t feasible for the organisation right now as this would add extra costs and technical difficulty.</p>
+</div>
+<div id="operational-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.4</span> Operational Feasibility</h3>
+<p>The operational feasibility study involves undertaking a study to analyze and determine whether – and how well – the organization’s needs can be met by completing the project. Operational feasibility studies also analyze how a project plan satisfies the requirements identified in the requirements analysis phase of system development.</p>
+<p>To ensure success, the desired operational outcomes must be imparted during design and development. These include such design-dependent parameters as reliability, maintainability, supportability, usability, producibility, disposability, sustainability, affordability and others. These parameters are required to be considered at the early stages of the design if desired operational behaviours are to be realised. System design and development requires appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters. A system may serve its intended purpose most effectively when its technical and operating characteristics are engineered into the design. Therefore, operational feasibility is a critical aspect of systems engineering that needs to be an integral part of the early design phases</p>
+</div>
+<div id="scheduling-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.5</span> Scheduling Feasibility</h3>
+<p>The scheduling feasibility assessment is the most important study for the project’s success; after all, a project that is delivered too late to be useful is an automatic failure. In this study, we estimate how long the system will take to develop, and if it can be completed in the given time. Time feasibility is a measure of how reasonable the project timetable is. Given our technical expertise, are the project deadlines reasonable? Some projects are initiated with specific deadlines. It is necessary to determine whether the deadlines are mandatory or desirable.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="phases-summary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="consulting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-1-define-the-business-casequestion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phase-3-scoping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

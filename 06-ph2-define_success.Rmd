@@ -1,0 +1,71 @@
+# Phase 2: Define success.
+After going through Phase 1, you and your client/manager should have a clear picture of what the main objectives of the project are. Now it’s time to narrow in on some details. In this phase, you will address specific requirements to make sure that you and your client/manager agree on what a successful outcome will look like in concrete terms.
+
+As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is all about negotiation, negotiate with the different parties until you get everybody to align to the same vision. Note that without alignment you can’t proceed, if you do proceed by choosing to align to the main stakeholder, the other stakeholders will be hostile towards you and the project. If there is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.
+
+When fleshing out your feature list, It can be useful to make two different lists, one with the must-have requirements and one with the nice to have. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements. 
+
+At this point, it is also important to think about the bigger picture and what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?
+
+In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter \@ref(levels) and define success on the four different levels: the project process, product, business and contextual level. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here,  ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a tradeoff between accuracy and the budget/time spent. 
+
+Most companies will already be working with a way to keep track of and define success for it’s varying departments, this is often framed as Key Performance Indicators.
+
+## Key Performance Indicators (KPI){#KPIs}
+
+<div class="infobox">
+**Definition**
+
+A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.
+</div>
+
+KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:
+
+- What is your desired outcome?
+- Why does this outcome matter?
+- How are you going to measure progress?
+- How can you influence the outcome?
+- Who is responsible for the business outcome?
+- How will you know you’ve achieved your outcome?
+- How often will you review progress towards the outcome?
+
+One way to evaluate the relevance of a performance indicator is to use [the SMART criteria](http://en.wikipedia.org/wiki/SMART_criteria){target="_blank"}. The letters are typically taken to stand for **Specific, Measurable, Attainable, Relevant, Time-bound**. In other words:
+
+- Is your objective **Specific**?
+- Can you **Measure** progress towards that goal?
+- Is the goal realistically **Attainable**?
+- How **Relevant** is the goal for your organization?
+- What is the **Time-frame** for achieving this goal?
+ 
+## Feasibility Study
+A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project in order to assess the likelihood of its success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibilities. 
+
+### Technical Feasibility
+The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.
+
+This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken into consideration:
+
+- A brief description of the business to assess more possible factors which could affect the study
+- The part of the business being examined
+- The human and economic factor
+- The possible solutions to the problem
+- Methods of producing the solution
+- Detailed project requirements
+
+This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it is technically possible to do so.
+
+### Economic Feasibility 
+An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
+serves as an independent project assessment and enhances project
+credibility -- helping decision-makers determine the positive economic benefits to the organization that the proposed project will provide.
+
+### Legal Feasibility
+The legal feasibility assessment investigates whether any aspect of the proposed project conflicts with legal requirements like zoning laws, data protection acts or social media laws. Let’s say an organization wants to store customer information for the use in a recommendation engine on its e-commerce site.  A feasibility study might reveal that the laws governing this data differ depending on where the customer is geographically located. Therefore, simply storing this data isn’t possible and a more in-depth analysis of the law needs to be made. Different data will need to be stored for different customers. This might mean that the recommendation engine isn’t feasible for the organisation right now as this would add extra costs and technical difficulty. 
+
+### Operational Feasibility
+The operational feasibility study involves undertaking a study to analyze and determine whether -- and how well -- the organization’s needs can be met by completing the project. Operational feasibility studies also analyze how a project plan satisfies the requirements identified in the requirements analysis phase of system development.
+
+To ensure success, the desired operational outcomes must be imparted during design and development. These include such design-dependent parameters as reliability, maintainability, supportability, usability, producibility, disposability, sustainability, affordability and others. These parameters are required to be considered at the early stages of the design if desired operational behaviours are to be realised. System design and development requires appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters. A system may serve its intended purpose most effectively when its technical and operating characteristics are engineered into the design. Therefore, operational feasibility is a critical aspect of systems engineering that needs to be an integral part of the early design phases
+
+### Scheduling Feasibility
+The scheduling feasibility assessment is the most important study for the project’s success; after all, a project that is delivered too late to be useful is an automatic failure. In this study, we estimate how long the system will take to develop, and if it can be completed in the given time. Time feasibility is a measure of how reasonable the project timetable is. Given our technical expertise, are the project deadlines reasonable? Some projects are initiated with specific deadlines. It is necessary to determine whether the deadlines are mandatory or desirable.

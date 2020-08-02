@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Example project plan | Designing and Building Data Science Solutions</title>
+  <title>Chapter 10 Summary of project phases | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="Chapter 10 Summary of project phases | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="Chapter 10 Summary of project phases | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="phases-summary.html"/>
-<link rel="next" href="consulting.html"/>
+<link rel="prev" href="phase-6-handover-and-knowledge-transfer-aka-finding-a-new-owner.html"/>
+<link rel="next" href="example.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -176,209 +176,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="example" class="section level1">
-<h1><span class="header-section-number">Chapter 11</span> Example project plan</h1>
-<p>Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers – what might be best for one project may be well off-the-mark for another.</p>
-<p>We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.</p>
-<hr />
-<center>
-<strong>Proposal for Client X</strong>
-</center>
-<p><em>Introduction:</em></p>
-<p>Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers.</p>
-<p><em>Project description:</em></p>
-<p>In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience.</p>
-<p>In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset.</p>
-<p>When performing cluster analysis, an important consideration is in determining the optimal number of clusters. While techniques such as the elbow method can be useful in arriving at this number, we feel it will also be important to sense-check the outcome with Client X stakeholders who understand their customers the best. Thus, throughout this project, we will have regular progress updates with Client X to show our findings and illustrate descriptive analyses of how the resultant clusters differ from one another.</p>
-<p>In Objective 2, “Product recommendations”, we will focus on building a recommender system that can be used to suggest products to Client X customers. We plan to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches intending to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.</p>
-<p>We outline the plan for this project below.</p>
-<hr />
-<center>
-<p><strong>Project Proposal: Customer Insights and Recommendations</strong></p>
-<p><em>Objective: This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.</em></p>
-</center>
-<p><br/></p>
-<center>
-<strong>Objective 1: Customer insights</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome//Deliverables</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-1</td>
-<td><ul>
-<li><strong>Exploratory data
-analysis</strong></li>
-<li>We will explore the
-data available to
-support the project.</li>
-<li>We will ensure that
-data are accessible
-and will perform a
-preliminary analysis
-with a view to
-identifying a subset
-of features that
-best-suited for
-cluster analysis in
-Milestone 2.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing the initial
-findings of
-relationships between
-features.</li>
-<li>A list of features
-to use for clustering.</li>
-</ul></td>
-<td>End
-of
-Week
-2</td>
-</tr>
-<tr class="even">
-<td>Milestone
-2</td>
-<td><ul>
-<li><strong>Cluster analysis</strong></li>
-<li>Using the learnings
-from Milestone 1, we
-will experiment with
-various clustering
-algorithms.</li>
-<li>The best candidate
-will be selected for
-further improvements.</li>
-</ul></td>
-<td><ul>
-<li>A GitHub repository
-containing Python code
-driving a segmentation
-model.</li>
-<li>A report and
-presentation
-highlighting findings.</li>
-</ul></td>
-<td>End
-of
-Week
-4</td>
-</tr>
-</tbody>
-</table>
+<div id="phases_summary" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Summary of project phases</h1>
+<p>In this chapter, we have given you a lot of information about how we approach the projects that we design and execute. We hope that you find our suggestions useful. Naturally, projects come in different sizes and scopes, and whether or not all of these phases are appropriate for a given project depends on many factors.</p>
+<p>While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter <a href="levels.html#levels">2</a>, the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project when the business case is being discussed. The lower levels, such as the <em>project process</em> phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.</p>
+
+<div class="center">
+<div class="figure"><span id="fig:full-figure"></span>
+<img src="figures/Framework%20phases.png" alt="Combined project evaluation and phases" width="100%" />
+<p class="caption">
+Figure 10.1: Combined project evaluation and phases
+</p>
 </div>
-<br/><br/>
-<center>
-<strong>Objective 2: Product recommendations</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome/Deliverable</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-3</td>
-<td><ul>
-<li><strong>Research</strong></li>
-<li>We will examine the
-data available to
-identify a feature
-space to use for
-collaborative
-filtering.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing initial
-findings of possible
-approaches to the
-recommendation engine.</li>
-</ul></td>
-<td>End
-of
-Week
-6</td>
-</tr>
-<tr class="even">
-<td>Milestone
-4</td>
-<td><ul>
-<li><strong>Build</strong></li>
-<li>We will focus on
-productionising the
-recommender system and
-integrating it into
-the existing Client X
-data infrastructure</li>
-</ul></td>
-<td><ul>
-<li>A deployed
-recommender system
-that runs on the
-Client X GCP instance.</li>
-<li>A demonstration,
-presentation and
-report outlining
-experimental approach
-and deployment
-specifications, as
-well as
-recommendations for
-model improvements and
-retraining.</li>
-<li>A GitHub repo
-containing all code
-used.
-.</li>
-</ul></td>
-<td>End
-of
-Week
-9</td>
-</tr>
-</tbody>
-</table>
 </div>
 
 </div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="phases-summary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="consulting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-6-handover-and-knowledge-transfer-aka-finding-a-new-owner.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="example.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

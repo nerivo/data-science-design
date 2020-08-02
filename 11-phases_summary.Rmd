@@ -1,0 +1,14 @@
+# Summary of project phases {#phases_summary}
+In this chapter, we have given you a lot of information about how we approach the projects that we design and execute. We hope that you find our suggestions useful. Naturally, projects come in different sizes and scopes, and whether or not all of these phases are appropriate for a given project depends on many factors. 
+
+While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter \@ref(levels), the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project when the business case is being discussed. The lower levels, such as the *project process* phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.
+
+(ref:fig3) Combined project evaluation and phases
+
+::: {.center}
+
+```{r full-figure, fig.cap='(ref:fig3)', fig.show='hold', message=FALSE, out.width='100%', echo=FALSE}
+knitr::include_graphics(rep('figures/Framework phases.png', 1))
+```
+
+:::

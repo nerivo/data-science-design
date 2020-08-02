@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Example project plan | Designing and Building Data Science Solutions</title>
+  <title>Chapter 6 Phase 3: Scoping | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="Chapter 6 Phase 3: Scoping | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Example project plan | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="Chapter 6 Phase 3: Scoping | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="phases-summary.html"/>
-<link rel="next" href="consulting.html"/>
+<link rel="prev" href="phase-2-define-success-.html"/>
+<link rel="next" href="definition.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -176,209 +176,46 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="example" class="section level1">
-<h1><span class="header-section-number">Chapter 11</span> Example project plan</h1>
-<p>Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers – what might be best for one project may be well off-the-mark for another.</p>
-<p>We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.</p>
-<hr />
-<center>
-<strong>Proposal for Client X</strong>
-</center>
-<p><em>Introduction:</em></p>
-<p>Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers.</p>
-<p><em>Project description:</em></p>
-<p>In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience.</p>
-<p>In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset.</p>
-<p>When performing cluster analysis, an important consideration is in determining the optimal number of clusters. While techniques such as the elbow method can be useful in arriving at this number, we feel it will also be important to sense-check the outcome with Client X stakeholders who understand their customers the best. Thus, throughout this project, we will have regular progress updates with Client X to show our findings and illustrate descriptive analyses of how the resultant clusters differ from one another.</p>
-<p>In Objective 2, “Product recommendations”, we will focus on building a recommender system that can be used to suggest products to Client X customers. We plan to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches intending to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.</p>
-<p>We outline the plan for this project below.</p>
-<hr />
-<center>
-<p><strong>Project Proposal: Customer Insights and Recommendations</strong></p>
-<p><em>Objective: This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.</em></p>
-</center>
-<p><br/></p>
-<center>
-<strong>Objective 1: Customer insights</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome//Deliverables</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-1</td>
-<td><ul>
-<li><strong>Exploratory data
-analysis</strong></li>
-<li>We will explore the
-data available to
-support the project.</li>
-<li>We will ensure that
-data are accessible
-and will perform a
-preliminary analysis
-with a view to
-identifying a subset
-of features that
-best-suited for
-cluster analysis in
-Milestone 2.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing the initial
-findings of
-relationships between
-features.</li>
-<li>A list of features
-to use for clustering.</li>
-</ul></td>
-<td>End
-of
-Week
-2</td>
-</tr>
-<tr class="even">
-<td>Milestone
-2</td>
-<td><ul>
-<li><strong>Cluster analysis</strong></li>
-<li>Using the learnings
-from Milestone 1, we
-will experiment with
-various clustering
-algorithms.</li>
-<li>The best candidate
-will be selected for
-further improvements.</li>
-</ul></td>
-<td><ul>
-<li>A GitHub repository
-containing Python code
-driving a segmentation
-model.</li>
-<li>A report and
-presentation
-highlighting findings.</li>
-</ul></td>
-<td>End
-of
-Week
-4</td>
-</tr>
-</tbody>
-</table>
+<div id="phase-3-scoping" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Phase 3: Scoping</h1>
+<p>This is the phase where we start to explore the supporting data and test some of our hypotheses and assumptions. Note that the goal of this phase is not to create a proof-of-concept; this phase has no concrete deliverables and is more open-ended. Rather this phase is aimed at understanding the size, structure and complexity of the supporting data and to generate a clearer understanding of the problem and what a solution could look like.</p>
+<p>Usually this phase starts with a data exploration, during which you should be asking questions such as:</p>
+<ul>
+<li>Are the data in a clean usable format?</li>
+<li>If not what manual/automated effort would be required to get the data in a usable format?</li>
+<li>How complex are the transformations required?</li>
+</ul>
+<p>Once you have the data in a usable format, you should ask standard EDA (exploratory data analysis) questions: What abnormalities does the data set have? What do the distributions look like? What do outliers look like? How are missing values recorded? How many missing values are there? Are there any unusual entries that require explanation?</p>
+<div class="infobox">
+<p><strong>Data access and security</strong></p>
+<p>Getting access to data can often be a challenge due to security policies that may be in place. This is especially common in financial services, but is certainly not limited to this industry. There are many ways of making data access secure so you may have to work with the data administrators to work out a safe and secure plan that works for them. We have each had to endure inconveniences to access data, such as sitting in data-secure rooms with no internet access, having encrypted laptops sent to us to use for our work or having had to access data via VPNs and cloud-based servers that restricted access based on multi-factor authentication. For some industries, we have even had to go through extensive background checks. There are often quite a few hurdles to jump through when it comes to data security so we recommend discussing this with your client early in order to get these hurdles out of the way.</p>
 </div>
-<br/><br/>
-<center>
-<strong>Objective 2: Product recommendations</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome/Deliverable</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-3</td>
-<td><ul>
-<li><strong>Research</strong></li>
-<li>We will examine the
-data available to
-identify a feature
-space to use for
-collaborative
-filtering.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing initial
-findings of possible
-approaches to the
-recommendation engine.</li>
-</ul></td>
-<td>End
-of
-Week
-6</td>
-</tr>
-<tr class="even">
-<td>Milestone
-4</td>
-<td><ul>
-<li><strong>Build</strong></li>
-<li>We will focus on
-productionising the
-recommender system and
-integrating it into
-the existing Client X
-data infrastructure</li>
-</ul></td>
-<td><ul>
-<li>A deployed
-recommender system
-that runs on the
-Client X GCP instance.</li>
-<li>A demonstration,
-presentation and
-report outlining
-experimental approach
-and deployment
-specifications, as
-well as
-recommendations for
-model improvements and
-retraining.</li>
-<li>A GitHub repo
-containing all code
-used.
-.</li>
-</ul></td>
-<td>End
-of
-Week
-9</td>
-</tr>
-</tbody>
-</table>
+<p>What defines clean data can vary greatly across professions and industries. For some people, hundreds of differently structured excel files that are human-readable would be considered clean data, yet for data scientists this would be a nightmare, requiring a substantial investment to merge all of the files for them to be analysed as a coherent whole. Databases or data warehouses, in contrast, tend not to suffer from such problems of <em>data structure</em>. However, even well-structured data can require substantial cleaning. For example the dataset could contain duplicate entries, missing values or inconsistently-recorded measurements, to name but a few potential data cleaniness problems. While exploring and working with a poorly-structured or unclean dataset may be agonising, knowing the state of the data that you will use for the project is critical in order to accurately appreciate the scale of the prospective project. Unexpected data cleaning can take weeks and will invariably cause delays to your project, so this insight will allow you to budget appropriately when creating your project plan.</p>
+<p>The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. What do we mean by that? In one way, we mean statistical hypothesis testing in the truest sense of the word: formulating null and alternative hypotheses and applying appropriate statistical tests to see how well the evidence supports them. However, we also mean testing more general ideas about the data, usually based on anecdotal evidence or domain experience from those who know the business the best. For example, your client may be confident that sales are highest on Fridays – use that as the basis for an experiment in your EDA and see if the data really do support that notion. Often with such assumptions, the data will indeed confirm what your client <em>knows</em> (or, more accurately, <em>thinks they know</em>) about the data. But sometimes those assumptions are wrong, and you are unable to find support for the assumption <strong>in the data you have</strong>.</p>
+<p>It is important to note here that hypothesis tests that fail to support your client’s assumptions do not necessarily mean that those assumptions are false. We emphasised the words “in the data you have” in the preceding paragarph for a reason: your data may not be representative of reality. This touches on a fundamental notion in data science – that data is not the same as ground truth. Data are artefacts and are affected by biases in collection methodology, study design, storage, aggregation and interpretation. In short, the data that comes to you has been affected by the many design choices that were made by others – choices about every step on the journey between the real world and the number you see in front of you. No dataset is ever completely unbiased. For an in-depth discussion of this topic, we stonlgy recommend <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4" target="_blank">this article</a> by Angela Bassa.</p>
+<p>Does this mean that data science is worthless? Of course not. But it does mean that you should keep in mind that some bias will be baked into every dataset. You job is to identify where biases may lay and account for them in your mission to “reach a factual understanding of truth” <span class="citation">(Bassa <a href="#ref-bassa_2017" role="doc-biblioref">2017</a>)</span>. In an ideal world, you (the data scientist) would have a say in how data are collected and curated, therefore allowing you to understand what design choices were made. In reality this almost never happens, leaving you to work with data that has been affected by the choices of others. During this phase of the project, you will want to validate some of the foundational assumptions upon which your project will be based. Our advice is to do this as scientifically as possible so that you can maximise your chances of accurately assessing what will be involved to deliver the project objectives.</p>
+<p>We recommend that you time-box this phase of the project. Exactly how much time you spend will vary: in some cases a few hours of exploring the data may be sufficient, in others you may want to spend several weeks going through a formal in-depth EDA and data validation activity. Time-boxing allows the team to focus their efforts on the most pressing concerns without starting to implement the entire project. Remember, <strong>the goal is not to get started but rather to reduce risk and explore possible solutions.</strong> In software engineering, this is often done in the form of a design sprint. In data science, we can also work in sprints but the process is slightly different as we need to validate a hypothesis – the process is far more scientific. Doing this work beforehand helps us drastically reduce uncertainties and ensures that projects which are unlikely to succeed don’t get started: if we discover there is insufficient or insignificant data to reach the goal then we can pause the analysis in order to collect more suitable data, delaying the project until its goals are achievable.</p>
+<p>The reader might think that doing this phase is hindering the project – delaying it from really getting started and providing little in the way of tangible outcomes. In our experience, this is untrue: when we scope out a project we can more accurately predict what the outcome will be and what resources are needed to achieve the end goal. This translates into less risk for clients and data scientists alike. Being able to quickly demonstrate progress or build a basic proof-of-concept reassures all stakeholders that the project will be successful. This also stops us from adding large margins to project proposals to combat the uncertainty and ultimately delivers project proposals that better reflect reality, which is better for all stakeholders involved. We have personally had a 100% success rate of winning project proposals as an independent consultant once we embarked on this stage. The reason is clear, having had time to scope out the project our proposal was more competitive as we didn’t need to add large margins for project uncertainty.</p>
+<div class="infobox">
+<p>It is essential to note that general engineering projects differ from data science projects. Data science projects need to be scientifically correct and for this, you need to follow a scientific process. It is not enough to make a library call to train a model and assume it will perform a certain way just because you tested a few cases. Models you create need to be robust or you will get large varying results that cannot be explained. Making models robust to outliers is an important step in modelling. So be warned, it is not enough for somebody to have used a machine learning library in the past, they should be capable of following a scientific process required to build what is necessary for a data science project to succeed.</p>
 </div>
+<p>In this phase, it is also essential to start thinking about testing. How will you test your final solution? Can you use TDD (test-driven development)? This strategy requires you to set up extensive test cases now that you will use to validate your final solution later. Doing this will let you think through the problem more clearly and write down what criteria the result will adhere to.</p>
+<p>The last thing to consider in this phase is that you might not get the desired outcome. It is essential that you allow the scoping project to fail if need be. At the very least you saved yourself from failing at a larger scale. Most probably you will discover shortcomings that will not allow the project to be successful. How can these issues be addressed? Can more data be collected? Can the data be enriched with another source? )r can data be cleaned even further to get a better sample? A valid outcome is to make a good recommendation as to how the project can still be successful by doing other work. For example, can clickstream data be collected from the website if there are insufficient orders to make decent recommendations for customers who have never bought an item? This would solve the cold start problem many recommendation engines face.</p>
 
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-bassa_2017">
+<p>Bassa, Angela. 2017. “Data Alone Isn’t Ground Truth.” <em>Medium</em>. <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4">https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4</a>.</p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="phases-summary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="consulting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-2-define-success-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="definition.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

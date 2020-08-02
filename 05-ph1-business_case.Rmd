@@ -1,0 +1,43 @@
+# Phase 1: Define the business case/question
+## Find the business case
+You may find that your client already has a clear idea of possible projects. If that’s the case, then we encourage you to go through each and view them through the lens of the contextual understandings identified above. If your client does not have preconceived ideas about possible projects, then you might want to view this conversation as a brainstorming session.
+
+Questions that can help to drive the conversation can include:
+
+*  Do you have any ideas already that you would like to consider?
+*  If you could improve three aspects of your business, what would they be?
+*  Do you have a concrete objective or are you trying to implement a more general innovation in your business?
+
+As you drill down into specific project ideas, you should consider the practical aspects of delivering the project. For example, we often ask our clients to describe to us what a successful outcome would be, what would be acceptable and what would be outstanding. These questions can be in terms of concrete modelling metrics (such as accuracy, precision, recall, etc) or terms of business value (for instance, to save at least £10,000 in lost annual revenue from customer churn). Asking for concrete examples of outcomes can help you to get a sense of your client’s expectations and will allow you to manage these in advance. 
+
+You will also want to understand what your client will need in terms of deliverables, by which we mean the tangible *thing* that is delivered at the end of the project. This could include things such as reports, presentations or a code-base, but often also includes a fully-functional software package, a deployed model or API.
+
+Similarly, it can be useful to assess your client’s appetite for risk by asking questions such as, “If our best model is only correct half the time, would that be acceptable?”
+
+## Define the business case
+As with any scientific experiment, a critical first step in designing a data science project is to define the question and to phrase a hypothesis. In other words, it is vital that all parties, including the data scientists and the stakeholders, agree on the project’s goals. While a project brief can help identify important aspects of the work, in our experience the best results come from face-to-face conversations. Do not restrict this to a single person, but rather make every effort to talk to every stakeholder who may be involved in the project. 
+
+With a client I once worked with, the main stakeholder turned out to be the CFO (Chief Financial Officer). Although he was in no way involved in the project he was the one who created the budget required for the innovation. When asking the other stakeholders about the budget and requirements his name came up and we decided to include him in the next meeting. At the next meeting, we discussed the scope and even expanded the scope and budget as we were finally talking to the main stakeholder. If however this interaction had not occurred, the project would have taken a completely different direction.
+
+When talking to the the different stakeholders, ask yourself whether a clear vision forms from these conversations and, more importantly, whether the different visions from the different stakeholders are aligned. When they are not aligned, it is your responsibility to align them. Find the middle ground and make compromises between the different parties. There is never going to be an infinite budget so you will always need to compromise somewhere.
+
+In a related way, it is important to recognise that different stakeholders will almost always come from different backgrounds and have different preconceptions that can influence the way they perceive business problems and potential solutions. As a consultant, you want to take these different points of view into account, and you may even find that you have to defend your point of view as well. 
+
+A common pre-conception is that artificial intelligence is complicated and cannot be understood. It is often treated as a black box with a magical outcome. Developers who use machine learning libraries without fully understanding these often create or support this preconception. This viewpoint, however, originates from a lack of knowledge. Most machine learning libraries are open source and a skilled data scientist will be able to dig into their models and alter or understand the results it produces. 
+
+Machine learning models at the core are mathematical models, data is manipulated through a series of mathematical operations. These operations are not random but should be well chosen to produce favourable results. Understanding this process lets you understand the limitations and the overall behaviour of the model. Once this is properly understood, one can make deliberate changes that improve the model overall, remove bias or simply deal better with outliers that had been neglected previously.
+
+:::{.infobox}
+**What is open source**
+
+Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.
+
+:::
+
+As a side note be aware when choosing your machine learning toolkit. When using closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that data scientists will lose visibility and the ability to understand the system fully.
+
+When talking to your stakeholders, do not be shy: understanding what the different stakeholders know and value is essential to forming a plan and ensuring that everyone is “on the same page.”
+
+In this phase, you should be focusing on the contextual and business levels. As a data scientist, it is your responsibility to make sure you and your teammates have thought carefully about what will bring value to the business and whether or not the candidate project aligns with the business strategy long-term. Fully consider how the business will change over time and what will be needed to keep this new part of the system up to date so that it can remain relevant.
+
+Systems are in development constantly, the more you learn about the overall product and future of the product through the roadmap, the more you can use this knowledge to make your part of the system more robust. Is one of the data sources being replaced by a richer data source in future? If so how can you build your system so that this can be easily incorporated in your model when this data arrives and how will your models deal with the inconsistency in your old and new data? Writing a recommendation engine for an e-commerce site can be straightforward but how can your model use the clickstream data that will be collected in the future if you do not have this data now? These scenarios, as well as many others, can lead to technical debt in a data science pipeline. While a comprehensive review of how to minimise technical debt is beyond the scope of this article, we recommend [Managing Technical Debt](https://www.amazon.co.uk/Managing-Technical-Debt-Development-Engineering/dp/013564593X/ref=sr_1_1?dchild=1&keywords=managing+technical+debt&qid=1595912830&sr=8-1){target="_blank"}.
