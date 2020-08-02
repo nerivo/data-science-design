@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 13 Finding help | Designing and Building Data Science Solutions</title>
+  <title>Chapter 9 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 13 Finding help | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="Chapter 9 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 13 Finding help | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="Chapter 9 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="consulting.html"/>
-
+<link rel="prev" href="execution.html"/>
+<link rel="next" href="phases-summary.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -181,34 +181,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="help" class="section level1">
-<h1><span class="header-section-number">Chapter 13</span> Finding help</h1>
-<p>Numerous kind and generous data professionals make themselves available to help others. Four of our favourite collections are:</p>
-<ul>
-<li><a href="https://www.datahelpers.org/" target="_blank">Data Helpers</a> by Angela Bassa (a list of people who are happy to help and mentor data scientists)</li>
-<li><a href="http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you" target="_blank">Stephanie Hurlburt’s list</a> of engineers willing to offer mentorship or find a mentor on these <a href="https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/" target="_blank">replies on twitter</a>.</li>
-<li>The <a href="https://www.rfordatasci.com/" target="_blank">R for Data Science Online Learning Community</a>, where R users and learners can find one another and share ideas.</li>
-<li><a href="https://pydata.org/" target="_blank">PyData</a> provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. They run conferences and meet-ups world wide. It is a good place to connect with others that use predominantly python.</li>
-</ul>
-<p>The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise…don’t be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another.</p>
-<p>If you would like to gain more experience using your data science skills or use them for good cause you can always get involved with <a href="https://www.datakind.org/" target="_blank">Data Kind</a>.</p>
+<div id="phase-6-handover-and-knowledge-transfer-aka-finding-a-new-owner" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Phase 6: Handover and knowledge transfer (aka finding a new owner)</h1>
+<p>Sometimes this phase is really simple. If the deliverable was a report then nothing further needs to be done. For more complex projects this, however, can be the most difficult phase.</p>
+<p>If you are creating a system, remember to deploy the solution according to the plan. It is often not enough to hand over source code as crucial details are often in the deployment. Does your solution scale? Make sure to stress test your application so that it doesn’t crash unexpectedly.</p>
+<p>For the long term success of any project, there must be a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?</p>
+<div class="infobox">
+<p><strong>The concept ‘drift’ explained</strong></p>
+<p>In the most challenging of data analysis applications, data evolves and must be analyzed in near real-time. Patterns and relations in such data often evolve, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.</p>
+<p>To combat drift, a model should be thoroughly analysed and a decision needs to be made on how frequently a model should be re-trained in order to remain relevant.</p>
+</div>
+<p>Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location than the code, then a developer making changes, would also need to remember to update the documentation.</p>
+<p>Many great tools can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphynx</a> as it is widely used and gives you loads of great styles to choose from.
+Regarding proper coding style, we recommend you follow <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP8</a> for python and for R, the <a href="http://adv-r.had.co.nz/Style.html" target="_blank">R style guide</a>. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use <a href="https://github.com/psf/black" target="_blank">Black</a>. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is, however, important to note that once you use a formatter, you can’t realistically override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your preferred format.</p>
+<p>When you reach the end of your project, find the person responsible for maintaining the system and run through how it works. Do a complete handover running through both the code and the documentation, adding comments and notes to clarify points that are not clear to the person you are handing over to.</p>
+<p>If handover to an actual person is not possible for whatever reason, eg. if a permanent data scientist is not yet hired, then make sure you make your documentation as clear as possible. Do not leave it to chance and write it as if you are writing for a very junior person. More documentation is recommended in these cases.</p>
+<p>Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.</p>
 
-<div id="refs" class="references">
-<div>
-<p>Bassa, Angela. 2017. “Data Alone Isn’t Ground Truth.” <em>Medium</em>. <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4">https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4</a>.</p>
-</div>
-<div>
-<p>Howsawi, Eskander, David Eager, Ravindra Bagia, and Klaus Niebecker. 2014. “The Four-Level Project Success Framework: Application and Assessment.” <em>Organisational Project Management</em> 1 (May). <a href="https://doi.org/10.5130/.v1i0.3865">https://doi.org/10.5130/.v1i0.3865</a>.</p>
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="consulting.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="execution.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phases-summary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
