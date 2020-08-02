@@ -37,8 +37,7 @@ site: bookdown::bookdown_site
 
 # Welcome {-}
 
-```{r cover-fig, out.width='50%', fig.show='hold', echo=FALSE}
-#out.extra='style="float:right; padding:10px"'
+```{r cover-fig, out.width='50%', fig.show='hold', echo=FALSE, out.extra='style="float:right; padding:10px"'}
 knitr::include_graphics(rep('figures/Designing and bulding data science solutions seo.jpg', 1))
 ```
 
