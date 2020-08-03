@@ -1,5 +1,5 @@
 # The phases of a project {#phases}
-Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases. We outline these in the sections below and expand on two of those in detail in Chapters \@ref(definition) and \@ref(execution). While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
+Every project is different and the exact way you approach it may vary. That said, we have found that nearly every project has some aspect of six major phases . We outline these in the chapters that follow. While you may find that you do not need to formally demarcate each phase explicitly, we suggest that you go through the process of considering each carefully during the course of your project.
 
 <br/>
 
@@ -13,3 +13,6 @@ knitr::include_graphics(rep('figures/Figure_2-phases.png', 1))
 
 :::
 
+As the above diagram shows, we see a natural logic flow to the process, starting with a zoomed-out view that defines the project's objectives in a business context. Phases 1--3 focus on setting the stage for project definition, allowing you to determine if the prospective undertaking could be a viable project. While this may seem intuitive, we have seen many examples of projects that struggled or failed because the designers did not consider these steps carefully. In other words, it can be tempting to jump into the "hands-on" work of a project (Phase 5 above) without taking the time to go through the early definition phases. 
+
+Once you have determined that success is possible -- that you have a viable project concept -- the next steps are to design a project plan and put it into action. We call these Phases 4 and 5, respectively. Phase 6 focuses on wrapping up the project and handing it over to its new owners at the end of your engagement. Again, while this may seem like an obvious way to wrap up a piece of work, we find that it can be useful to go through a checklist of points to consider to ensure that your project's new owners can use what you've created, understand how it works and build on your hard work. We describe these considerations in Chapter \@ref(handover). 

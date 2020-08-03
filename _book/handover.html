@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Example project plan | Designing and Building Data Science Solutions</title>
+  <title>10 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Example project plan | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="10 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Example project plan | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="10 Phase 6: Handover and knowledge transfer (aka finding a new owner) | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="definition.html"/>
-<link rel="next" href="execution.html"/>
+<link rel="prev" href="execution.html"/>
+<link rel="next" href="phasesSummary.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -174,200 +174,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="example" class="section level1">
-<h1><span class="header-section-number">8</span> Example project plan</h1>
-<p>Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers – what might be best for one project may be well off-the-mark for another.</p>
-<p>We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.</p>
-<hr />
-<center>
-<strong>Proposal for Client X</strong>
-</center>
-<p><em>Introduction:</em></p>
-<p>Client X specialises in creating high-performance, affordable exercise gear for serious and recreational runners alike. Their vision is to create an online shopping experience for their customers, in which they can shop for shoes, apparel and accessories without having to walk into a store. However, this vision comes with understandable obstacles, such as how to convince customers that an online shopping experience can match the experience they would expect in-store, which has the benefit of allowing a customer to try on several sizes and models. Furthermore, many customers have reported that working with a sales associate directly gives them more confidence that the suggestions brought before them are personalised in a way that an online shopping experience cannot match. Client X would like to dispel this rumour by making the Client X online shopping experience more personalised. In this proposal, we outline a project in which we will develop a personalised recommendation engine for Client X, which will employ innovative approaches to understanding Client X customers.</p>
-<p><em>Project description:</em></p>
-<p>In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience.</p>
-<p>In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset.</p>
-<p>When performing cluster analysis, an important consideration is in determining the optimal number of clusters. While techniques such as the elbow method can be useful in arriving at this number, we feel it will also be important to sense-check the outcome with Client X stakeholders who understand their customers the best. Thus, throughout this project, we will have regular progress updates with Client X to show our findings and illustrate descriptive analyses of how the resultant clusters differ from one another.</p>
-<p>In Objective 2, “Product recommendations”, we will focus on building a recommender system that can be used to suggest products to Client X customers. We plan to use collaborative filtering in combination with the customer segments identified in Objective 1, however we may find through the course of researching this project that a different approach is more appropriate. We have, therefore, broken this project into two discrete phases: research and building. The research phase will explore various recommender system approaches intending to gain enough knowledge to choose a single best option for the build phase, in which we will productionise an engine that runs on the Client X Google Cloud Platform instance, ingesting data from the Client X datastores and returning the outcome via an API. We will work with the Client X engineering team to ensure that the API produced returns information in a format that can be processed by the rest of the Client X data infrastructure.</p>
-<p>We outline the plan for this project below.</p>
-<hr />
-<center>
-<p><strong>Project Proposal: Customer Insights and Recommendations</strong></p>
-<p><em>Objective: This project is aimed at developing a personalised recommendation engine that will employ innovative approaches to understanding Client X customers.</em></p>
-</center>
-<p><br/></p>
-<center>
-<strong>Objective 1: Customer insights</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome//Deliverables</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-1</td>
-<td><ul>
-<li><strong>Exploratory data
-analysis</strong></li>
-<li>We will explore the
-data available to
-support the project.</li>
-<li>We will ensure that
-data are accessible
-and will perform a
-preliminary analysis
-with a view to
-identifying a subset
-of features that
-best-suited for
-cluster analysis in
-Milestone 2.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing the initial
-findings of
-relationships between
-features.</li>
-<li>A list of features
-to use for clustering.</li>
-</ul></td>
-<td>End
-of
-Week
-2</td>
-</tr>
-<tr class="even">
-<td>Milestone
-2</td>
-<td><ul>
-<li><strong>Cluster analysis</strong></li>
-<li>Using the learnings
-from Milestone 1, we
-will experiment with
-various clustering
-algorithms.</li>
-<li>The best candidate
-will be selected for
-further improvements.</li>
-</ul></td>
-<td><ul>
-<li>A GitHub repository
-containing Python code
-driving a segmentation
-model.</li>
-<li>A report and
-presentation
-highlighting findings.</li>
-</ul></td>
-<td>End
-of
-Week
-4</td>
-</tr>
-</tbody>
-</table>
+<div id="handover" class="section level1">
+<h1><span class="header-section-number">10</span> Phase 6: Handover and knowledge transfer (aka finding a new owner)</h1>
+<p>Sometimes this phase is really simple. If the deliverable was a report then nothing further needs to be done. For more complex projects this, however, can be the most difficult phase.</p>
+<p>If you are creating a system, remember to deploy the solution according to the plan. It is often not enough to hand over source code as crucial details are often in the deployment. Does your solution scale? Make sure to stress test your application so that it doesn’t crash unexpectedly.</p>
+<p>For the long term success of any project, there must be a long term strategy in place. The software will always need to be maintained and depending on what you developed models might ingest new data and the results will slowly start to drift over time. How will the organisation deal with this? Is there a plan in place to maintain these models over time and who will do this?</p>
+<div class="infobox">
+<p><strong>The concept ‘drift’ explained</strong></p>
+<p>In the most challenging of data analysis applications, data evolves and must be analyzed in near real-time. Patterns and relations in such data often evolve, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.</p>
+<p>To combat drift, a model should be thoroughly analysed and a decision needs to be made on how frequently a model should be re-trained in order to remain relevant.</p>
 </div>
-<br/><br/>
-<center>
-<strong>Objective 2: Product recommendations</strong>
-</center>
-<div class="smaller">
-<table>
-<colgroup>
-<col width="16%" />
-<col width="33%" />
-<col width="33%" />
-<col width="17%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Milestone</th>
-<th>Work Carried Out</th>
-<th>Outcome/Deliverable</th>
-<th>Completion
-Date</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Milestone
-3</td>
-<td><ul>
-<li><strong>Research</strong></li>
-<li>We will examine the
-data available to
-identify a feature
-space to use for
-collaborative
-filtering.</li>
-</ul></td>
-<td><ul>
-<li>A presentation
-showing initial
-findings of possible
-approaches to the
-recommendation engine.</li>
-</ul></td>
-<td>End
-of
-Week
-6</td>
-</tr>
-<tr class="even">
-<td>Milestone
-4</td>
-<td><ul>
-<li><strong>Build</strong></li>
-<li>We will focus on
-productionising the
-recommender system and
-integrating it into
-the existing Client X
-data infrastructure</li>
-</ul></td>
-<td><ul>
-<li>A deployed
-recommender system
-that runs on the
-Client X GCP instance.</li>
-<li>A demonstration,
-presentation and
-report outlining
-experimental approach
-and deployment
-specifications, as
-well as
-recommendations for
-model improvements and
-retraining.</li>
-<li>A GitHub repo
-containing all code
-used.
-.</li>
-</ul></td>
-<td>End
-of
-Week
-9</td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location than the code, then a developer making changes, would also need to remember to update the documentation.</p>
+<p>Many great tools can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend <a href="https://www.sphinx-doc.org/en/master/" target="_blank">Sphynx</a> as it is widely used and gives you loads of great styles to choose from.
+Regarding proper coding style, we recommend you follow <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP8</a> for python and for R, the <a href="http://adv-r.had.co.nz/Style.html" target="_blank">R style guide</a>. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use <a href="https://github.com/psf/black" target="_blank">Black</a>. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is, however, important to note that once you use a formatter, you can’t realistically override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your preferred format.</p>
+<p>When you reach the end of your project, find the person responsible for maintaining the system and run through how it works. Do a complete handover running through both the code and the documentation, adding comments and notes to clarify points that are not clear to the person you are handing over to.</p>
+<p>If handover to an actual person is not possible for whatever reason, eg. if a permanent data scientist is not yet hired, then make sure you make your documentation as clear as possible. Do not leave it to chance and write it as if you are writing for a very junior person. More documentation is recommended in these cases.</p>
+<p>Make sure the test cases are understood and implemented in such a way that they are run regularly. There are plenty of continuous integration tools that do this for you. This will stop any performance altering changes from taking place. To avoid the negative consequences of model drift, recalculate the model performance on new data regularly.</p>
 
 </div>
             </section>
@@ -375,8 +197,8 @@ Week
           </div>
         </div>
       </div>
-<a href="definition.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="execution.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="execution.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phasesSummary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
