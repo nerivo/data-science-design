@@ -1,4 +1,6 @@
-# Phase 6: Handover and knowledge transfer (aka finding a new owner){#handover}
+# Phase 6: Handover and knowledge transfer {#handover}
+
+## Finding a new owner {-}
 
 Sometimes this phase is really simple. If the deliverable was a report then nothing further needs to be done. For more complex projects this, however, can be the most difficult phase. 
 

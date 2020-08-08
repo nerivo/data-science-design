@@ -1,4 +1,4 @@
-# Phase 5: exploration, execution and pivots {#execution}
+# Phase 5: Exploration, execution and pivots {#execution}
 
 ***
 ## Phase 5: Exploration, execution and pivots
