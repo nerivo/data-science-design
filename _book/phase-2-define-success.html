@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 Summary of project phases | Designing and Building Data Science Solutions</title>
+  <title>5 Phase 2: Define success | Designing and Building Data Science Solutions</title>
   <meta name="description" content="A guide as to how to make data science projects successful." />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 Summary of project phases | Designing and Building Data Science Solutions" />
+  <meta property="og:title" content="5 Phase 2: Define success | Designing and Building Data Science Solutions" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://datasciencedesign.com" />
   <meta property="og:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="nerivo/data-science-design" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 Summary of project phases | Designing and Building Data Science Solutions" />
+  <meta name="twitter:title" content="5 Phase 2: Define success | Designing and Building Data Science Solutions" />
   
   <meta name="twitter:description" content="A guide as to how to make data science projects successful." />
   <meta name="twitter:image" content="https://datasciencedesign.comfigures/Designing and bulding data science solutions seo.jpg" />
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="handover.html"/>
-<link rel="next" href="consulting.html"/>
+<link rel="prev" href="phase-1-the-business-case.html"/>
+<link rel="next" href="phase-3-scoping.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,28 +178,85 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="phasesSummary" class="section level1">
-<h1><span class="header-section-number">11</span> Summary of project phases</h1>
-<p>In this chapter, we have given you a lot of information about how we approach the projects that we design and execute. We hope that you find our suggestions useful. Naturally, projects come in different sizes and scopes, and whether or not all of these phases are appropriate for a given project depends on many factors.</p>
-<p>While we have presented project evaluation and project phases as different concepts, in actuality they go hand-in-hand. We encourage you to think about the levels of project evaluation as you go through the phases of project design. As we saw in Chapter <a href="levels.html#levels">2</a>, the levels of project evaluation are hierarchical. They also have a temporal component, by which mean that one should think about the higher levels during the earlier phases of a project when the business case is being discussed. The lower levels, such as the <em>project process</em> phase come more into consideration during the later phases of scoping, execution and handover. To illustrate this point, we have combined the earlier two figures into the figure before.</p>
+<div id="phase-2-define-success" class="section level1">
+<h1><span class="header-section-number">5</span> Phase 2: Define success</h1>
+<p>After going through Phase 1, you and your client/manager should have a clear picture of what the main objectives of the project are. Now it’s time to narrow in on some details. In this phase, you will address specific requirements to make sure that you and your client/manager agree on what a successful outcome will look like in concrete terms.</p>
+<p>As part of defining success, it will be essential to map out the business and identify the various people and departments involved in the project. You may find that each stakeholder has a different picture of what a successful outcome looks like, so you must be sure to address these differences and align them as best you can. Project planning is largely about negotiation, so a part of this phase involves you negotiating with the different parties until you get everybody aligned to the same vision. You should not proceed with the next phases of the project until you have acheived this alignment: if you do, for example by choosing to align to the main stakeholder, you risk creating a rift between the other stakeholders and you and the project. This scenario is never a good way to start a project, and if left unchecked such situations can block your chances of success. If there is a conflict you can’t possibly resolve, take this up with the most senior person so that they can pull rank and force alignment this way.</p>
+<p>When fleshing out the list of features your product or project will include, It can be useful to make two different lists, one with the must-have requirements and one with the nice-to-haves. You can then move different items between the lists when talking to the different stakeholders. When everybody agrees with the final list, you have an agreement and you can focus on implementing the essential requirements while possibly leaving space for some of the less important requirements.</p>
+<p>At this point, it is also important to think about the bigger picture: what the end product will look like and how this can be achieved. For example, if the end goal is to have a feature in production, then now is the time to figure out how the deployment process works. Consider questions such as who has access to this process? Do you need to get engineers involved and what does their availability look like?</p>
+<p>In order to be successful, it is essential to consider how we will measure success. Refer back to Chapter <a href="levels.html#levels">2</a> and define success on the four different levels: the project process, product, business and contextual levels. For project and process level success we will need to define a metric that accurately reflects the problem that we are trying to solve. This metric is often tied to a business objective. For instance, if we are automatically classifying incoming emails then success could be defined as a system that classifies 95% of all incoming email correctly. In this case, you should also define ‘correctly’. Here, ‘correct’ would be that the classification algorithm has the same outcome as a skilled employee. The exact number you choose will be a trade-off between accuracy and the budget available or time spent.</p>
+<p>Most companies will already be working with a way to keep track of and define success for their varying departments, this is often framed as Key Performance Indicators.</p>
+<div id="KPIs" class="section level2">
+<h2><span class="header-section-number">5.1</span> Key Performance Indicators (KPI)</h2>
+<div class="infobox">
+<p><strong>Definition</strong></p>
+<p>A Key Performance Indicator is a measurable value that demonstrates how effectively a company is achieving key business objectives. Organizations use KPIs at multiple levels to evaluate their success at reaching targets. High-level KPIs may focus on the overall performance of the business, while low-level KPIs may focus on processes in departments such as sales, marketing, HR, support and others.</p>
+</div>
+<p>KPIs are widely used within organisations to measure business objectives. To find KPIs that are relevant to your project you should be able to answer the following questions:</p>
+<ul>
+<li>What is your desired outcome?</li>
+<li>Why does this outcome matter?</li>
+<li>How are you going to measure progress?</li>
+<li>How can you influence the outcome?</li>
+<li>Who is responsible for the business outcome?</li>
+<li>How will you know you’ve achieved your outcome?</li>
+<li>How often will you review progress towards the outcome?</li>
+</ul>
+<p>One way to evaluate the relevance of a performance indicator is to use <a href="http://en.wikipedia.org/wiki/SMART_criteria" target="_blank">the SMART criteria</a>. The letters are typically taken to stand for <strong>Specific, Measurable, Attainable, Relevant, Time-bound</strong>. In other words:</p>
+<ul>
+<li>Is your objective <strong>Specific</strong>?</li>
+<li>Can you <strong>Measure</strong> progress towards that goal?</li>
+<li>Is the goal realistically <strong>Attainable</strong>?</li>
+<li>How <strong>Relevant</strong> is the goal for your organization?</li>
+<li>What is the <strong>Time-frame</strong> for achieving this goal?</li>
+</ul>
+</div>
+<div id="feasibility-study" class="section level2">
+<h2><span class="header-section-number">5.2</span> Feasibility Study</h2>
+<p>A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project in order to assess the likelihood of its success. In its simplest terms, the two criteria to judge feasibility are cost required and value to be attained. For data science projects we tend to focus on technical, economic, legal, operational and scheduling feasibilities.</p>
+<div id="technical-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Technical Feasibility</h3>
+<p>The technical feasibility assessment is focused on gaining an understanding of the present technical resources of the organization and their applicability to the expected needs of the proposed system. It is an evaluation of the hardware, software and technology required to meet the needs of the proposed system.</p>
+<p>This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project. When writing a feasibility report, the following should be taken into consideration:</p>
+<ul>
+<li>A brief description of the business to assess more possible factors which could affect the study</li>
+<li>The part of the business being examined</li>
+<li>The human and economic factor</li>
+<li>The possible solutions to the problem</li>
+<li>Methods of producing the solution</li>
+<li>Detailed project requirements</li>
+</ul>
+<p>This detailed report should stipulate if a project is technically feasible. There are many reasons why projects aren’t technically feasible and it could be as complex as the requirements aren’t simultaneously achievable or the company does not have the know-how to build and maintain the proposed system even if it is technically possible to do so.</p>
+</div>
+<div id="economic-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Economic Feasibility</h3>
+<p>An economic feasibility study typically involves a cost/benefits analysis of the project, helping organizations determine the viability, cost, and benefits associated with a project before financial resources are allocated. It also
+serves as an independent project assessment and enhances project
+credibility – helping decision-makers determine the positive economic benefits to the organization that the proposed project will provide.</p>
+</div>
+<div id="legal-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> Legal Feasibility</h3>
+<p>The legal feasibility assessment investigates whether any aspect of the proposed project conflicts with legal requirements like zoning laws, data protection acts or social media laws. Let’s say an organization wants to store customer information for the use in a recommendation engine on its e-commerce site. A feasibility study might reveal that the laws governing this data differ depending on where the customer is geographically located. Therefore, simply storing this data isn’t possible and a more in-depth analysis of the law needs to be made. Different data will need to be stored for different customers. This might mean that the recommendation engine isn’t feasible for the organisation right now as this would add extra costs and technical difficulty.</p>
+</div>
+<div id="operational-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.4</span> Operational Feasibility</h3>
+<p>The operational feasibility study involves undertaking a study to analyze and determine whether – and how well – the organization’s needs can be met by completing the project. Operational feasibility studies also analyze how a project plan satisfies the requirements identified in the requirements analysis phase of system development.</p>
+<p>To ensure success, the desired operational outcomes must be imparted during design and development. These include such design-dependent parameters as reliability, maintainability, supportability, usability, producibility, disposability, sustainability, affordability and others. These parameters are required to be considered at the early stages of the design if desired operational behaviours are to be realised. System design and development requires appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters. A system may serve its intended purpose most effectively when its technical and operating characteristics are engineered into the design. Therefore, operational feasibility is a critical aspect of systems engineering that needs to be an integral part of the early design phases</p>
+</div>
+<div id="scheduling-feasibility" class="section level3">
+<h3><span class="header-section-number">5.2.5</span> Scheduling Feasibility</h3>
+<p>The scheduling feasibility assessment is the most important study for the project’s success; after all, a project that is delivered too late to be useful is an automatic failure. In this study, we estimate how long the system will take to develop, and if it can be completed in the given time. Time feasibility is a measure of how reasonable the project timetable is. Given our technical expertise, are the project deadlines reasonable? Some projects are initiated with specific deadlines. It is necessary to determine whether the deadlines are mandatory or desirable.</p>
 
-<div class="center">
-<div class="figure"><span id="fig:full-figure"></span>
-<img src="figures/Framework%20phases.png" alt="Combined project evaluation and phases" width="100%" />
-<p class="caption">
-Figure 11.1: Combined project evaluation and phases
-</p>
 </div>
 </div>
-
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="handover.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="consulting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="phase-1-the-business-case.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phase-3-scoping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
