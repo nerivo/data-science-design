@@ -1,16 +1,5 @@
 # Phase 4: project definition {#definition}
 
-***
-
-## Phase 4: Project definition
-In the previous scoping section we got to do some hands-on work. At this point, you have understood the business case for your project and had a look at the data that will support the work. You will also have defined what a successful outcome is, established metrics for measuring success and developed a clear understanding of the complexity of the task in front of you. The next steps are to concretely define the project, describe it in the form of a written proposal and put a price tag on it. Welcome to Phase 4: Project definition.
-
-This is a difficult task and it comes with a large number of considerations that you need to take into account. We have, therefore, put a detailed description of how we approach this in a subsequent chapter. Here we highlight a few of those factors.
-
-When defining your project, it’s good to start with a project plan that can be broken down into milestones. Think about what the objective of each milestone is, and what deliverable will mark its completion. What skills will be needed for the work? If you are building a team, you’ll want to make sure they have what’s required; if you’re working on your own, will you have to do any homework to ensure that you have the experience that is needed. You will have to put a price on the work and think about how the project will be managed. These items are discussed in detail in Chapter \@ref(definition). 
-
-***
-
 If you have followed the steps outlined in phases 1-3, you will have now determined that the project is viable. You will have confirmed that, in principle, the project makes contextual sense and that it is likely to bring value to your stakeholder, and you are now ready to think in terms of the specifics about how you will deliver the work. Congratulations! This represents a major crossroads for any project, and you should be proud of yourself for having had the discipline to work through Phases 1 – 3 carefully. Now you are ready to start your project in earnest!
 
 But hold on! Before you start writing code and delving into the work, you must plan the project – that is what Phase 4 is about. This is the design phase, where you lay out in detail the approach you will take, the steps that will be included and the resources that will be required. We often hear people say things such as, “Data science is research...how can I say how long it will take if I don’t know what I’m going to find?” This is a valid concern – in an ideal world, you would have all the time and money you need. Sadly, this is an example of the difference between the ideal world and reality: if you are working with a client/manager, you will need to inform that client/manager what will be required in terms of time and money. Can you be certain that your estimations are sufficient? No. But you can make reasonable estimations with the information you have, and this is where the art of project design comes in.
