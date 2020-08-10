@@ -4,10 +4,22 @@
 \usepackage{framed}
 \setlength{\fboxsep}{.8em}
 
-\newenvironment{smaller}{}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+\newenvironment{smaller}{
+  \definecolor{shadecolor}{rgb}{1,1,1}  % black
+  \small
+  \begin{shaded}}
+ {\end{shaded}}
 
 \newenvironment{infobox}{
-  \definecolor{shadecolor}{rgb}{0, 0, 0}  % black
-  \color{white}
+  \definecolor{shadecolor}{rgb}{0.83,0.83,0.83}  % black
+  \color{black}
   \begin{shaded}}
  {\end{shaded}}

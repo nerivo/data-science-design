@@ -1,4 +1,4 @@
-# Phase 4: project definition {#definition}
+# Phase 4: Project definition {#definition}
 
 If you have followed the steps outlined in phases 1-3, you will have now determined that the project is viable. You will have confirmed that, in principle, the project makes contextual sense and that it is likely to bring value to your stakeholder, and you are now ready to think in terms of the specifics about how you will deliver the work. Congratulations! This represents a major crossroads for any project, and you should be proud of yourself for having had the discipline to work through Phases 1 – 3 carefully. Now you are ready to start your project in earnest!
 
@@ -29,7 +29,7 @@ Throughout this process, it can be useful to consider pivot points or alternativ
 In the earlier scoping phases, you will have determined what the requirements of the project are in terms of outcomes and deliverables. If these include data products that require engineering or deployment (as opposed to projects primarily focused on the generation of insights and models), you will need to include corresponding milestones. Data cleaning, code refactoring, optimisation and productization can be time-consuming, as can deployment of your product and the development of sound ETL pipelines – be sure to budget for these in your project plan and think carefully about what a sensible development plan looks like. 
 
 
-## What skills/expertise is required?
+## Skills/expertise required
 As you plan your project, the required technical and non-technical skills should start to become clear. Many skills can be thought of as more general, such as coding, machine learning or results orientated. Others are more specialised, such as natural language processing or graph theory. And yet other skills are harder to come by, the domain-specific expertise. Ensuring you have the industry-specific experience to deliver the project or make sure that you have willing sponsors within the company who will set aside time to work with you on understanding any industry quirks and nuances.
 
 Your approach to meeting the skills required for a project is, of course, dependent upon the composition of your team. If you are designing a project that you will work on individually, then it is up to you to make sure you have the skills required in your repertoire. If you don’t, you may need to consider bringing in outside help or budgeting for the time it will take to level-up your shortfall. Often projects are designed for teams of data scientists, in which case you will want to make sure that the skills required are matched collectively by the team. Data Science as software development is a team sport.
@@ -37,7 +37,7 @@ Your approach to meeting the skills required for a project is, of course, depend
 
 > “If you want to go fast, go alone. If you want to go far, go together.” -- African Proverb
 
-## How much will it cost?
+## Determining the cost
 You will almost certainly have to put a price tag on your project. For us, this is essentially a calculation based on how long we think the project will take and the billing rate for the staff. Junior/mid-level/senior data scientists all have different rates to consider in this calculation. The staff billing rate is normally constant, so we tend to focus primarily on the duration of the project. 
 
 As discussed above, getting this right can be difficult. If your estimate is too low you may not have the time needed to complete the work; if it’s too high, you risk losing the contract. The latter case is especially relevant if you are competing against other providers, for example in the case of a proposal written in response to an RFP (request for proposals). For other projects, the cost factor might not be important at all as employee projects often overrun without any negative consequences. For those to whom the cost factor is important, we don’t have a magic formula that tells how to strike the right middle ground. What we can do is highlight some considerations that we find helpful in the process and offer our reassurance that it gets easier to make this judgement as you become more experienced. 
@@ -70,7 +70,7 @@ It’s also useful to think about aspects of the project that are “must-haves�
 We also encourage you to mention any other costs that the client/manager may incur. For instance, if your work requires the use of a virtual machine or the creation of a database that will be hosted on the cloud, these are costs that the client/manager will want to know about. Hosting your solution can also bring with it security concerns and other maintenance costs or complications. Be sure to be as thorough as possible.  This will help your client/manager to understand the total expense of the project. It will also help in your efforts to build up a trusting relationship with your client/manager. Or, to put it another way, surprising your client/manager with unexpected expenses can undermine the trust that you are striving to build. In short, view your work with your client/manager as a relationship that has to be built and nurtured, and do your best to approach it with empathy for all the people who are involved.  
 
 
-## How will you manage the project?
+## Managing the project
 At this point, you have a project plan and you have accounted for the technical skills that will be needed to bring it to fruition. However, a final consideration is still outstanding: how will you manage the project? 
 
 As above, if you are working on a project independently, then this is probably a fairly easy question to answer. If you are designing the project for a team, then planning for the project’s management will be critically important. Either way, we suggest that you take some time to consider exactly how you will work and how you will interact with your client/manager.
@@ -83,7 +83,7 @@ In addition to planning out how you will work and communicate with your team, yo
 
 We also encourage you to think about how you intend to structure your codebase. We generally use Git and GitHub for version control and code sharing, and we would encourage you to build your repository’s directory structure before any code is added. We highly recommend the [“cookiecutter” family of project templates](https://github.com/cookiecutter/cookiecutter){target="_blank"} and have found the [Python-based data science template](http://drivendata.github.io/cookiecutter-data-science/){target="_blank"} to be a good fit for most of our Python-based projects. It includes a guide to best practices for directory structure and naming conventions and contains a built-in make functionality that can be useful for managing the steps required to build the requisite datasets and functions for your project. For R-based projects, one option is the [ProjectTemplate](http://projecttemplate.net/){target="_blank"}, although others also exist. At the minimum, we encourage you to work within the [framework of an R Project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects){target="_blank"}. 
 
-## Check back on the four levels and evaluate the plan in the context of each.
+## Evaluate the plan
 If you have followed the steps above, you will now have defined your project. You will have a project plan that includes milestones, a timeline, potential pivot points and clearly-defined deliverables. You will have determined the composition of the team needed to execute the project and have thought about how the team will work together and liaise with the client/manager. You will have also created a budget for the project based on the time required, cost of staff and any other costs required. You probably can’t wait to send your proposed plan off to the client/manager and get to work! 
 
 But before you do, we encourage you to look back at the four levels of project evaluation outlined previously. Think about the business case and the larger context of the project in relation to the business strategy, and ask yourself if what you have planned will be impactful. If you are not convinced that it will be, you may need to reconsider your plan. 
