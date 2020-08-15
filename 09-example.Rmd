@@ -1,6 +1,6 @@
 # Example project plan {#example}
 
-Between the two of us, we have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4, in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers – what might be best for one project may be well off-the-mark for another. 
+Your authors have designed, managed or delivered hundreds of projects. Despite that experience, the process can still be uncomfortable and disorienting. This is especially true for Phase 4 (Chapter \@ref(definition)), in which you have to create concrete details about your execution plan. Many find this especially daunting: it’s a subjective endeavour with no right answers -- what might be best for one project may be well off-the-mark for another. 
 
 We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.
 
@@ -15,7 +15,7 @@ Client X specialises in creating high-performance, affordable exercise gear for 
 
 *Project description:*
 
-In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) analysis on customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience. 
+In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) an analysis of customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience. 
 
 In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset. 
 
@@ -66,8 +66,7 @@ mytable = data.frame(
     'Milestone'     = c("Milestone 3", "Milestone 4"),
     
     "Work Carried Out" =c("- **Research** \n - We will examine the data available to identify a feature space to use for collaborative filtering.", "- **Build** \n - We will focus on productionising the recommender system and integrating it into the existing Client X data infrastructure"),
-    "Outcome/Deliverable" = c("- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used.
-."),
+    "Outcome/Deliverable" = c("- A presentation showing initial findings of possible approaches to the recommendation engine.", "- A deployed recommender system that runs on the Client X GCP instance.\n - A demonstration, presentation and report outlining experimental approach and deployment specifications, as well as recommendations for model improvements and retraining. \n - A GitHub repo containing all code used."),
     "Completion Date" = c("End of Week 6", "End of Week 9"),
 check.names = FALSE
 )
