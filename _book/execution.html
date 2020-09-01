@@ -136,7 +136,7 @@
 <li class="chapter" data-level="9.1" data-path="execution.html"><a href="execution.html#research"><i class="fa fa-check"></i><b>9.1</b> Research</a></li>
 <li class="chapter" data-level="9.2" data-path="execution.html"><a href="execution.html#prototyping"><i class="fa fa-check"></i><b>9.2</b> Prototyping</a></li>
 <li class="chapter" data-level="9.3" data-path="execution.html"><a href="execution.html#build-assess-rinse-and-repeat"><i class="fa fa-check"></i><b>9.3</b> Build, assess, rinse and repeat</a><ul>
-<li class="chapter" data-level="9.3.1" data-path="execution.html"><a href="execution.html#testing"><i class="fa fa-check"></i><b>9.3.1</b> Testing</a></li>
+<li class="chapter" data-level="" data-path="execution.html"><a href="execution.html#testing"><i class="fa fa-check"></i>Testing</a></li>
 </ul></li>
 <li class="chapter" data-level="9.4" data-path="execution.html"><a href="execution.html#evaluate"><i class="fa fa-check"></i><b>9.4</b> Evaluate</a></li>
 <li class="chapter" data-level="9.5" data-path="execution.html"><a href="execution.html#go-to-client"><i class="fa fa-check"></i><b>9.5</b> Go to client</a><ul>
@@ -228,8 +228,8 @@
 <p>Open Source is any computer software that is distributed with its source code available for modification. That means it usually includes a license for programmers to change the software in any way they choose: They can fix bugs, improve functions, or adapt the software to suit their own needs.</p>
 <p>As a side note, it is important to be conscientious when choosing your machine learning toolkit. If you use closed and proprietary systems like those provided by IBM, Google and Amazon, be aware that you will lose visibility and the ability to understand the system fully.</p>
 </div>
-<div id="testing" class="section level3">
-<h3><span class="header-section-number">9.3.1</span> Testing</h3>
+<div id="testing" class="section level3 unnumbered">
+<h3>Testing</h3>
 <p>As with software development, data science projects should be rigorously tested to ensure model performance. Create test cases and make sure your model adheres to them. Later if you need to update the model with new data, these test cases should still hold and make any update robust. Testing is somewhat of an art form, and it takes a lot of experience and practice to become good at devising a sensible, rigorous testing scheme. Furthermore, the notion of “unit testing” is not entirely sufficient in data science. Nonetheless, it’s good to have an understanding of testing principles.</p>
 <p>If you or a colleague has made changes to some code and want to replace the old version, how do you know it has not introduced any problems (let alone that it’s improved)? Unit tests help ensure this for software, along with code reviews. For data science work, we have found it useful to recruit reviewers to inspect results from experiments.</p>
 <p>Another common use case for unit testing in software is to ensure things work properly before automatic deployment to a production environment. For machine learning models in a production environment, you can run code that retrains your model on new data automatically and redeploys your updated model to production. In this situation, you may want the deployment to fail if your updated model fails to meet certain conditions. To handle this, abort the deployment if your retraining script throws an error. This allows you to build any gatekeeping checks you wish while ensuring consistent quality.</p>

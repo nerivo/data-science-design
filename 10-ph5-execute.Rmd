@@ -63,7 +63,7 @@ As a side note, it is important to be conscientious when choosing your machine l
 :::
 
 
-### Testing 
+### Testing {-}
 As with software development, data science projects should be rigorously tested to ensure model performance. Create test cases and make sure your model adheres to them. Later if you need to update the model with new data, these test cases should still hold and make any update robust. Testing is somewhat of an art form, and it takes a lot of experience and practice to become good at devising a sensible, rigorous testing scheme. Furthermore, the notion of “unit testing” is not entirely sufficient in data science. Nonetheless, it’s good to have an understanding of testing principles.
 
 If you or a colleague has made changes to some code and want to replace the old version, how do you know it has not introduced any problems (let alone that it’s improved)? Unit tests help ensure this for software, along with code reviews. For data science work, we have found it useful to recruit reviewers to inspect results from experiments.
