@@ -19,6 +19,6 @@ We love collaboration.
 * Submit a pull request to the master branch at `nerivo/data-science-design`
 
 ### Prefer to discuss over email?
-Email Jon at jonathan.leslie@pivigo.com or Neri at neri.vvo@gmail.com
+Email Jon at jonathan.leslie@pivigo.com or Neri at neri@gspotintelligence.com
 
 ### Thanks for contributing!
