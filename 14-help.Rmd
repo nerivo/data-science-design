@@ -10,3 +10,7 @@ Numerous kind and generous data professionals make themselves available to help 
 The resources listed above are great places to turn for help and advice. Similarly, you may have your own network of colleagues who have domain expertise...don’t be afraid to reach out to them for advice. Most people are happy to help, so use your network. But do so respectfully: understand that people are busy and may not have the time to spare. If you do reach out, be clear about what you want and how much time it will take. Ideally, you find a way to somehow align your goals with theirs, find a situation where you can help one another. 
 
 If you would like to gain more experience using your data science skills or use them for good cause you can always get involved with [Data Kind](https://www.datakind.org/){target="_blank"}.
+
+# Bibliography
+
+<div id="refs"></div>

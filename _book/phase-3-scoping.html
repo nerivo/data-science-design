@@ -25,7 +25,7 @@
 <meta name="author" content="Neri Van Otten" />
 
 
-<meta name="date" content="2020-09-05" />
+<meta name="date" content="2020-09-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -82,7 +82,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-us"><i class="fa fa-check"></i>About us</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#a-note-about-our-affiliations"><i class="fa fa-check"></i>A note about our affiliations</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#work-with-us"><i class="fa fa-check"></i>Work with us</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contributing"><i class="fa fa-check"></i>Contributing</a></li>
 </ul></li>
@@ -170,6 +170,7 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i><b>13</b> Finding help</a></li>
+<li class="chapter" data-level="14" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>14</b> Bibliography</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -212,7 +213,7 @@
 <h2><span class="header-section-number">6.2</span> Step 2: Testing assumptions</h2>
 <p>The next step is reducing some of the uncertainty and risk by carrying out hypothesis testing. What do we mean by that? In one way, we mean statistical hypothesis testing in the truest sense of the word: formulating null and alternative hypotheses and applying appropriate statistical tests to see how well the evidence supports them. However, we also mean testing more general ideas about the data, usually based on anecdotal evidence or domain experience from those who know the business the best. For example, your client may be confident that sales are highest on Fridays – use that as the basis for an experiment in your EDA and see if the data really do support that notion. Often with such assumptions, the data will indeed confirm what your client knows (or, more accurately, <em>thinks</em> they know) about the data. But sometimes those assumptions are wrong, and you are unable to find support for the assumption <strong>in the data you have</strong>.</p>
 <p>It is important to note here that hypothesis tests that fail to support your client’s assumptions do not necessarily mean that those assumptions are false. We emphasised the words “in the data you have” in the preceding paragraph for a reason: your data may not be representative of reality. This touches on a fundamental notion in data science – that data is not the same as ground truth. Data are artifacts and are affected by biases in collection methodology, study design, storage, aggregation and interpretation. In short, the data that comes to you has been affected by the many design choices that were made by others – choices about every step on the journey between the real world and the number you see in front of you. No dataset is ever completely unbiased. For an in-depth discussion of this topic, we strongly recommend <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4" target="_blank">this article</a> by Angela Bassa.</p>
-<p>Does this mean that data science is worthless? Of course not. But it does mean that you should keep in mind that some bias will be baked into every dataset. You job is to identify where biases may lay and account for them in your mission to “reach a factual understanding of truth” <span class="citation">(Bassa <a href="#ref-bassa_2017" role="doc-biblioref">2017</a>)</span>. In an ideal world, you (the data scientist) would have a say in how data are collected and curated, therefore allowing you to understand what design choices were made. In reality this almost never happens, leaving you to work with data that has been affected by the choices of others. During this phase of the project, you will want to validate some of the foundational assumptions upon which your project will be based. Our advice is to do this as scientifically as possible so that you can maximise your chances of accurately assessing what will be involved to deliver the project objectives.</p>
+<p>Does this mean that data science is worthless? Of course not. But it does mean that you should keep in mind that some bias will be baked into every dataset. You job is to identify where biases may lay and account for them in your mission to “reach a factual understanding of truth” <span class="citation">(Bassa <a href="bibliography.html#ref-bassa_2017" role="doc-biblioref">2017</a>)</span>. In an ideal world, you (the data scientist) would have a say in how data are collected and curated, therefore allowing you to understand what design choices were made. In reality this almost never happens, leaving you to work with data that has been affected by the choices of others. During this phase of the project, you will want to validate some of the foundational assumptions upon which your project will be based. Our advice is to do this as scientifically as possible so that you can maximise your chances of accurately assessing what will be involved to deliver the project objectives.</p>
 </div>
 <div id="what-you-hope-to-learn-from-scoping" class="section level2">
 <h2><span class="header-section-number">6.3</span> What you hope to learn from scoping</h2>
@@ -230,12 +231,6 @@
 <p>If you are unsure, or believe you cannot deliver a successful outcome, then you will need to go back to the client to either re-define success (Phase 2) or establish a different business case (Phase 1). This result is not a failure but rather an example of your due diligence arriving at an important finding. While it may not be the outcome you or your client wants, it is essential that you allow the scoping project to fail if need be. At the very least you saved yourself from failing at a larger scale. In this scenario, it is useful to clearly identify the reasons for your misgivings and consider how they may be overcome. For instance, would the collection of more data change your mind? Can the data be enriched with another source? Perhaps the incoming data you have been given suffers from some sort of collection or aggregation bias that you cannot account for? If you can somehow make a good recommendation for how the project can still be successful with a few concrete changes, that would be a very valid outcome. For example, can click-stream data be collected from the website if there are insufficient orders to make decent recommendations for customers who have never bought an item? This would solve the cold start problem many recommendation engines face.</p>
 <p>If you are happy that your project “has legs”, then it’s time to move on to Phase 4: Project definition. This is where you concretely design the project, including recommended approach, phases, milestones, timelines, resources and budgets. It’s a big stage and a big chapter, and one that will be critical for the success of most project. See you there!</p>
 
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-bassa_2017">
-<p>Bassa, Angela. 2017. “Data Alone Isn’t Ground Truth.” <em>Medium</em>. <a href="https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4">https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4</a>.</p>
 </div>
 </div>
             </section>
@@ -286,7 +281,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["designing_and_building_data_science_solutions.pdf"],
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
