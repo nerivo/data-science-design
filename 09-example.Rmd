@@ -4,7 +4,8 @@ Your authors have designed, managed or delivered hundreds of projects. Despite t
 
 We felt it would be valuable, then, to show an example of how we might present a project plan in the form of a written proposal. The example below is based on a real proposal we wrote. It is, by no means, the only way this project could have been designed, nor is it clear that this was the best way. It was simply the way we approached the task. We hope the example is useful to you.
 
------------
+-----------------
+
 <center>
 **Proposal for Client X**
 </center>
@@ -15,7 +16,7 @@ Client X specialises in creating high-performance, affordable exercise gear for 
 
 *Project description:*
 
-In this proposal, we outline a project aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) an analysis of customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience. 
+This project is aimed at helping Client X create a more personalised customer experience. We will focus on two main objectives: (1) an analysis of customer segments and (2) the development of a recommendation engine. We feel that these two branches of the project will combine to give Client X a better understanding of their customers’ tastes and preferences and will allow them to deliver a more personalised customer experience. 
 
 In Objective 1, “Customer Insights”, we will perform a customer segmentation analysis on data from Client X’s CRM (Customer Relationship Management), sales and marketing systems. We will first perform an in-depth analysis of the Client X data in which we will assess data quality and completeness and perform preliminary exploratory analyses, looking for clear relationships between the features available. We will then, in conjunction with Client X staff, select a subset of features that we feel have the most utility for separating customers into meaningful, interpretable segments. To achieve this we will take an unsupervised approach, exploring several clustering methodologies before determining which we feel has the most promise for this particular dataset. 
 
@@ -25,7 +26,7 @@ In Objective 2, “Product recommendations”, we will focus on building a recom
 
 We outline the plan for this project below.
 
------------ 
+------------------
 
 <center>
 **Project Proposal: Customer Insights and Recommendations**
@@ -34,11 +35,9 @@ We outline the plan for this project below.
 
 </center>
 
-<br/>
-
+:::{.smaller}
 <center>**Objective 1: Customer insights**</center>
 
-:::{.smaller}
 
 ```{r echo=FALSE}
 
@@ -56,10 +55,10 @@ pander::pander(mytable, keep.line.breaks = TRUE, style = 'grid', justify = 'left
 
 :::
 
-<br/><br/>
-<center>**Objective 2: Product recommendations**</center>
+</br>
 
 :::{.smaller}
+<center>**Objective 2: Product recommendations**</center>
 
 ```{r echo=FALSE}
 mytable = data.frame(

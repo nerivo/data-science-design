@@ -11,6 +11,8 @@ In order to be successful, it is essential to consider how we will measure succe
 
 Most companies will already be working with a way to keep track of and define success for their varying departments, this is often framed as Key Performance Indicators.
 
+\newpage
+
 ## Key Performance Indicators (KPI){#KPIs}
 
 <div class="infobox">

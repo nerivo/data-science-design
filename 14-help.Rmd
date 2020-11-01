@@ -3,7 +3,7 @@
 Numerous kind and generous data professionals make themselves available to help others. Four of our favourite collections are:
 
 - [Data Helpers](https://www.datahelpers.org/){target="_blank"} by Angela Bassa (a list of people who are happy to help and mentor data scientists)
-- [Stephanie Hurlburt’s list](http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you){target="_blank"} of engineers willing to offer mentorship or find a mentor on these [replies on twitter](https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/){target="_blank"}.
+- [Stephanie Hurlburt’s list](http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you){target="_blank"} of engineers willing to offer mentorship or find a mentor on this [list of people offering to help](https://twitter-replies.hoelz.ro/sehurlburt/889004724669661184/){target="_blank"}.
 - The [R for Data Science Online Learning Community](https://www.rfordatasci.com/){target="_blank"}, where R users and learners can find one another and share ideas. 
 - [PyData](https://pydata.org/){target="_blank"} provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. They run conferences and meet-ups world wide. It is a good place to connect with others that use predominantly python.
 

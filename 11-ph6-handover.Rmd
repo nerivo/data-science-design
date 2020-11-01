@@ -1,4 +1,4 @@
-# Phase 6: Handover and knowledge transfer {#handover}
+# Phase 6: Handover {#handover}
 
 ## Finding a new owner {-}
 
@@ -11,12 +11,12 @@ For the long term success of any project, there must be a long term strategy in 
 ::: {.infobox}
 **The concept ‘drift’ explained**
 
-In the most challenging of data analysis applications, data evolves and must be analyzed in near real-time. Patterns and relations in such data often evolve, thus, models built for analyzing such data quickly become obsolete over time. In machine learning and data mining, this phenomenon is referred to as drift.
+Predictive models are trained to recognise patterns and relationships in data and, in turn, to make predictions based on these patterns. Yet the world is not static: data will change over time as new observations come in, and patterns that may exist today may no longer exist in the same way in the future. If a model is not allowed to learn from this evolution in data relationships, model performance will decline over time. In short, your model will be making predictions based on an outdated understanding of the world. This deterioration of model performance is what we mean by model drift. 
 
-To combat drift, a model should be thoroughly analysed and a decision needs to be made on how frequently a model should be re-trained in order to remain relevant.
+To combat model drift, models should be monitored for performance changes and periodically re-trained on fresh data. Exactly how often retraining should be performed depends on the dataset in question and is best tested empirically.
 :::
 
-Oftentimes those that develop a system are not those that need to maintain it long term. This by itself might cause many issues but to make sure this goes as smoothly as possible be sure to write clear concise code, following coding standards, writing detailed documentation and having decent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location than the code, then a developer making changes would also need to remember to update the documentation. 
+Oftentimes those who develop a system are not those who need to maintain it long term. To make sure this goes as smoothly as possible, be sure to write clear concise code, follow recognised coding standards, write detailed documentation and include stringent test coverage. Regarding documentation, it is best practice to write your comments and documentation alongside the actual code. Doing this will mean your documentation is more likely to stay up to date. If documentation is in a different location than the code, then a developer making changes would also need to remember to update the documentation. 
 
 Many great tools can generate beautiful looking documentation from comments added in your code. For python, we can highly recommend [Sphynx](https://www.sphinx-doc.org/en/master/){target="_blank"} as it is widely used and gives you loads of great styles to choose from. 
 Regarding proper coding style, we recommend you follow [PEP8](https://www.python.org/dev/peps/pep-0008/){target="_blank"} for python and for R, the [R style guide](https://style.tidyverse.org/){target="_blank"}. We recommend you install a linter into your text editor so that your code will be constantly checked against these coding standards. Coding standards make your code far more readable so it is recommended to adhere to them as much as possible, We also find it useful to use a formatter, for python we use [Black](https://github.com/psf/black){target="_blank"}. This will automatically format your python code to meet the PEP8 guidelines. You will never need to worry about code formatting again as a formatter can automatically add the correct spacing, line breaks and other coding standards. It is, however, important to note that once you use a formatter, you can’t realistically override the formatting and you will need to accept some style changes as is. Every time you run your formatter these changes will be undone so there is no point sticking to your preferred format.

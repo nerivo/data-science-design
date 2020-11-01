@@ -13,7 +13,7 @@ Project design is difficult: it can be loosely structured and often has no singl
 
 We often think of data science as a process by which we frame a business problem as a scientific question and apply scientific methodologies to answer that question and derive insights. But how do we identify the business question in the first place? As a data scientist, a good first step is to ask different stakeholders. Yet in our experience, this can often be an unsatisfying approach: more often than not, the stakeholders (clients or managers) will not have a clearly-defined business problem or a concrete objective for the project.  We believe our framework can help drive this conversation, setting the stage for well-planned project design and giving projects the best chances for success. 
 
-## Data science, machine learning and artificial intelligence
+## Data science, machine learning and AI
 
 “Data science”, “machine learning” and “artificial intelligence” are terms that can be used in imprecise ways and can have overlapping meanings. Many will be familiar with the phenomenon of a job advertisement that is billed as a data scientist role but in reality, is more of a data analyst or an IT specialist. AI is perhaps the most liberally-used of the terms, sure to increase one’s chances of writing a successful grant application or tender for a piece of work. It is safe to say that all of these terms can be susceptible to over-hype, and the choice of which to use often appears as a matter of marketing. 
 
@@ -36,7 +36,7 @@ knitr::include_graphics(rep('figures/xkcd.png', 1))
 :::
 
 
-Artificial Intelligence is the most common term that is most widely understood but is possibly also the hardest to distinguish between. Everyone will have their view on this but to distinguish it from the other two terms we will define artificial intelligence as an actional application. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning. 
+Artificial intelligence (AI) may be the most commonly-used of the terms and, paradoxically, may also be the most poorly-understood. Many practitioners have strong views on what it means and what distinguishes it from the other two terms. For us, we think of AI as any application that results in an outcome that is an action. This can be anything from robotics used in industries, chatbots providing customer service to game-playing algorithms using reinforcement learning. 
 
 For the sake of simplicity, we have chosen to use the term "data science" throughout this book as this most accurately represents the type of projects we tackle. In most cases, the reader can substitute the term with "machine learning" or "artificial intelligence" without losing the message of the text.
 
@@ -46,4 +46,3 @@ Our framework has two related components: **project execution** and **project ev
 
 ## Organisation of this book
 This book is divided into three main sections. In the Chapter \@ref(levels) we discuss the four levels of project evaluation in more detail and provides examples of how to assess each. In Chapters \@ref(phases) through \@ref(phasesSummary) we explain our suggested approach to project design and delivery, breaking the process down into six major phases. We finish by providing some practical tips: Chapter \@ref(consulting) is primarily aimed at independent contractors/freelancers and covers how to build up a client base and find work and Chapter \@ref(help) lists some useful resources for where you can find help in the wider data science community.  
-

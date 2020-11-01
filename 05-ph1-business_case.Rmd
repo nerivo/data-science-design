@@ -15,6 +15,8 @@ Similarly, it can be useful to assess your client’s appetite for risk by askin
 ## Define the business case
 As with any scientific experiment, a critical first step in designing a data science project is to define the question and to formulate a hypothesis. To put it in slightly different terms, it is vital that all parties -- including the data scientists and the stakeholders -- agree on the project’s scope and goals. While a project brief can help identify important aspects of the work, in our experience the best results come from face-to-face conversations with everyone involved. In other words, do not restrict this conversation to a single person, but rather try to get input from every stakeholder who may be involved in the project. 
 
+\newpage
+
 :::{.infobox}
 **A story about stakeholders**
 
